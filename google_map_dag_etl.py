@@ -30,14 +30,14 @@ with DAG(
     # Tâche 1 : Extraction des données et sauvegarde JSON
     scraping_task = PythonOperator(
         task_id='extract_data_task',
-        python_callable=lambda: __import__('main_scraping_script').main()
+        python_callable=lambda: __import__('main_scraping_script').main(),
         dag=dag
     )
 
     # Tâche 2 : Insertion des données et sauvegarde en PostgreSQL 
     insertion_task = PythonOperator(
         task_id='insert_data_task',
-        python_callable=lambda: __import__('insert_data').main()
+        python_callable=lambda: __import__('insert_data').main(),
         dag=dag
 
     )
@@ -52,7 +52,7 @@ with DAG(
     # #Tache 4 : transformation phase 2 
     transform_phase_2_task = PythonOperator(
     task_id='transform_phase_2_task',
-    python_callable=lambda: __import__('transform_phase_2').main()
+    python_callable=lambda: __import__('transform_phase_2').main(),
     dag=dag
 
     )
