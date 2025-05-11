@@ -1,0 +1,27 @@
+data_warehouse_project:
+  outputs:
+    dev:
+      dbname: Data_Warehouse_Project
+      host: localhost
+      pass: azerty
+      port: 5432
+      schema: public  # Default schema for other models
+      threads: 4
+      type: postgres
+      user: postgres
+
+  target: dev  # Default target (keep as is)
+
+decisionnelle_profile:
+  outputs:
+    dev_decisionnelle:
+      dbname: Data_Warehouse_Project
+      host: localhost
+      pass: azerty
+      port: 5432
+      schema: Decisionnelle  # Set schema directly here
+      threads: 4
+      type: postgres
+      user: postgres
+
+  target: dev_decisionnelle  # Set this as the active target for Decisionnelle models
