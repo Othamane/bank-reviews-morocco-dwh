@@ -81,6 +81,24 @@ The project is structured into six main phases:
    * Build DBT models to transform and load data into the warehouse.
    * Automate loading via Airflow DAGs.
 
+Star Schema Diagram
+
+Below is the star schema design for the data mart, showing the central fact table and its relationships to dimension tables:
+
+![alt text](DW_Schema.png)
+
+Explanation: The fact_reviews table sits at the center, linking to four dimensions:
+
+dim_bank: Contains unique banks (bank_id, bank_name).
+
+dim_branch: Contains branches (branch_id, branch_name).
+
+dim_location: Geographic information (location_id, location).
+
+dim_sentiment: Sentiment labels (sentiment_id, sentiment_label).
+
+This design enables efficient slicing and dicing of review data by bank, branch, location, or sentiment for BI queries.   
+
 ### Phase 4: Data Analytics & Reporting (✅ Completed)
 
 * Develop interactive dashboards in Looker Studio:
