@@ -1,0 +1,35 @@
+[2025-03-20T22:02:49.110+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_phase_1_task manual__2025-03-20T22:02:38.687555+00:00 [queued]>
+[2025-03-20T22:02:49.202+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_phase_1_task manual__2025-03-20T22:02:38.687555+00:00 [queued]>
+[2025-03-20T22:02:49.203+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-20T22:02:49.289+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): transform_phase_1_task> on 2025-03-20 22:02:38.687555+00:00
+[2025-03-20T22:02:49.305+0000] {standard_task_runner.py:60} INFO - Started process 2036 to run task
+[2025-03-20T22:02:49.387+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_phase_1_task', 'manual__2025-03-20T22:02:38.687555+00:00', '--job-id', '235', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmplejidj80']
+[2025-03-20T22:02:49.415+0000] {standard_task_runner.py:88} INFO - Job 235: Subtask transform_phase_1_task
+[2025-03-20T22:02:49.937+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_phase_1_task manual__2025-03-20T22:02:38.687555+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-20T22:02:50.902+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_phase_1_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-20T22:02:38.687555+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-20T22:02:38.687555+00:00'
+[2025-03-20T22:02:50.909+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-03-20T22:02:50.910+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd ~/data_warehouse_project && dbt run --profiles-dir ~/.dbt --models cleaned_reviews']
+[2025-03-20T22:02:50.941+0000] {subprocess.py:86} INFO - Output:
+[2025-03-20T22:03:01.088+0000] {subprocess.py:93} INFO - [0m22:03:01  Running with dbt=1.9.0-b2
+[2025-03-20T22:03:02.393+0000] {subprocess.py:93} INFO - [0m22:03:02  Registered adapter: postgres=1.8.2
+[2025-03-20T22:03:03.059+0000] {subprocess.py:93} INFO - [0m22:03:03  Unable to do partial parsing because config vars, config profile, or config target have changed
+[2025-03-20T22:03:03.072+0000] {subprocess.py:93} INFO - [0m22:03:03  Unable to do partial parsing because profile has changed
+[2025-03-20T22:03:12.119+0000] {subprocess.py:93} INFO - [0m22:03:12  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2025-03-20T22:03:12.120+0000] {subprocess.py:93} INFO - There are 1 unused configuration paths:
+[2025-03-20T22:03:12.121+0000] {subprocess.py:93} INFO - - models.data_warehouse_project.example
+[2025-03-20T22:03:12.733+0000] {subprocess.py:93} INFO - [0m22:03:12  Found 6 models, 1 source, 425 macros
+[2025-03-20T22:03:12.739+0000] {subprocess.py:93} INFO - [0m22:03:12
+[2025-03-20T22:03:12.743+0000] {subprocess.py:93} INFO - [0m22:03:12  Concurrency: 4 threads (target='dev')
+[2025-03-20T22:03:12.747+0000] {subprocess.py:93} INFO - [0m22:03:12
+[2025-03-20T22:03:13.219+0000] {subprocess.py:93} INFO - [0m22:03:13  1 of 1 START sql table model public.cleaned_reviews ............................ [RUN]
+[2025-03-20T22:03:13.926+0000] {subprocess.py:93} INFO - [0m22:03:13  1 of 1 OK created sql table model public.cleaned_reviews ....................... [[32mSELECT 9[0m in 0.70s]
+[2025-03-20T22:03:14.002+0000] {subprocess.py:93} INFO - [0m22:03:14
+[2025-03-20T22:03:14.007+0000] {subprocess.py:93} INFO - [0m22:03:14  Finished running 1 table model in 0 hours 0 minutes and 1.25 seconds (1.25s).
+[2025-03-20T22:03:14.154+0000] {subprocess.py:93} INFO - [0m22:03:14
+[2025-03-20T22:03:14.157+0000] {subprocess.py:93} INFO - [0m22:03:14  [32mCompleted successfully[0m
+[2025-03-20T22:03:14.159+0000] {subprocess.py:93} INFO - [0m22:03:14
+[2025-03-20T22:03:14.161+0000] {subprocess.py:93} INFO - [0m22:03:14  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2025-03-20T22:03:24.772+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-03-20T22:03:24.840+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Google_map, task_id=transform_phase_1_task, execution_date=20250320T220238, start_date=20250320T220249, end_date=20250320T220324
+[2025-03-20T22:03:24.900+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-20T22:03:24.941+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

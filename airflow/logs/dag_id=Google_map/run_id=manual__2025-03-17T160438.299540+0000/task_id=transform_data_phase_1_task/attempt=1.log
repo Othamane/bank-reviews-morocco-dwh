@@ -1,0 +1,30 @@
+[2025-03-17T16:04:54.018+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_data_phase_1_task manual__2025-03-17T16:04:38.299540+00:00 [queued]>
+[2025-03-17T16:04:54.044+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_data_phase_1_task manual__2025-03-17T16:04:38.299540+00:00 [queued]>
+[2025-03-17T16:04:54.046+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-17T16:04:54.088+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): transform_data_phase_1_task> on 2025-03-17 16:04:38.299540+00:00
+[2025-03-17T16:04:54.097+0000] {standard_task_runner.py:60} INFO - Started process 166362 to run task
+[2025-03-17T16:04:54.105+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_data_phase_1_task', 'manual__2025-03-17T16:04:38.299540+00:00', '--job-id', '170', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmp02nlt5zy']
+[2025-03-17T16:04:54.111+0000] {standard_task_runner.py:88} INFO - Job 170: Subtask transform_data_phase_1_task
+[2025-03-17T16:04:54.311+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_data_phase_1_task manual__2025-03-17T16:04:38.299540+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-17T16:04:54.683+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_data_phase_1_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-17T16:04:38.299540+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-17T16:04:38.299540+00:00'
+[2025-03-17T16:04:54.696+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-03-17T16:04:54.698+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd ~/data_warehouse_project && dbt run --profiles-dir ~/.dbt --models cleaned_reviews']
+[2025-03-17T16:04:54.714+0000] {subprocess.py:86} INFO - Output:
+[2025-03-17T16:04:59.504+0000] {subprocess.py:93} INFO - [0m16:04:59  Running with dbt=1.9.0-b2
+[2025-03-17T16:05:00.242+0000] {subprocess.py:93} INFO - [0m16:05:00  Registered adapter: postgres=1.8.2
+[2025-03-17T16:05:01.629+0000] {subprocess.py:93} INFO - [0m16:05:01  Found 6 models, 1 source, 424 macros
+[2025-03-17T16:05:01.634+0000] {subprocess.py:93} INFO - [0m16:05:01
+[2025-03-17T16:05:01.635+0000] {subprocess.py:93} INFO - [0m16:05:01  Concurrency: 4 threads (target='dev')
+[2025-03-17T16:05:01.636+0000] {subprocess.py:93} INFO - [0m16:05:01
+[2025-03-17T16:05:01.983+0000] {subprocess.py:93} INFO - [0m16:05:01  1 of 1 START sql table model public_public.cleaned_reviews ..................... [RUN]
+[2025-03-17T16:05:02.367+0000] {subprocess.py:93} INFO - [0m16:05:02  1 of 1 OK created sql table model public_public.cleaned_reviews ................ [[32mSELECT 9[0m in 0.38s]
+[2025-03-17T16:05:02.397+0000] {subprocess.py:93} INFO - [0m16:05:02
+[2025-03-17T16:05:02.400+0000] {subprocess.py:93} INFO - [0m16:05:02  Finished running 1 table model in 0 hours 0 minutes and 0.76 seconds (0.76s).
+[2025-03-17T16:05:02.469+0000] {subprocess.py:93} INFO - [0m16:05:02
+[2025-03-17T16:05:02.470+0000] {subprocess.py:93} INFO - [0m16:05:02  [32mCompleted successfully[0m
+[2025-03-17T16:05:02.471+0000] {subprocess.py:93} INFO - [0m16:05:02
+[2025-03-17T16:05:02.473+0000] {subprocess.py:93} INFO - [0m16:05:02  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2025-03-17T16:05:04.332+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-03-17T16:05:04.488+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Google_map, task_id=transform_data_phase_1_task, execution_date=20250317T160438, start_date=20250317T160454, end_date=20250317T160504
+[2025-03-17T16:05:04.575+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-17T16:05:04.643+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

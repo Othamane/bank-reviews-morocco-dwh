@@ -1,0 +1,32 @@
+[2025-03-16T16:50:49.310+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T16:15:39.596689+00:00 [queued]>
+[2025-03-16T16:50:49.332+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T16:15:39.596689+00:00 [queued]>
+[2025-03-16T16:50:49.333+0000] {taskinstance.py:2170} INFO - Starting attempt 7 of 7
+[2025-03-16T16:50:49.381+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_phase_2_task> on 2025-03-16 16:15:39.596689+00:00
+[2025-03-16T16:50:49.389+0000] {standard_task_runner.py:60} INFO - Started process 113477 to run task
+[2025-03-16T16:50:49.400+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_phase_2_task', 'manual__2025-03-16T16:15:39.596689+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmp0aw8yf_4']
+[2025-03-16T16:50:49.409+0000] {standard_task_runner.py:88} INFO - Job 129: Subtask transform_phase_2_task
+[2025-03-16T16:50:49.640+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T16:15:39.596689+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-16T16:50:49.973+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_phase_2_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T16:15:39.596689+00:00' AIRFLOW_CTX_TRY_NUMBER='7' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T16:15:39.596689+00:00'
+[2025-03-16T16:50:50.647+0000] {logging_mixin.py:188} WARNING - None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[2025-03-16T16:50:50.863+0000] {logging_mixin.py:188} WARNING - None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[2025-03-16T16:50:53.032+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nord/airflow/dags/google_map_dag_etl.py", line 51, in <lambda>
+    python_callable=lambda: __import__('transform_phase_2').main()
+  File "/home/nord/airflow/dags/transform_phase_2.py", line 11, in <module>
+    sentiment_pipeline = pipeline('sentiment-analysis', model='nlptown/bert-base-multilingual-uncased-sentiment')
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/pipelines/__init__.py", line 926, in pipeline
+    framework, model = infer_framework_load_model(
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/pipelines/base.py", line 240, in infer_framework_load_model
+    raise RuntimeError(
+RuntimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.
+[2025-03-16T16:50:53.066+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=Google_map, task_id=transform_phase_2_task, execution_date=20250316T161539, start_date=20250316T165049, end_date=20250316T165053
+[2025-03-16T16:50:53.093+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 129 for task transform_phase_2_task (At least one of TensorFlow 2.0 or PyTorch should be installed. To install TensorFlow 2.0, read the instructions at https://www.tensorflow.org/install/ To install PyTorch, read the instructions at https://pytorch.org/.; 113477)
+[2025-03-16T16:50:53.150+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-16T16:50:53.204+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

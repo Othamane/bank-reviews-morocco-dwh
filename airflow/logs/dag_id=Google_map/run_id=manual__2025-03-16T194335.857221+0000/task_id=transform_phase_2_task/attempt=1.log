@@ -1,0 +1,230 @@
+[2025-03-16T19:43:40.386+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T19:43:35.857221+00:00 [queued]>
+[2025-03-16T19:43:40.430+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T19:43:35.857221+00:00 [queued]>
+[2025-03-16T19:43:40.431+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-16T19:43:40.634+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_phase_2_task> on 2025-03-16 19:43:35.857221+00:00
+[2025-03-16T19:43:40.652+0000] {standard_task_runner.py:60} INFO - Started process 226956 to run task
+[2025-03-16T19:43:40.659+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_phase_2_task', 'manual__2025-03-16T19:43:35.857221+00:00', '--job-id', '152', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpkvd2g330']
+[2025-03-16T19:43:40.674+0000] {standard_task_runner.py:88} INFO - Job 152: Subtask transform_phase_2_task
+[2025-03-16T19:43:41.085+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T19:43:35.857221+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-16T19:43:41.670+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_phase_2_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T19:43:35.857221+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T19:43:35.857221+00:00'
+[2025-03-16T19:44:39.822+0000] {dictionary.py:201} INFO - adding document #0 to Dictionary<0 unique tokens: []>
+[2025-03-16T19:44:39.829+0000] {dictionary.py:206} INFO - built Dictionary<86 unique tokens: ['500dhs', 'a', 'bancaire', 'bon', "c'est"]...> from 9 documents (total 104 corpus positions)
+[2025-03-16T19:44:39.863+0000] {utils.py:447} INFO - Dictionary lifecycle event {'msg': 'built Dictionary<86 unique tokens: [\'500dhs\', \'a\', \'bancaire\', \'bon\', "c\'est"]...> from 9 documents (total 104 corpus positions)', 'datetime': '2025-03-16T19:44:39.830243', 'gensim': '4.3.3', 'python': '3.8.10 (default, Jan 17 2025, 14:40:23) \n[GCC 9.4.0]', 'platform': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.29', 'event': 'created'}
+[2025-03-16T19:44:39.864+0000] {ldamodel.py:596} INFO - using autotuned alpha, starting with [0.2, 0.2, 0.2, 0.2, 0.2]
+[2025-03-16T19:44:39.865+0000] {ldamodel.py:482} INFO - using serial LDA version on this node
+[2025-03-16T19:44:39.868+0000] {ldamodel.py:948} INFO - running online (multi-pass) LDA training, 5 topics, 15 passes over the supplied corpus of 9 documents, updating model once every 9 documents, evaluating perplexity every 9 documents, iterating 50x with a convergence threshold of 0.001000
+[2025-03-16T19:44:39.889+0000] {ldamodel.py:848} INFO - -7.971 per-word bound, 250.9 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:39.890+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 0, at document #9/9
+[2025-03-16T19:44:39.904+0000] {ldamodel.py:795} INFO - optimized alpha [0.21670946, 0.0903327, 0.13883054, 0.23514949, 0.14723727]
+[2025-03-16T19:44:39.905+0000] {ldamodel.py:1197} INFO - topic #0 (0.217): 0.029*"bon" + 0.028*"frais" + 0.028*"plus" + 0.027*"c'est" + 0.027*"personnel" + 0.026*"a" + 0.026*"chose" + 0.025*"guichet" + 0.023*"non" + 0.023*"carte"
+[2025-03-16T19:44:39.906+0000] {ldamodel.py:1197} INFO - topic #1 (0.090): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:39.906+0000] {ldamodel.py:1197} INFO - topic #2 (0.139): 0.061*"service" + 0.059*"bon" + 0.019*"c'est" + 0.017*"plus" + 0.016*"frais" + 0.016*"500dhs" + 0.015*"partir" + 0.014*"sans" + 0.014*"deal" + 0.013*"retrait"
+[2025-03-16T19:44:39.907+0000] {ldamodel.py:1197} INFO - topic #3 (0.235): 0.039*"banque" + 0.026*"encore" + 0.024*"seul" + 0.024*"pauvre" + 0.024*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"pire" + 0.023*"renseignement"
+[2025-03-16T19:44:39.908+0000] {ldamodel.py:1197} INFO - topic #4 (0.147): 0.022*"carte" + 0.022*"aussi" + 0.021*"plus" + 0.020*"chaque" + 0.020*"succès" + 0.020*"non" + 0.020*"traiter" + 0.019*"heureux" + 0.018*"individu" + 0.017*"souhaite"
+[2025-03-16T19:44:39.908+0000] {ldamodel.py:1075} INFO - topic diff=2.444875, rho=1.000000
+[2025-03-16T19:44:39.920+0000] {ldamodel.py:848} INFO - -5.370 per-word bound, 41.4 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:39.920+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 1, at document #9/9
+[2025-03-16T19:44:39.926+0000] {ldamodel.py:795} INFO - optimized alpha [0.2122814, 0.07424682, 0.11113776, 0.21871874, 0.10528838]
+[2025-03-16T19:44:39.927+0000] {ldamodel.py:1197} INFO - topic #0 (0.212): 0.028*"bon" + 0.027*"frais" + 0.027*"plus" + 0.027*"c'est" + 0.027*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.025*"non" + 0.025*"carte"
+[2025-03-16T19:44:39.928+0000] {ldamodel.py:1197} INFO - topic #1 (0.074): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:39.929+0000] {ldamodel.py:1197} INFO - topic #2 (0.111): 0.062*"service" + 0.061*"bon" + 0.014*"c'est" + 0.014*"plus" + 0.013*"frais" + 0.013*"500dhs" + 0.013*"partir" + 0.012*"sans" + 0.012*"deal" + 0.012*"retrait"
+[2025-03-16T19:44:39.929+0000] {ldamodel.py:1197} INFO - topic #3 (0.219): 0.040*"banque" + 0.024*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"pire" + 0.023*"renseignement"
+[2025-03-16T19:44:39.930+0000] {ldamodel.py:1197} INFO - topic #4 (0.105): 0.017*"carte" + 0.017*"aussi" + 0.016*"plus" + 0.016*"chaque" + 0.016*"succès" + 0.016*"non" + 0.016*"traiter" + 0.016*"heureux" + 0.015*"individu" + 0.015*"souhaite"
+[2025-03-16T19:44:39.930+0000] {ldamodel.py:1075} INFO - topic diff=0.249743, rho=0.577350
+[2025-03-16T19:44:39.937+0000] {ldamodel.py:848} INFO - -5.272 per-word bound, 38.6 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:39.937+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 2, at document #9/9
+[2025-03-16T19:44:39.944+0000] {ldamodel.py:795} INFO - optimized alpha [0.20535561, 0.06427138, 0.09566878, 0.20527111, 0.085379586]
+[2025-03-16T19:44:39.945+0000] {ldamodel.py:1197} INFO - topic #0 (0.205): 0.027*"bon" + 0.027*"frais" + 0.027*"plus" + 0.027*"c'est" + 0.027*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:39.946+0000] {ldamodel.py:1197} INFO - topic #1 (0.064): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:39.946+0000] {ldamodel.py:1197} INFO - topic #2 (0.096): 0.062*"service" + 0.062*"bon" + 0.012*"c'est" + 0.012*"plus" + 0.012*"frais" + 0.012*"500dhs" + 0.011*"partir" + 0.011*"sans" + 0.011*"deal" + 0.011*"retrait"
+[2025-03-16T19:44:39.947+0000] {ldamodel.py:1197} INFO - topic #3 (0.205): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"pire" + 0.023*"renseignement"
+[2025-03-16T19:44:39.948+0000] {ldamodel.py:1197} INFO - topic #4 (0.085): 0.015*"carte" + 0.015*"aussi" + 0.014*"plus" + 0.014*"chaque" + 0.014*"succès" + 0.014*"non" + 0.014*"traiter" + 0.014*"heureux" + 0.014*"individu" + 0.013*"souhaite"
+[2025-03-16T19:44:39.948+0000] {ldamodel.py:1075} INFO - topic diff=0.130090, rho=0.500000
+[2025-03-16T19:44:39.954+0000] {ldamodel.py:848} INFO - -5.252 per-word bound, 38.1 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:39.954+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 3, at document #9/9
+[2025-03-16T19:44:39.961+0000] {ldamodel.py:795} INFO - optimized alpha [0.19788991, 0.057270035, 0.085364684, 0.19414175, 0.07307864]
+[2025-03-16T19:44:39.962+0000] {ldamodel.py:1197} INFO - topic #0 (0.198): 0.027*"bon" + 0.027*"frais" + 0.027*"plus" + 0.027*"c'est" + 0.027*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:39.963+0000] {ldamodel.py:1197} INFO - topic #1 (0.057): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:39.963+0000] {ldamodel.py:1197} INFO - topic #2 (0.085): 0.062*"service" + 0.062*"bon" + 0.012*"c'est" + 0.011*"plus" + 0.011*"frais" + 0.011*"500dhs" + 0.011*"partir" + 0.011*"sans" + 0.011*"deal" + 0.011*"retrait"
+[2025-03-16T19:44:39.963+0000] {ldamodel.py:1197} INFO - topic #3 (0.194): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"pire" + 0.023*"renseignement"
+[2025-03-16T19:44:39.963+0000] {ldamodel.py:1197} INFO - topic #4 (0.073): 0.013*"carte" + 0.013*"aussi" + 0.013*"plus" + 0.013*"chaque" + 0.013*"succès" + 0.013*"non" + 0.013*"traiter" + 0.013*"heureux" + 0.013*"individu" + 0.013*"souhaite"
+[2025-03-16T19:44:39.964+0000] {ldamodel.py:1075} INFO - topic diff=0.070624, rho=0.447214
+[2025-03-16T19:44:39.970+0000] {ldamodel.py:848} INFO - -5.246 per-word bound, 37.9 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:39.970+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 4, at document #9/9
+[2025-03-16T19:44:39.973+0000] {ldamodel.py:795} INFO - optimized alpha [0.19058077, 0.05199415, 0.07784106, 0.18474667, 0.064513266]
+[2025-03-16T19:44:39.976+0000] {ldamodel.py:1197} INFO - topic #0 (0.191): 0.027*"bon" + 0.027*"frais" + 0.027*"plus" + 0.027*"c'est" + 0.026*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:39.977+0000] {ldamodel.py:1197} INFO - topic #1 (0.052): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:39.977+0000] {ldamodel.py:1197} INFO - topic #2 (0.078): 0.062*"service" + 0.062*"bon" + 0.011*"c'est" + 0.011*"plus" + 0.011*"frais" + 0.011*"500dhs" + 0.011*"partir" + 0.011*"sans" + 0.011*"deal" + 0.011*"retrait"
+[2025-03-16T19:44:39.978+0000] {ldamodel.py:1197} INFO - topic #3 (0.185): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"pire" + 0.023*"renseignement"
+[2025-03-16T19:44:39.979+0000] {ldamodel.py:1197} INFO - topic #4 (0.065): 0.013*"carte" + 0.013*"aussi" + 0.013*"plus" + 0.013*"chaque" + 0.013*"succès" + 0.012*"non" + 0.012*"traiter" + 0.012*"heureux" + 0.012*"individu" + 0.012*"souhaite"
+[2025-03-16T19:44:39.979+0000] {ldamodel.py:1075} INFO - topic diff=0.039663, rho=0.408248
+[2025-03-16T19:44:39.985+0000] {ldamodel.py:848} INFO - -5.242 per-word bound, 37.8 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:39.986+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 5, at document #9/9
+[2025-03-16T19:44:39.989+0000] {ldamodel.py:795} INFO - optimized alpha [0.1836978, 0.04782945, 0.07202483, 0.17668033, 0.058115095]
+[2025-03-16T19:44:39.990+0000] {ldamodel.py:1197} INFO - topic #0 (0.184): 0.027*"bon" + 0.027*"frais" + 0.027*"plus" + 0.026*"c'est" + 0.026*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:39.996+0000] {ldamodel.py:1197} INFO - topic #1 (0.048): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:39.997+0000] {ldamodel.py:1197} INFO - topic #2 (0.072): 0.062*"service" + 0.062*"bon" + 0.011*"c'est" + 0.011*"plus" + 0.011*"frais" + 0.011*"500dhs" + 0.011*"partir" + 0.011*"sans" + 0.011*"deal" + 0.011*"retrait"
+[2025-03-16T19:44:39.998+0000] {ldamodel.py:1197} INFO - topic #3 (0.177): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"pire" + 0.023*"renseignement"
+[2025-03-16T19:44:39.998+0000] {ldamodel.py:1197} INFO - topic #4 (0.058): 0.012*"carte" + 0.012*"aussi" + 0.012*"plus" + 0.012*"chaque" + 0.012*"succès" + 0.012*"non" + 0.012*"traiter" + 0.012*"heureux" + 0.012*"individu" + 0.012*"souhaite"
+[2025-03-16T19:44:39.999+0000] {ldamodel.py:1075} INFO - topic diff=0.023094, rho=0.377964
+[2025-03-16T19:44:40.004+0000] {ldamodel.py:848} INFO - -5.238 per-word bound, 37.7 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:40.005+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 6, at document #9/9
+[2025-03-16T19:44:40.007+0000] {ldamodel.py:795} INFO - optimized alpha [0.17731331, 0.04443189, 0.067348704, 0.16965455, 0.053107128]
+[2025-03-16T19:44:40.011+0000] {ldamodel.py:1197} INFO - topic #0 (0.177): 0.027*"bon" + 0.026*"frais" + 0.026*"plus" + 0.026*"c'est" + 0.026*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:40.012+0000] {ldamodel.py:1197} INFO - topic #1 (0.044): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:40.014+0000] {ldamodel.py:1197} INFO - topic #2 (0.067): 0.062*"service" + 0.062*"bon" + 0.011*"c'est" + 0.011*"plus" + 0.011*"frais" + 0.011*"500dhs" + 0.011*"partir" + 0.011*"sans" + 0.011*"deal" + 0.011*"retrait"
+[2025-03-16T19:44:40.014+0000] {ldamodel.py:1197} INFO - topic #3 (0.170): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"pire" + 0.023*"renseignement"
+[2025-03-16T19:44:40.015+0000] {ldamodel.py:1197} INFO - topic #4 (0.053): 0.012*"carte" + 0.012*"aussi" + 0.012*"plus" + 0.012*"chaque" + 0.012*"succès" + 0.012*"non" + 0.012*"traiter" + 0.012*"heureux" + 0.012*"individu" + 0.012*"souhaite"
+[2025-03-16T19:44:40.018+0000] {ldamodel.py:1075} INFO - topic diff=0.013930, rho=0.353553
+[2025-03-16T19:44:40.025+0000] {ldamodel.py:848} INFO - -5.235 per-word bound, 37.7 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:40.028+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 7, at document #9/9
+[2025-03-16T19:44:40.037+0000] {ldamodel.py:795} INFO - optimized alpha [0.17143887, 0.041591264, 0.06348018, 0.16346294, 0.049054027]
+[2025-03-16T19:44:40.038+0000] {ldamodel.py:1197} INFO - topic #0 (0.171): 0.027*"bon" + 0.026*"frais" + 0.026*"plus" + 0.026*"c'est" + 0.026*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:40.039+0000] {ldamodel.py:1197} INFO - topic #1 (0.042): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:40.040+0000] {ldamodel.py:1197} INFO - topic #2 (0.063): 0.062*"service" + 0.062*"bon" + 0.011*"c'est" + 0.011*"plus" + 0.011*"frais" + 0.011*"500dhs" + 0.011*"partir" + 0.010*"sans" + 0.010*"deal" + 0.010*"retrait"
+[2025-03-16T19:44:40.041+0000] {ldamodel.py:1197} INFO - topic #3 (0.163): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"pire" + 0.023*"renseignement"
+[2025-03-16T19:44:40.045+0000] {ldamodel.py:1197} INFO - topic #4 (0.049): 0.012*"carte" + 0.012*"aussi" + 0.012*"plus" + 0.012*"chaque" + 0.012*"succès" + 0.012*"non" + 0.012*"traiter" + 0.012*"heureux" + 0.012*"individu" + 0.012*"souhaite"
+[2025-03-16T19:44:40.046+0000] {ldamodel.py:1075} INFO - topic diff=0.008678, rho=0.333333
+[2025-03-16T19:44:40.055+0000] {ldamodel.py:848} INFO - -5.233 per-word bound, 37.6 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:40.055+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 8, at document #9/9
+[2025-03-16T19:44:40.064+0000] {ldamodel.py:795} INFO - optimized alpha [0.16603926, 0.039170444, 0.060208984, 0.15795046, 0.045689914]
+[2025-03-16T19:44:40.065+0000] {ldamodel.py:1197} INFO - topic #0 (0.166): 0.026*"bon" + 0.026*"frais" + 0.026*"plus" + 0.026*"c'est" + 0.026*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:40.068+0000] {ldamodel.py:1197} INFO - topic #1 (0.039): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:40.069+0000] {ldamodel.py:1197} INFO - topic #2 (0.060): 0.062*"service" + 0.062*"bon" + 0.011*"c'est" + 0.011*"plus" + 0.010*"frais" + 0.010*"500dhs" + 0.010*"partir" + 0.010*"sans" + 0.010*"deal" + 0.010*"retrait"
+[2025-03-16T19:44:40.070+0000] {ldamodel.py:1197} INFO - topic #3 (0.158): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"pire" + 0.023*"renseignement"
+[2025-03-16T19:44:40.070+0000] {ldamodel.py:1197} INFO - topic #4 (0.046): 0.012*"carte" + 0.012*"aussi" + 0.012*"plus" + 0.012*"chaque" + 0.012*"succès" + 0.012*"non" + 0.012*"traiter" + 0.012*"heureux" + 0.012*"individu" + 0.012*"souhaite"
+[2025-03-16T19:44:40.070+0000] {ldamodel.py:1075} INFO - topic diff=0.005565, rho=0.316228
+[2025-03-16T19:44:40.077+0000] {ldamodel.py:848} INFO - -5.230 per-word bound, 37.5 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:40.077+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 9, at document #9/9
+[2025-03-16T19:44:40.079+0000] {ldamodel.py:795} INFO - optimized alpha [0.1610757, 0.037075624, 0.057394754, 0.15300056, 0.04284211]
+[2025-03-16T19:44:40.080+0000] {ldamodel.py:1197} INFO - topic #0 (0.161): 0.026*"bon" + 0.026*"frais" + 0.026*"plus" + 0.026*"c'est" + 0.026*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:40.081+0000] {ldamodel.py:1197} INFO - topic #1 (0.037): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:40.081+0000] {ldamodel.py:1197} INFO - topic #2 (0.057): 0.062*"service" + 0.062*"bon" + 0.011*"c'est" + 0.010*"plus" + 0.010*"frais" + 0.010*"500dhs" + 0.010*"partir" + 0.010*"sans" + 0.010*"deal" + 0.010*"retrait"
+[2025-03-16T19:44:40.081+0000] {ldamodel.py:1197} INFO - topic #3 (0.153): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"pire" + 0.023*"renseignement"
+[2025-03-16T19:44:40.084+0000] {ldamodel.py:1197} INFO - topic #4 (0.043): 0.012*"carte" + 0.012*"aussi" + 0.012*"plus" + 0.012*"chaque" + 0.012*"succès" + 0.012*"non" + 0.012*"traiter" + 0.012*"heureux" + 0.012*"individu" + 0.012*"souhaite"
+[2025-03-16T19:44:40.085+0000] {ldamodel.py:1075} INFO - topic diff=0.003661, rho=0.301511
+[2025-03-16T19:44:40.090+0000] {ldamodel.py:848} INFO - -5.228 per-word bound, 37.5 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:40.091+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 10, at document #9/9
+[2025-03-16T19:44:40.094+0000] {ldamodel.py:795} INFO - optimized alpha [0.1565042, 0.03524005, 0.05493956, 0.14852312, 0.04039285]
+[2025-03-16T19:44:40.095+0000] {ldamodel.py:1197} INFO - topic #0 (0.157): 0.026*"bon" + 0.026*"frais" + 0.026*"plus" + 0.026*"c'est" + 0.026*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:40.095+0000] {ldamodel.py:1197} INFO - topic #1 (0.035): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:40.096+0000] {ldamodel.py:1197} INFO - topic #2 (0.055): 0.062*"service" + 0.062*"bon" + 0.010*"c'est" + 0.010*"plus" + 0.010*"frais" + 0.010*"500dhs" + 0.010*"partir" + 0.010*"sans" + 0.010*"deal" + 0.010*"retrait"
+[2025-03-16T19:44:40.096+0000] {ldamodel.py:1197} INFO - topic #3 (0.149): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"renseignement" + 0.023*"pire"
+[2025-03-16T19:44:40.096+0000] {ldamodel.py:1197} INFO - topic #4 (0.040): 0.012*"carte" + 0.012*"aussi" + 0.012*"plus" + 0.012*"chaque" + 0.012*"succès" + 0.012*"non" + 0.012*"traiter" + 0.012*"heureux" + 0.012*"individu" + 0.012*"souhaite"
+[2025-03-16T19:44:40.096+0000] {ldamodel.py:1075} INFO - topic diff=0.002463, rho=0.288675
+[2025-03-16T19:44:40.107+0000] {ldamodel.py:848} INFO - -5.226 per-word bound, 37.4 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:40.108+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 11, at document #9/9
+[2025-03-16T19:44:40.112+0000] {ldamodel.py:795} INFO - optimized alpha [0.15228568, 0.033614747, 0.052772727, 0.14444698, 0.038258754]
+[2025-03-16T19:44:40.112+0000] {ldamodel.py:1197} INFO - topic #0 (0.152): 0.026*"bon" + 0.026*"frais" + 0.026*"plus" + 0.026*"c'est" + 0.026*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:40.113+0000] {ldamodel.py:1197} INFO - topic #1 (0.034): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:40.113+0000] {ldamodel.py:1197} INFO - topic #2 (0.053): 0.062*"service" + 0.062*"bon" + 0.010*"c'est" + 0.010*"plus" + 0.010*"frais" + 0.010*"500dhs" + 0.010*"partir" + 0.010*"sans" + 0.010*"deal" + 0.010*"retrait"
+[2025-03-16T19:44:40.113+0000] {ldamodel.py:1197} INFO - topic #3 (0.144): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"renseignement" + 0.023*"d'attente"
+[2025-03-16T19:44:40.114+0000] {ldamodel.py:1197} INFO - topic #4 (0.038): 0.012*"carte" + 0.012*"aussi" + 0.012*"plus" + 0.012*"chaque" + 0.012*"succès" + 0.012*"non" + 0.012*"traiter" + 0.012*"heureux" + 0.012*"individu" + 0.012*"souhaite"
+[2025-03-16T19:44:40.114+0000] {ldamodel.py:1075} INFO - topic diff=0.001690, rho=0.277350
+[2025-03-16T19:44:40.121+0000] {ldamodel.py:848} INFO - -5.224 per-word bound, 37.4 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:40.121+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 12, at document #9/9
+[2025-03-16T19:44:40.123+0000] {ldamodel.py:795} INFO - optimized alpha [0.14838152, 0.032162804, 0.050841685, 0.14071554, 0.03637887]
+[2025-03-16T19:44:40.126+0000] {ldamodel.py:1197} INFO - topic #0 (0.148): 0.026*"bon" + 0.026*"frais" + 0.026*"plus" + 0.026*"c'est" + 0.026*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:40.127+0000] {ldamodel.py:1197} INFO - topic #1 (0.032): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:40.127+0000] {ldamodel.py:1197} INFO - topic #2 (0.051): 0.062*"service" + 0.062*"bon" + 0.010*"c'est" + 0.010*"plus" + 0.010*"frais" + 0.010*"500dhs" + 0.010*"partir" + 0.010*"sans" + 0.010*"deal" + 0.010*"retrait"
+[2025-03-16T19:44:40.128+0000] {ldamodel.py:1197} INFO - topic #3 (0.141): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"renseignement" + 0.023*"d'attente"
+[2025-03-16T19:44:40.129+0000] {ldamodel.py:1197} INFO - topic #4 (0.036): 0.012*"carte" + 0.012*"aussi" + 0.012*"plus" + 0.012*"chaque" + 0.012*"succès" + 0.012*"non" + 0.012*"traiter" + 0.012*"heureux" + 0.012*"individu" + 0.012*"souhaite"
+[2025-03-16T19:44:40.129+0000] {ldamodel.py:1075} INFO - topic diff=0.001180, rho=0.267261
+[2025-03-16T19:44:40.139+0000] {ldamodel.py:848} INFO - -5.222 per-word bound, 37.3 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:40.139+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 13, at document #9/9
+[2025-03-16T19:44:40.146+0000] {ldamodel.py:795} INFO - optimized alpha [0.14475887, 0.0308558, 0.049106434, 0.13728134, 0.034707487]
+[2025-03-16T19:44:40.147+0000] {ldamodel.py:1197} INFO - topic #0 (0.145): 0.026*"bon" + 0.026*"frais" + 0.026*"plus" + 0.026*"c'est" + 0.026*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:40.148+0000] {ldamodel.py:1197} INFO - topic #1 (0.031): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:40.149+0000] {ldamodel.py:1197} INFO - topic #2 (0.049): 0.062*"service" + 0.062*"bon" + 0.010*"c'est" + 0.010*"plus" + 0.010*"frais" + 0.010*"500dhs" + 0.010*"partir" + 0.010*"sans" + 0.010*"deal" + 0.010*"retrait"
+[2025-03-16T19:44:40.150+0000] {ldamodel.py:1197} INFO - topic #3 (0.137): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"renseignement" + 0.023*"d'attente"
+[2025-03-16T19:44:40.152+0000] {ldamodel.py:1197} INFO - topic #4 (0.035): 0.012*"carte" + 0.012*"aussi" + 0.012*"plus" + 0.012*"chaque" + 0.012*"succès" + 0.012*"non" + 0.012*"traiter" + 0.012*"heureux" + 0.012*"individu" + 0.012*"souhaite"
+[2025-03-16T19:44:40.152+0000] {ldamodel.py:1075} INFO - topic diff=0.000837, rho=0.258199
+[2025-03-16T19:44:40.155+0000] {ldamodel.py:848} INFO - -5.220 per-word bound, 37.3 perplexity estimate based on a held-out corpus of 9 documents with 104 words
+[2025-03-16T19:44:40.155+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 14, at document #9/9
+[2025-03-16T19:44:40.159+0000] {ldamodel.py:795} INFO - optimized alpha [0.14138865, 0.029671455, 0.04753593, 0.1341074, 0.033209585]
+[2025-03-16T19:44:40.160+0000] {ldamodel.py:1197} INFO - topic #0 (0.141): 0.026*"bon" + 0.026*"plus" + 0.026*"frais" + 0.026*"c'est" + 0.026*"personnel" + 0.026*"a" + 0.026*"chose" + 0.026*"guichet" + 0.026*"non" + 0.026*"carte"
+[2025-03-16T19:44:40.161+0000] {ldamodel.py:1197} INFO - topic #1 (0.030): 0.012*"bon" + 0.012*"service" + 0.012*"courage" + 0.012*"remercions" + 0.012*"accompagner" + 0.012*"avis" + 0.012*"👍👍👍👍" + 0.012*"…" + 0.012*"encore" + 0.012*"plaisir"
+[2025-03-16T19:44:40.161+0000] {ldamodel.py:1197} INFO - topic #2 (0.048): 0.062*"service" + 0.062*"bon" + 0.010*"c'est" + 0.010*"plus" + 0.010*"frais" + 0.010*"500dhs" + 0.010*"partir" + 0.010*"sans" + 0.010*"deal" + 0.010*"retrait"
+[2025-03-16T19:44:40.162+0000] {ldamodel.py:1197} INFO - topic #3 (0.134): 0.041*"banque" + 0.023*"encore" + 0.023*"seul" + 0.023*"pauvre" + 0.023*"minutes" + 0.023*"45" + 0.023*"depuis" + 0.023*"sécurité" + 0.023*"renseignement" + 0.023*"d'attente"
+[2025-03-16T19:44:40.162+0000] {ldamodel.py:1197} INFO - topic #4 (0.033): 0.012*"carte" + 0.012*"aussi" + 0.012*"plus" + 0.012*"chaque" + 0.012*"succès" + 0.012*"non" + 0.012*"traiter" + 0.012*"heureux" + 0.012*"individu" + 0.012*"souhaite"
+[2025-03-16T19:44:40.163+0000] {ldamodel.py:1075} INFO - topic diff=0.000602, rho=0.250000
+[2025-03-16T19:44:40.164+0000] {utils.py:447} INFO - LdaModel lifecycle event {'msg': 'trained LdaModel<num_terms=86, num_topics=5, decay=0.5, chunksize=2000> in 0.30s', 'datetime': '2025-03-16T19:44:40.164365', 'gensim': '4.3.3', 'python': '3.8.10 (default, Jan 17 2025, 14:40:23) \n[GCC 9.4.0]', 'platform': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.29', 'event': 'created'}
+[2025-03-16T19:44:40.166+0000] {logging_mixin.py:188} INFO - Topics extraction complete
+[2025-03-16T19:44:40.168+0000] {logging_mixin.py:188} INFO - Index(['bank_name', 'branch_name', 'location', 'review_text', 'rating',
+       'review_date', 'language', 'sentiment'],
+      dtype='object')
+[2025-03-16T19:44:40.201+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 982, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/nord/venv/lib/python3.8/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.UndefinedColumn: column "language" of relation "cleaned_reviews" does not exist
+LINE 1: ...name, location, review_text, rating, review_date, language, ...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nord/airflow/dags/google_map_dag_etl.py", line 51, in <lambda>
+    python_callable=lambda: __import__('transform_phase_2').main()
+  File "/home/nord/airflow/dags/transform_phase_2.py", line 104, in main
+    df_filtered.to_sql('cleaned_reviews', db_engine, if_exists='append', index=False)
+  File "/home/nord/venv/lib/python3.8/site-packages/pandas/core/generic.py", line 2878, in to_sql
+    return sql.to_sql(
+  File "/home/nord/venv/lib/python3.8/site-packages/pandas/io/sql.py", line 769, in to_sql
+    return pandas_sql.to_sql(
+  File "/home/nord/venv/lib/python3.8/site-packages/pandas/io/sql.py", line 1920, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/home/nord/venv/lib/python3.8/site-packages/pandas/io/sql.py", line 1470, in insert_records
+    raise err
+  File "/home/nord/venv/lib/python3.8/site-packages/pandas/io/sql.py", line 1461, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/home/nord/venv/lib/python3.8/site-packages/pandas/io/sql.py", line 1023, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/home/nord/venv/lib/python3.8/site-packages/pandas/io/sql.py", line 929, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1385, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1890, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 982, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/nord/venv/lib/python3.8/site-packages/psycopg2/extras.py", line 1299, in execute_values
+    cur.execute(b''.join(parts))
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column "language" of relation "cleaned_reviews" does not exist
+LINE 1: ...name, location, review_text, rating, review_date, language, ...
+                                                             ^
+
+[SQL: INSERT INTO cleaned_reviews (bank_name, branch_name, location, review_text, rating, review_date, language, sentiment) VALUES (%(bank_name)s, %(branch_name)s, %(location)s, %(review_text)s, %(rating)s, %(review_date)s, %(language)s, %(sentiment)s)]
+[parameters: ({'bank_name': 'Umnia Bank', 'branch_name': 'Umnia Bank Kénitra', 'location': 'Adresse: Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'review_text': "service sympatique . avec de bon deal côté ouverture de comote bancaire et les frais sont moin cher et de plus la chose la plus cool c'est le retrait sur tout les guichet a partir de 500dhs c'est sans frais", 'rating': 4, 'review_date': 2025.0, 'language': 'fr', 'sentiment': '4 stars'}, {'bank_name': 'Bank As-Safa', 'branch_name': 'Bank Assafa', 'location': 'Adresse: 3634+QFF, Av. Assalam, Salé ', 'review_text': 'non respect de certains agents en vers les clients, comme si tu leur demande autre chose à faire appart leur travail.\n\n04/04/2023\nencore une fois déçu par la non disponibilité du personnel, bloquer par ma carte guichet expiré il n y a personne pour me donner ma nouvelle carte', 'rating': 1, 'review_date': 2024.0, 'language': 'fr', 'sentiment': '1 star'}, {'bank_name': 'Umnia Bank', 'branch_name': 'Umnia Bank Kénitra', 'location': 'Adresse: Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'review_text': "45 minutes d'attente pour un renseignement et le pauvre agent de sécurité seul dans la banque", 'rating': 1, 'review_date': 2025.0, 'language': 'fr', 'sentiment': '1 star'}, {'bank_name': 'Umnia Bank', 'branch_name': 'Umnia Bank Kénitra', 'location': 'Adresse: Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'review_text': 'nous vous remercions pour votre avis et au plaisir de vous accompagner', 'rating': 5, 'review_date': 2024.0, 'language': 'fr', 'sentiment': '5 stars'}, {'bank_name': 'Umnia Bank', 'branch_name': 'Umnia Bank Kénitra', 'location': 'Adresse: Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'review_text': 'bon courage\n👍👍👍👍 …', 'rating': 5, 'review_date': 2024.0, 'language': 'fr', 'sentiment': '5 stars'}, {'bank_name': 'Bank As-Safa', 'branch_name': 'Bank Assafa', 'location': 'Adresse: 3634+QFF, Av. Assalam, Salé ', 'review_text': 'bon service', 'rating': 5, 'review_date': 2025.0, 'language': 'en', 'sentiment': '4 stars'}, {'bank_name': 'Bank As-Safa', 'branch_name': 'Bank Assafa', 'location': 'Adresse: 3634+QFF, Av. Assalam, Salé ', 'review_text': "personnel très sympathique et à l'écoute ( commerciaux et chef d'agence )", 'rating': 4, 'review_date': 2025.0, 'language': 'fr', 'sentiment': '4 stars'}, {'bank_name': 'Bank As-Safa', 'branch_name': 'Bank Assafa', 'location': 'Adresse: 3634+QFF, Av. Assalam, Salé ', 'review_text': 'nulle depuis l ouverture actuellement  c est encore pire .', 'rating': 1, 'review_date': 2025.0, 'language': 'fr', 'sentiment': '1 star'}, {'bank_name': 'Umnia Bank', 'branch_name': 'Umnia Bank Kénitra', 'location': 'Adresse: Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'review_text': "haut niveau de services, plus de prospérité et de succès\n\ntrès heureux de traiter avec eux, c'est aussi vraiment une banque\nchaque individu musulman souhaite", 'rating': 5, 'review_date': 2025.0, 'language': 'fr', 'sentiment': '5 stars'})]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-03-16T19:44:40.285+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Google_map, task_id=transform_phase_2_task, execution_date=20250316T194335, start_date=20250316T194340, end_date=20250316T194440
+[2025-03-16T19:44:40.329+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 152 for task transform_phase_2_task ((psycopg2.errors.UndefinedColumn) column "language" of relation "cleaned_reviews" does not exist
+LINE 1: ...name, location, review_text, rating, review_date, language, ...
+                                                             ^
+
+[SQL: INSERT INTO cleaned_reviews (bank_name, branch_name, location, review_text, rating, review_date, language, sentiment) VALUES (%(bank_name)s, %(branch_name)s, %(location)s, %(review_text)s, %(rating)s, %(review_date)s, %(language)s, %(sentiment)s)]
+[parameters: ({'bank_name': 'Umnia Bank', 'branch_name': 'Umnia Bank Kénitra', 'location': 'Adresse: Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'review_text': "service sympatique . avec de bon deal côté ouverture de comote bancaire et les frais sont moin cher et de plus la chose la plus cool c'est le retrait sur tout les guichet a partir de 500dhs c'est sans frais", 'rating': 4, 'review_date': 2025.0, 'language': 'fr', 'sentiment': '4 stars'}, {'bank_name': 'Bank As-Safa', 'branch_name': 'Bank Assafa', 'location': 'Adresse: 3634+QFF, Av. Assalam, Salé ', 'review_text': 'non respect de certains agents en vers les clients, comme si tu leur demande autre chose à faire appart leur travail.\n\n04/04/2023\nencore une fois déçu par la non disponibilité du personnel, bloquer par ma carte guichet expiré il n y a personne pour me donner ma nouvelle carte', 'rating': 1, 'review_date': 2024.0, 'language': 'fr', 'sentiment': '1 star'}, {'bank_name': 'Umnia Bank', 'branch_name': 'Umnia Bank Kénitra', 'location': 'Adresse: Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'review_text': "45 minutes d'attente pour un renseignement et le pauvre agent de sécurité seul dans la banque", 'rating': 1, 'review_date': 2025.0, 'language': 'fr', 'sentiment': '1 star'}, {'bank_name': 'Umnia Bank', 'branch_name': 'Umnia Bank Kénitra', 'location': 'Adresse: Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'review_text': 'nous vous remercions pour votre avis et au plaisir de vous accompagner', 'rating': 5, 'review_date': 2024.0, 'language': 'fr', 'sentiment': '5 stars'}, {'bank_name': 'Umnia Bank', 'branch_name': 'Umnia Bank Kénitra', 'location': 'Adresse: Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'review_text': 'bon courage\n👍👍👍👍 …', 'rating': 5, 'review_date': 2024.0, 'language': 'fr', 'sentiment': '5 stars'}, {'bank_name': 'Bank As-Safa', 'branch_name': 'Bank Assafa', 'location': 'Adresse: 3634+QFF, Av. Assalam, Salé ', 'review_text': 'bon service', 'rating': 5, 'review_date': 2025.0, 'language': 'en', 'sentiment': '4 stars'}, {'bank_name': 'Bank As-Safa', 'branch_name': 'Bank Assafa', 'location': 'Adresse: 3634+QFF, Av. Assalam, Salé ', 'review_text': "personnel très sympathique et à l'écoute ( commerciaux et chef d'agence )", 'rating': 4, 'review_date': 2025.0, 'language': 'fr', 'sentiment': '4 stars'}, {'bank_name': 'Bank As-Safa', 'branch_name': 'Bank Assafa', 'location': 'Adresse: 3634+QFF, Av. Assalam, Salé ', 'review_text': 'nulle depuis l ouverture actuellement  c est encore pire .', 'rating': 1, 'review_date': 2025.0, 'language': 'fr', 'sentiment': '1 star'}, {'bank_name': 'Umnia Bank', 'branch_name': 'Umnia Bank Kénitra', 'location': 'Adresse: Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'review_text': "haut niveau de services, plus de prospérité et de succès\n\ntrès heureux de traiter avec eux, c'est aussi vraiment une banque\nchaque individu musulman souhaite", 'rating': 5, 'review_date': 2025.0, 'language': 'fr', 'sentiment': '5 stars'})]
+(Background on this error at: https://sqlalche.me/e/14/f405); 226956)
+[2025-03-16T19:44:40.431+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-16T19:44:40.475+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,32 @@
+[2025-03-17T13:33:47.710+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.load_phase_2_task manual__2025-03-17T13:33:41.148579+00:00 [queued]>
+[2025-03-17T13:33:47.728+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.load_phase_2_task manual__2025-03-17T13:33:41.148579+00:00 [queued]>
+[2025-03-17T13:33:47.728+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-17T13:33:47.786+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): load_phase_2_task> on 2025-03-17 13:33:41.148579+00:00
+[2025-03-17T13:33:47.808+0000] {standard_task_runner.py:60} INFO - Started process 79106 to run task
+[2025-03-17T13:33:47.825+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'load_phase_2_task', 'manual__2025-03-17T13:33:41.148579+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpydth27ox']
+[2025-03-17T13:33:47.829+0000] {standard_task_runner.py:88} INFO - Job 163: Subtask load_phase_2_task
+[2025-03-17T13:33:48.089+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.load_phase_2_task manual__2025-03-17T13:33:41.148579+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-17T13:33:48.341+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='load_phase_2_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-17T13:33:41.148579+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-17T13:33:41.148579+00:00'
+[2025-03-17T13:33:48.346+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-03-17T13:33:48.347+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd ~/data_warehouse_project && dbt run --profiles-dir ~/.dbt --models stg_cleaned_reviews fact_reviews']
+[2025-03-17T13:33:48.363+0000] {subprocess.py:86} INFO - Output:
+[2025-03-17T13:33:52.245+0000] {subprocess.py:93} INFO - [0m13:33:52  Running with dbt=1.9.0-b2
+[2025-03-17T13:33:52.846+0000] {subprocess.py:93} INFO - [0m13:33:52  Registered adapter: postgres=1.8.2
+[2025-03-17T13:33:53.691+0000] {subprocess.py:93} INFO - [0m13:33:53  Found 3 models, 1 source, 424 macros
+[2025-03-17T13:33:53.696+0000] {subprocess.py:93} INFO - [0m13:33:53
+[2025-03-17T13:33:53.698+0000] {subprocess.py:93} INFO - [0m13:33:53  Concurrency: 4 threads (target='dev')
+[2025-03-17T13:33:53.700+0000] {subprocess.py:93} INFO - [0m13:33:53
+[2025-03-17T13:33:54.140+0000] {subprocess.py:93} INFO - [0m13:33:54  1 of 2 START sql view model public_public.stg_cleaned_reviews .................. [RUN]
+[2025-03-17T13:33:54.380+0000] {subprocess.py:93} INFO - [0m13:33:54  1 of 2 OK created sql view model public_public.stg_cleaned_reviews ............. [[32mCREATE VIEW[0m in 0.23s]
+[2025-03-17T13:33:54.390+0000] {subprocess.py:93} INFO - [0m13:33:54  2 of 2 START sql table model public_Decisionnelle.fact_reviews ................. [RUN]
+[2025-03-17T13:33:54.625+0000] {subprocess.py:93} INFO - [0m13:33:54  2 of 2 OK created sql table model public_Decisionnelle.fact_reviews ............ [[32mSELECT 0[0m in 0.23s]
+[2025-03-17T13:33:54.666+0000] {subprocess.py:93} INFO - [0m13:33:54
+[2025-03-17T13:33:54.668+0000] {subprocess.py:93} INFO - [0m13:33:54  Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.97 seconds (0.97s).
+[2025-03-17T13:33:54.744+0000] {subprocess.py:93} INFO - [0m13:33:54
+[2025-03-17T13:33:54.745+0000] {subprocess.py:93} INFO - [0m13:33:54  [32mCompleted successfully[0m
+[2025-03-17T13:33:54.746+0000] {subprocess.py:93} INFO - [0m13:33:54
+[2025-03-17T13:33:54.746+0000] {subprocess.py:93} INFO - [0m13:33:54  Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[2025-03-17T13:33:56.445+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-03-17T13:33:56.526+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Google_map, task_id=load_phase_2_task, execution_date=20250317T133341, start_date=20250317T133347, end_date=20250317T133356
+[2025-03-17T13:33:56.563+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-17T13:33:56.613+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

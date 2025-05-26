@@ -1,0 +1,45 @@
+[2025-03-17T22:30:26.451+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_data_phase_1_task manual__2025-03-16T18:51:12.944761+00:00 [queued]>
+[2025-03-17T22:30:26.753+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_data_phase_1_task manual__2025-03-16T18:51:12.944761+00:00 [queued]>
+[2025-03-17T22:30:26.754+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-17T22:30:27.718+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): transform_data_phase_1_task> on 2025-03-16 18:51:12.944761+00:00
+[2025-03-17T22:30:27.733+0000] {standard_task_runner.py:60} INFO - Started process 15979 to run task
+[2025-03-17T22:30:27.773+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_data_phase_1_task', 'manual__2025-03-16T18:51:12.944761+00:00', '--job-id', '194', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpsu4cyg1u']
+[2025-03-17T22:30:27.824+0000] {standard_task_runner.py:88} INFO - Job 194: Subtask transform_data_phase_1_task
+[2025-03-17T22:30:30.137+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_data_phase_1_task manual__2025-03-16T18:51:12.944761+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-17T22:30:34.880+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_data_phase_1_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T18:51:12.944761+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T18:51:12.944761+00:00'
+[2025-03-17T22:30:34.883+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-03-17T22:30:34.884+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd ~/data_warehouse_project && dbt run --profiles-dir ~/.dbt --models cleaned_reviews']
+[2025-03-17T22:30:34.908+0000] {subprocess.py:86} INFO - Output:
+[2025-03-17T22:30:57.148+0000] {subprocess.py:93} INFO - [0m22:30:57  Running with dbt=1.9.0-b2
+[2025-03-17T22:31:03.596+0000] {subprocess.py:93} INFO - [0m22:31:03  Registered adapter: postgres=1.8.2
+[2025-03-17T22:31:07.696+0000] {subprocess.py:93} INFO - [0m22:31:07  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2025-03-17T22:31:07.696+0000] {subprocess.py:93} INFO - There are 1 unused configuration paths:
+[2025-03-17T22:31:07.697+0000] {subprocess.py:93} INFO - - models.data_warehouse_project.example
+[2025-03-17T22:31:11.295+0000] {subprocess.py:93} INFO - [0m22:31:11  Found 6 models, 1 source, 424 macros
+[2025-03-17T22:31:11.323+0000] {subprocess.py:93} INFO - [0m22:31:11
+[2025-03-17T22:31:11.342+0000] {subprocess.py:93} INFO - [0m22:31:11  Concurrency: 4 threads (target='dev')
+[2025-03-17T22:31:11.344+0000] {subprocess.py:93} INFO - [0m22:31:11
+[2025-03-17T22:31:14.892+0000] {subprocess.py:93} INFO - [0m22:31:14  1 of 1 START sql table model public.cleaned_reviews ............................ [RUN]
+[2025-03-17T22:31:16.977+0000] {subprocess.py:93} INFO - [0m22:31:16  1 of 1 ERROR creating sql table model public.cleaned_reviews ................... [[31mERROR[0m in 1.94s]
+[2025-03-17T22:31:17.400+0000] {subprocess.py:93} INFO - [0m22:31:17
+[2025-03-17T22:31:17.410+0000] {subprocess.py:93} INFO - [0m22:31:17  Finished running 1 table model in 0 hours 0 minutes and 6.05 seconds (6.05s).
+[2025-03-17T22:31:17.732+0000] {subprocess.py:93} INFO - [0m22:31:17
+[2025-03-17T22:31:17.741+0000] {subprocess.py:93} INFO - [0m22:31:17  [31mCompleted with 1 error, 0 partial successs, and 0 warnings:[0m
+[2025-03-17T22:31:17.742+0000] {subprocess.py:93} INFO - [0m22:31:17
+[2025-03-17T22:31:17.744+0000] {subprocess.py:93} INFO - [0m22:31:17    Database Error in model cleaned_reviews (models/cleaned_reviews.sql)
+[2025-03-17T22:31:17.745+0000] {subprocess.py:93} INFO -   relation "cleaned_reviews__dbt_backup" already exists
+[2025-03-17T22:31:17.745+0000] {subprocess.py:93} INFO -   compiled code at target/run/data_warehouse_project/models/cleaned_reviews.sql
+[2025-03-17T22:31:17.752+0000] {subprocess.py:93} INFO - [0m22:31:17
+[2025-03-17T22:31:17.758+0000] {subprocess.py:93} INFO - [0m22:31:17  Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[2025-03-17T22:31:21.730+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-03-17T22:31:22.271+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-17T22:31:22.351+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Google_map, task_id=transform_data_phase_1_task, execution_date=20250316T185112, start_date=20250317T223026, end_date=20250317T223122
+[2025-03-17T22:31:22.550+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 194 for task transform_data_phase_1_task (Bash command failed. The command returned a non-zero exit code 1.; 15979)
+[2025-03-17T22:31:22.664+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-17T22:31:23.453+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

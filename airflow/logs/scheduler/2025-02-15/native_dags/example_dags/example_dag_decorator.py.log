@@ -1,0 +1,106 @@
+[2025-02-15T19:49:14.677+0100] {processor.py:161} INFO - Started process (PID=8007) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:49:14.679+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T19:49:14.683+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:49:14.681+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:49:15.227+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:49:15.697+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:49:15.697+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:49:15.731+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:49:15.730+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T19:49:15.833+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 1.182 seconds
+[2025-02-15T19:50:19.811+0100] {processor.py:161} INFO - Started process (PID=8066) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:50:19.816+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T19:50:19.820+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:50:19.819+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:50:19.982+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:50:20.224+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:50:20.223+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:50:20.247+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:50:20.246+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T19:50:20.305+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.506 seconds
+[2025-02-15T19:51:32.533+0100] {processor.py:161} INFO - Started process (PID=8132) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:51:32.540+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T19:51:32.545+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:51:32.543+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:51:32.768+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:51:32.974+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:51:32.974+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:51:32.995+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:51:32.995+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T19:51:33.031+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.516 seconds
+[2025-02-15T19:52:37.734+0100] {processor.py:161} INFO - Started process (PID=8183) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:52:37.741+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T19:52:37.747+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:52:37.745+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:52:38.052+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:52:38.250+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:52:38.249+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:52:38.265+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:52:38.265+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T19:52:38.305+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.589 seconds
+[2025-02-15T19:53:46.956+0100] {processor.py:161} INFO - Started process (PID=8251) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:53:46.963+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T19:53:46.966+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:53:46.965+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:53:47.167+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:53:47.324+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:53:47.323+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:53:47.344+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:53:47.344+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T19:53:47.420+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.498 seconds
+[2025-02-15T19:54:51.432+0100] {processor.py:161} INFO - Started process (PID=8303) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:54:51.438+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T19:54:51.443+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:54:51.441+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:54:51.744+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:54:51.890+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:54:51.890+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:54:51.900+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:54:51.900+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T19:54:51.952+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.534 seconds
+[2025-02-15T19:55:57.227+0100] {processor.py:161} INFO - Started process (PID=8356) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:55:57.232+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T19:55:57.235+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:55:57.234+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:55:57.403+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:55:57.528+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:55:57.528+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:55:57.548+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:55:57.548+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T19:55:57.585+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.365 seconds
+[2025-02-15T19:57:01.827+0100] {processor.py:161} INFO - Started process (PID=8410) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:57:01.829+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T19:57:01.832+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:57:01.830+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:57:02.063+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:57:02.104+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:57:02.104+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:57:02.134+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:57:02.133+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T19:57:02.203+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.385 seconds
+[2025-02-15T19:58:02.207+0100] {processor.py:161} INFO - Started process (PID=8463) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:58:02.208+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T19:58:02.210+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:58:02.209+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:58:02.347+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:58:02.377+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:58:02.376+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:58:02.395+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:58:02.394+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T19:58:02.444+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.241 seconds
+[2025-02-15T19:58:57.135+0100] {processor.py:161} INFO - Started process (PID=8511) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:58:57.171+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T19:58:57.173+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:58:57.172+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:58:57.386+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:58:57.696+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:58:57.695+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:58:57.716+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:58:57.716+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T19:58:57.857+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.726 seconds
+[2025-02-15T19:59:52.587+0100] {processor.py:161} INFO - Started process (PID=8556) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:59:52.589+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T19:59:52.592+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:59:52.590+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:59:52.971+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T19:59:53.204+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:59:53.204+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:59:53.228+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:59:53.227+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T19:59:53.279+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.700 seconds
+[2025-02-15T20:01:04.235+0100] {processor.py:161} INFO - Started process (PID=8610) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:01:04.242+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T20:01:04.247+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:01:04.245+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:01:04.491+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:01:04.675+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:01:04.675+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T20:01:04.686+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:01:04.685+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T20:01:04.717+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.502 seconds
+[2025-02-15T20:02:11.168+0100] {processor.py:161} INFO - Started process (PID=8682) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:02:11.175+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T20:02:11.177+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:02:11.176+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:02:11.303+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:02:11.329+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:02:11.329+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T20:02:11.343+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:02:11.342+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T20:02:11.376+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.249 seconds
+[2025-02-15T20:03:15.218+0100] {processor.py:161} INFO - Started process (PID=8734) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:03:15.220+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T20:03:15.222+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:03:15.221+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:03:15.390+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:03:15.421+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:03:15.421+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T20:03:15.443+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:03:15.443+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T20:03:15.489+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.280 seconds
+[2025-02-15T20:04:24.350+0100] {processor.py:161} INFO - Started process (PID=8805) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:04:24.353+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-15T20:04:24.356+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:04:24.355+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:04:24.713+0100] {processor.py:840} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-15T20:04:24.954+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:04:24.954+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T20:04:24.972+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:04:24.971+0100] {dag.py:3823} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-15T20:04:25.067+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.729 seconds
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

@@ -1,0 +1,1 @@
+[2025-03-03T15:29:36.430+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:29:28.996639+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

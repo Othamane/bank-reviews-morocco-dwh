@@ -1,0 +1,91 @@
+[2025-03-15T16:21:00.797+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [queued]>
+[2025-03-15T16:21:00.822+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [queued]>
+[2025-03-15T16:21:00.823+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 4
+[2025-03-15T16:21:00.872+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_data_task> on 2025-03-15 16:13:15.596075+00:00
+[2025-03-15T16:21:00.880+0000] {standard_task_runner.py:60} INFO - Started process 43150 to run task
+[2025-03-15T16:21:00.887+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T16:13:15.596075+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpt7n_4hbk']
+[2025-03-15T16:21:00.891+0000] {standard_task_runner.py:88} INFO - Job 75: Subtask extract_data_task
+[2025-03-15T16:21:01.032+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-15T16:21:01.287+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='extract_data_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-15T16:13:15.596075+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-15T16:13:15.596075+00:00'
+[2025-03-15T16:21:01.778+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-15T16:21:02.880+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-15T16:21:03.129+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-03-15T16:21:03.391+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-03-15T16:21:08.679+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-15T16:21:09.608+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-15T16:21:10.402+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/nord/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-03-15T16:21:10.844+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nord/airflow/dags/google_map_dag_etl.py", line 120, in <lambda>
+    python_callable=lambda: __import__('mini_scraping').main()
+  File "/home/nord/airflow/dags/mini_scraping.py", line 132, in main
+    driver = initialize_driver()
+  File "/home/nord/airflow/dags/mini_scraping.py", line 22, in initialize_driver
+    return webdriver.Chrome(service=service, options=options)
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome-stable is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x56140e4f74e3 <unknown>
+#1 0x56140e226c76 <unknown>
+#2 0x56140e24fd78 <unknown>
+#3 0x56140e24c029 <unknown>
+#4 0x56140e28accc <unknown>
+#5 0x56140e28a47f <unknown>
+#6 0x56140e281de3 <unknown>
+#7 0x56140e2572dd <unknown>
+#8 0x56140e25834e <unknown>
+#9 0x56140e4b73e4 <unknown>
+#10 0x56140e4bb3d7 <unknown>
+#11 0x56140e4c5b20 <unknown>
+#12 0x56140e4bc023 <unknown>
+#13 0x56140e48a1aa <unknown>
+#14 0x56140e4e06b8 <unknown>
+#15 0x56140e4e0847 <unknown>
+#16 0x56140e4f0243 <unknown>
+#17 0x7f5cd3907609 start_thread
+
+[2025-03-15T16:21:10.930+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Google_map, task_id=extract_data_task, execution_date=20250315T161315, start_date=20250315T162100, end_date=20250315T162110
+[2025-03-15T16:21:10.989+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 75 for task extract_data_task (Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome-stable is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x56140e4f74e3 <unknown>
+#1 0x56140e226c76 <unknown>
+#2 0x56140e24fd78 <unknown>
+#3 0x56140e24c029 <unknown>
+#4 0x56140e28accc <unknown>
+#5 0x56140e28a47f <unknown>
+#6 0x56140e281de3 <unknown>
+#7 0x56140e2572dd <unknown>
+#8 0x56140e25834e <unknown>
+#9 0x56140e4b73e4 <unknown>
+#10 0x56140e4bb3d7 <unknown>
+#11 0x56140e4c5b20 <unknown>
+#12 0x56140e4bc023 <unknown>
+#13 0x56140e48a1aa <unknown>
+#14 0x56140e4e06b8 <unknown>
+#15 0x56140e4e0847 <unknown>
+#16 0x56140e4f0243 <unknown>
+#17 0x7f5cd3907609 start_thread
+; 43150)
+[2025-03-15T16:21:11.036+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-15T16:21:11.123+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

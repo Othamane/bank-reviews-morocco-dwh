@@ -1,0 +1,84 @@
+[2025-03-15T22:36:09.838+0000] {processor.py:161} INFO - Started process (PID=192670) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:09.839+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:36:09.841+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:36:09.841+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:09.850+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:36:09.849+0000] {dagbag.py:348} ERROR - Failed to import: /home/nord/airflow/dags/insert_data.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 844, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 981, in get_code
+  File "<frozen importlib._bootstrap_external>", line 911, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/nord/airflow/dags/insert_data.py", line 94
+    insert_func()
+    ^
+IndentationError: expected an indented block
+[2025-03-15T22:36:09.851+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:09.957+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.148 seconds
+[2025-03-15T22:36:33.342+0000] {processor.py:161} INFO - Started process (PID=192936) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:33.347+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:36:33.349+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:36:33.348+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:33.358+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:33.420+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.111 seconds
+[2025-03-15T22:36:34.654+0000] {processor.py:161} INFO - Started process (PID=192958) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:34.662+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:36:34.666+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:36:34.664+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:34.688+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:34.780+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.141 seconds
+[2025-03-15T22:36:36.116+0000] {processor.py:161} INFO - Started process (PID=192985) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:36.118+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:36:36.131+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:36:36.130+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:36.140+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:36.214+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.109 seconds
+[2025-03-15T22:36:43.191+0000] {processor.py:161} INFO - Started process (PID=193049) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:43.193+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:36:43.196+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:36:43.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:43.214+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:36:43.277+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.099 seconds
+[2025-03-15T22:37:14.217+0000] {processor.py:161} INFO - Started process (PID=193381) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:14.243+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:37:14.244+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:37:14.244+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:14.249+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:14.341+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.132 seconds
+[2025-03-15T22:37:26.812+0000] {processor.py:161} INFO - Started process (PID=193599) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:26.821+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:37:26.822+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:37:26.822+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:26.825+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:37:26.824+0000] {dagbag.py:325} INFO - File /home/nord/airflow/dags/insert_data.py assumed to contain no DAGs. Skipping.
+[2025-03-15T22:37:26.825+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:26.915+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.112 seconds
+[2025-03-15T22:37:54.628+0000] {processor.py:161} INFO - Started process (PID=193896) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:54.632+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:37:54.636+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:37:54.634+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:54.640+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:37:54.640+0000] {dagbag.py:325} INFO - File /home/nord/airflow/dags/insert_data.py assumed to contain no DAGs. Skipping.
+[2025-03-15T22:37:54.641+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:54.738+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.126 seconds
+[2025-03-15T22:37:58.905+0000] {processor.py:161} INFO - Started process (PID=193964) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:58.908+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:37:58.911+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:37:58.910+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:58.914+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:37:58.914+0000] {dagbag.py:325} INFO - File /home/nord/airflow/dags/insert_data.py assumed to contain no DAGs. Skipping.
+[2025-03-15T22:37:58.922+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:37:58.987+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.096 seconds
+[2025-03-15T22:38:29.545+0000] {processor.py:161} INFO - Started process (PID=194316) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:38:29.547+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:38:29.548+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:38:29.548+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:38:29.550+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:38:29.550+0000] {dagbag.py:325} INFO - File /home/nord/airflow/dags/insert_data.py assumed to contain no DAGs. Skipping.
+[2025-03-15T22:38:29.550+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:38:29.584+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.043 seconds
+[2025-03-15T22:39:00.460+0000] {processor.py:161} INFO - Started process (PID=194662) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:39:00.467+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:39:00.468+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:39:00.468+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:39:00.471+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:39:00.471+0000] {dagbag.py:325} INFO - File /home/nord/airflow/dags/insert_data.py assumed to contain no DAGs. Skipping.
+[2025-03-15T22:39:00.472+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:39:00.553+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.100 seconds
+[2025-03-15T22:39:30.797+0000] {processor.py:161} INFO - Started process (PID=194996) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:39:30.798+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:39:30.799+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:39:30.799+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:39:30.800+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:39:30.800+0000] {dagbag.py:325} INFO - File /home/nord/airflow/dags/insert_data.py assumed to contain no DAGs. Skipping.
+[2025-03-15T22:39:30.801+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:39:30.828+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.035 seconds
+[2025-03-15T22:40:00.962+0000] {processor.py:161} INFO - Started process (PID=195334) to work on /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:40:00.966+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/insert_data.py for tasks to queue
+[2025-03-15T22:40:00.969+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:40:00.968+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:40:00.973+0000] {logging_mixin.py:188} INFO - [2025-03-15T22:40:00.972+0000] {dagbag.py:325} INFO - File /home/nord/airflow/dags/insert_data.py assumed to contain no DAGs. Skipping.
+[2025-03-15T22:40:00.974+0000] {processor.py:842} WARNING - No viable dags retrieved from /home/nord/airflow/dags/insert_data.py
+[2025-03-15T22:40:01.089+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/insert_data.py took 0.139 seconds

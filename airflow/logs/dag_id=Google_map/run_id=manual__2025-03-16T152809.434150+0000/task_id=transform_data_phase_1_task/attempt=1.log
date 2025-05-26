@@ -1,0 +1,25 @@
+[2025-03-16T15:28:14.989+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_data_phase_1_task manual__2025-03-16T15:28:09.434150+00:00 [queued]>
+[2025-03-16T15:28:15.017+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_data_phase_1_task manual__2025-03-16T15:28:09.434150+00:00 [queued]>
+[2025-03-16T15:28:15.018+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-16T15:28:15.052+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): transform_data_phase_1_task> on 2025-03-16 15:28:09.434150+00:00
+[2025-03-16T15:28:15.061+0000] {standard_task_runner.py:60} INFO - Started process 58779 to run task
+[2025-03-16T15:28:15.077+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_data_phase_1_task', 'manual__2025-03-16T15:28:09.434150+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmph452548v']
+[2025-03-16T15:28:15.083+0000] {standard_task_runner.py:88} INFO - Job 111: Subtask transform_data_phase_1_task
+[2025-03-16T15:28:15.484+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_data_phase_1_task manual__2025-03-16T15:28:09.434150+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-16T15:28:16.093+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_data_phase_1_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T15:28:09.434150+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T15:28:09.434150+00:00'
+[2025-03-16T15:28:16.097+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-03-16T15:28:16.103+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /path/to/your/dbt/project && dbt run --profiles-dir /path/to/your/dbt/profiles.yml --models remove_duplicates normalize_text handle_missing_values convert_rating']
+[2025-03-16T15:28:16.132+0000] {subprocess.py:86} INFO - Output:
+[2025-03-16T15:28:16.143+0000] {subprocess.py:93} INFO - /usr/bin/bash: line 0: cd: /path/to/your/dbt/project: No such file or directory
+[2025-03-16T15:28:16.143+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-03-16T15:28:16.215+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-16T15:28:16.226+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Google_map, task_id=transform_data_phase_1_task, execution_date=20250316T152809, start_date=20250316T152814, end_date=20250316T152816
+[2025-03-16T15:28:16.276+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 111 for task transform_data_phase_1_task (Bash command failed. The command returned a non-zero exit code 1.; 58779)
+[2025-03-16T15:28:16.298+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-16T15:28:16.384+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

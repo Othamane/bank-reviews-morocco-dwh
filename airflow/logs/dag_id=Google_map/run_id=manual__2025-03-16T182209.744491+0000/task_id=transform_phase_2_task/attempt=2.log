@@ -1,0 +1,109 @@
+[2025-03-16T18:26:05.253+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T18:22:09.744491+00:00 [queued]>
+[2025-03-16T18:26:05.275+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T18:22:09.744491+00:00 [queued]>
+[2025-03-16T18:26:05.276+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 3
+[2025-03-16T18:26:05.318+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_phase_2_task> on 2025-03-16 18:22:09.744491+00:00
+[2025-03-16T18:26:05.326+0000] {standard_task_runner.py:60} INFO - Started process 175479 to run task
+[2025-03-16T18:26:05.335+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_phase_2_task', 'manual__2025-03-16T18:22:09.744491+00:00', '--job-id', '138', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpjc81uv6n']
+[2025-03-16T18:26:05.340+0000] {standard_task_runner.py:88} INFO - Job 138: Subtask transform_phase_2_task
+[2025-03-16T18:26:05.628+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T18:22:09.744491+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-16T18:26:06.370+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_phase_2_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T18:22:09.744491+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T18:22:09.744491+00:00'
+[2025-03-16T18:26:20.293+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/nltk/corpus/util.py", line 84, in __load
+    root = nltk.data.find(f"{self.subdir}/{zip_name}")
+  File "/home/nord/venv/lib/python3.8/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mstopwords[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('stopwords')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mcorpora/stopwords.zip/stopwords/[0m
+
+  Searched in:
+    - '/home/nord/nltk_data'
+    - '/home/nord/venv/nltk_data'
+    - '/home/nord/venv/share/nltk_data'
+    - '/home/nord/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nord/airflow/dags/google_map_dag_etl.py", line 51, in <lambda>
+    python_callable=lambda: __import__('transform_phase_2').main()
+  File "/home/nord/airflow/dags/transform_phase_2.py", line 37, in <module>
+    stop_words = set(stopwords.words('french'))
+  File "/home/nord/venv/lib/python3.8/site-packages/nltk/corpus/util.py", line 120, in __getattr__
+    self.__load()
+  File "/home/nord/venv/lib/python3.8/site-packages/nltk/corpus/util.py", line 86, in __load
+    raise e
+  File "/home/nord/venv/lib/python3.8/site-packages/nltk/corpus/util.py", line 81, in __load
+    root = nltk.data.find(f"{self.subdir}/{self.__name}")
+  File "/home/nord/venv/lib/python3.8/site-packages/nltk/data.py", line 579, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mstopwords[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('stopwords')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mcorpora/stopwords[0m
+
+  Searched in:
+    - '/home/nord/nltk_data'
+    - '/home/nord/venv/nltk_data'
+    - '/home/nord/venv/share/nltk_data'
+    - '/home/nord/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+[2025-03-16T18:26:20.370+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Google_map, task_id=transform_phase_2_task, execution_date=20250316T182209, start_date=20250316T182605, end_date=20250316T182620
+[2025-03-16T18:26:20.488+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 138 for task transform_phase_2_task (
+**********************************************************************
+  Resource [93mstopwords[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('stopwords')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mcorpora/stopwords[0m
+
+  Searched in:
+    - '/home/nord/nltk_data'
+    - '/home/nord/venv/nltk_data'
+    - '/home/nord/venv/share/nltk_data'
+    - '/home/nord/venv/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+; 175479)
+[2025-03-16T18:26:20.723+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-16T18:26:20.785+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

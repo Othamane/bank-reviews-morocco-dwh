@@ -1,0 +1,14 @@
+[2025-02-15T20:03:37.717+0100] {processor.py:161} INFO - Started process (PID=8752) to work on /home/nord/airflow/dags/dag.py
+[2025-02-15T20:03:37.718+0100] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/dag.py for tasks to queue
+[2025-02-15T20:03:37.720+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:03:37.719+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/dag.py
+[2025-02-15T20:03:37.738+0100] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /home/nord/airflow/dags/dag.py
+[2025-02-15T20:03:38.020+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:03:38.020+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T20:03:38.066+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:03:38.066+0100] {dag.py:3823} INFO - Setting next_dagrun for tutorial to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T20:03:38.120+0100] {processor.py:183} INFO - Processing /home/nord/airflow/dags/dag.py took 0.411 seconds
+[2025-02-15T20:05:04.551+0100] {processor.py:161} INFO - Started process (PID=8839) to work on /home/nord/airflow/dags/dag.py
+[2025-02-15T20:05:04.554+0100] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/dag.py for tasks to queue
+[2025-02-15T20:05:04.558+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:05:04.557+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/dag.py
+[2025-02-15T20:05:04.587+0100] {processor.py:840} INFO - DAG(s) 'tutorial' retrieved from /home/nord/airflow/dags/dag.py
+[2025-02-15T20:05:04.980+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:05:04.979+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T20:05:05.050+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:05:05.050+0100] {dag.py:3823} INFO - Setting next_dagrun for tutorial to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T20:05:05.092+0100] {processor.py:183} INFO - Processing /home/nord/airflow/dags/dag.py took 0.558 seconds

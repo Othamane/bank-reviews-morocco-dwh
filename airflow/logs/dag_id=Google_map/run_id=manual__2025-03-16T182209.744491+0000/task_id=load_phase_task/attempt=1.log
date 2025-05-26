@@ -1,0 +1,56 @@
+[2025-03-17T22:32:39.098+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.load_phase_task manual__2025-03-16T18:22:09.744491+00:00 [queued]>
+[2025-03-17T22:32:39.126+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.load_phase_task manual__2025-03-16T18:22:09.744491+00:00 [queued]>
+[2025-03-17T22:32:39.127+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-17T22:32:39.184+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): load_phase_task> on 2025-03-16 18:22:09.744491+00:00
+[2025-03-17T22:32:39.194+0000] {standard_task_runner.py:60} INFO - Started process 18124 to run task
+[2025-03-17T22:32:39.236+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'load_phase_task', 'manual__2025-03-16T18:22:09.744491+00:00', '--job-id', '215', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpj_ijh51h']
+[2025-03-17T22:32:39.268+0000] {standard_task_runner.py:88} INFO - Job 215: Subtask load_phase_task
+[2025-03-17T22:32:39.742+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.load_phase_task manual__2025-03-16T18:22:09.744491+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-17T22:32:40.753+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='load_phase_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T18:22:09.744491+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T18:22:09.744491+00:00'
+[2025-03-17T22:32:40.756+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-03-17T22:32:40.760+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd ~/data_warehouse_project && dbt run --profiles-dir ~/.dbt --models dim_bank dim_branch dim_location dim_sentiment fact_reviews']
+[2025-03-17T22:32:40.795+0000] {subprocess.py:86} INFO - Output:
+[2025-03-17T22:32:51.403+0000] {subprocess.py:93} INFO - [0m22:32:51  Running with dbt=1.9.0-b2
+[2025-03-17T22:32:53.201+0000] {subprocess.py:93} INFO - [0m22:32:53  Registered adapter: postgres=1.8.2
+[2025-03-17T22:32:54.133+0000] {subprocess.py:93} INFO - [0m22:32:54  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2025-03-17T22:32:54.133+0000] {subprocess.py:93} INFO - There are 1 unused configuration paths:
+[2025-03-17T22:32:54.134+0000] {subprocess.py:93} INFO - - models.data_warehouse_project.example
+[2025-03-17T22:32:55.529+0000] {subprocess.py:93} INFO - [0m22:32:55  Found 6 models, 1 source, 424 macros
+[2025-03-17T22:32:55.541+0000] {subprocess.py:93} INFO - [0m22:32:55
+[2025-03-17T22:32:55.562+0000] {subprocess.py:93} INFO - [0m22:32:55  Concurrency: 4 threads (target='dev')
+[2025-03-17T22:32:55.571+0000] {subprocess.py:93} INFO - [0m22:32:55
+[2025-03-17T22:32:56.284+0000] {subprocess.py:93} INFO - [0m22:32:56  1 of 5 START sql table model public_Decisionnelle.dim_bank ..................... [RUN]
+[2025-03-17T22:32:56.309+0000] {subprocess.py:93} INFO - [0m22:32:56  2 of 5 START sql table model public_Decisionnelle.dim_branch ................... [RUN]
+[2025-03-17T22:32:56.315+0000] {subprocess.py:93} INFO - [0m22:32:56  3 of 5 START sql table model public_Decisionnelle.dim_location ................. [RUN]
+[2025-03-17T22:32:56.318+0000] {subprocess.py:93} INFO - [0m22:32:56  4 of 5 START sql table model public_Decisionnelle.dim_sentiment ................ [RUN]
+[2025-03-17T22:32:57.777+0000] {subprocess.py:93} INFO - [0m22:32:57  4 of 5 ERROR creating sql table model public_Decisionnelle.dim_sentiment ....... [[31mERROR[0m in 1.45s]
+[2025-03-17T22:32:57.990+0000] {subprocess.py:93} INFO - [0m22:32:57  1 of 5 ERROR creating sql table model public_Decisionnelle.dim_bank ............ [[31mERROR[0m in 1.67s]
+[2025-03-17T22:32:58.468+0000] {subprocess.py:93} INFO - [0m22:32:58  2 of 5 OK created sql table model public_Decisionnelle.dim_branch .............. [[32mSELECT 2[0m in 2.16s]
+[2025-03-17T22:32:58.477+0000] {subprocess.py:93} INFO - [0m22:32:58  3 of 5 OK created sql table model public_Decisionnelle.dim_location ............ [[32mSELECT 2[0m in 2.16s]
+[2025-03-17T22:32:58.486+0000] {subprocess.py:93} INFO - [0m22:32:58  5 of 5 SKIP relation public_Decisionnelle.fact_reviews ......................... [[33mSKIP[0m]
+[2025-03-17T22:32:58.557+0000] {subprocess.py:93} INFO - [0m22:32:58
+[2025-03-17T22:32:58.559+0000] {subprocess.py:93} INFO - [0m22:32:58  Finished running 5 table models in 0 hours 0 minutes and 2.98 seconds (2.98s).
+[2025-03-17T22:32:58.668+0000] {subprocess.py:93} INFO - [0m22:32:58
+[2025-03-17T22:32:58.671+0000] {subprocess.py:93} INFO - [0m22:32:58  [31mCompleted with 2 errors, 0 partial successs, and 0 warnings:[0m
+[2025-03-17T22:32:58.673+0000] {subprocess.py:93} INFO - [0m22:32:58
+[2025-03-17T22:32:58.676+0000] {subprocess.py:93} INFO - [0m22:32:58    Database Error in model dim_sentiment (models/marts/dim_sentiment.sql)
+[2025-03-17T22:32:58.676+0000] {subprocess.py:93} INFO -   relation "dim_sentiment__dbt_backup" already exists
+[2025-03-17T22:32:58.677+0000] {subprocess.py:93} INFO -   compiled code at target/run/data_warehouse_project/models/marts/dim_sentiment.sql
+[2025-03-17T22:32:58.678+0000] {subprocess.py:93} INFO - [0m22:32:58
+[2025-03-17T22:32:58.682+0000] {subprocess.py:93} INFO - [0m22:32:58    Database Error in model dim_bank (models/marts/dim_bank.sql)
+[2025-03-17T22:32:58.683+0000] {subprocess.py:93} INFO -   relation "dim_bank__dbt_backup" already exists
+[2025-03-17T22:32:58.683+0000] {subprocess.py:93} INFO -   compiled code at target/run/data_warehouse_project/models/marts/dim_bank.sql
+[2025-03-17T22:32:58.686+0000] {subprocess.py:93} INFO - [0m22:32:58
+[2025-03-17T22:32:58.688+0000] {subprocess.py:93} INFO - [0m22:32:58  Done. PASS=2 WARN=0 ERROR=2 SKIP=1 TOTAL=5
+[2025-03-17T22:33:00.630+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-03-17T22:33:00.661+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-03-17T22:33:00.666+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Google_map, task_id=load_phase_task, execution_date=20250316T182209, start_date=20250317T223239, end_date=20250317T223300
+[2025-03-17T22:33:00.686+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 215 for task load_phase_task (Bash command failed. The command returned a non-zero exit code 1.; 18124)
+[2025-03-17T22:33:00.710+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-17T22:33:00.847+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

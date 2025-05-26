@@ -1,0 +1,5 @@
+[2025-05-11 17:36:59 +0100] [876] [INFO] Starting gunicorn 21.2.0
+[2025-05-11 17:36:59 +0100] [876] [INFO] Listening at: http://[::]:8793 (876)
+[2025-05-11 17:36:59 +0100] [876] [INFO] Using worker: sync
+[2025-05-11 17:36:59 +0100] [877] [INFO] Booting worker with pid: 877
+[2025-05-11 17:36:59 +0100] [878] [INFO] Booting worker with pid: 878

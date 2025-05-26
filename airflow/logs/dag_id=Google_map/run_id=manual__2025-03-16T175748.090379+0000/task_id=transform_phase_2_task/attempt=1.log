@@ -1,0 +1,16 @@
+[2025-03-16T17:57:53.048+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T17:57:48.090379+00:00 [queued]>
+[2025-03-16T17:57:53.113+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T17:57:48.090379+00:00 [queued]>
+[2025-03-16T17:57:53.114+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-16T17:57:53.257+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_phase_2_task> on 2025-03-16 17:57:48.090379+00:00
+[2025-03-16T17:57:53.292+0000] {standard_task_runner.py:60} INFO - Started process 156879 to run task
+[2025-03-16T17:57:53.323+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_phase_2_task', 'manual__2025-03-16T17:57:48.090379+00:00', '--job-id', '136', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmp7jae21eb']
+[2025-03-16T17:57:53.339+0000] {standard_task_runner.py:88} INFO - Job 136: Subtask transform_phase_2_task
+[2025-03-16T17:57:53.847+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T17:57:48.090379+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-16T17:57:54.467+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_phase_2_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T17:57:48.090379+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T17:57:48.090379+00:00'
+[2025-03-16T18:21:52.541+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2025-03-16T18:21:52.549+0000] {process_utils.py:131} INFO - Sending 15 to group 156879. PIDs of all processes in the group: [156879]
+[2025-03-16T18:21:52.549+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 156879
+[2025-03-16T18:22:52.582+0000] {process_utils.py:149} WARNING - process psutil.Process(pid=156879, name='pt_main_thread', status='sleeping', started='17:57:52') did not respond to SIGTERM. Trying SIGKILL
+[2025-03-16T18:22:52.583+0000] {process_utils.py:86} INFO - Sending the signal 9 to group 156879
+[2025-03-16T18:22:52.688+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=156879, name='pt_main_thread', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='17:57:52') (156879) terminated with exit code -9
+[2025-03-16T18:22:52.693+0000] {standard_task_runner.py:175} ERROR - Job 136 was killed before it finished (likely due to running out of memory)

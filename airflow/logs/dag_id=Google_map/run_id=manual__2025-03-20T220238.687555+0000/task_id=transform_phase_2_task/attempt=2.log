@@ -1,0 +1,209 @@
+[2025-03-20T22:08:43.378+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-20T22:02:38.687555+00:00 [queued]>
+[2025-03-20T22:08:43.407+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-20T22:02:38.687555+00:00 [queued]>
+[2025-03-20T22:08:43.408+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 2
+[2025-03-20T22:08:43.458+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_phase_2_task> on 2025-03-20 22:02:38.687555+00:00
+[2025-03-20T22:08:43.473+0000] {standard_task_runner.py:60} INFO - Started process 6401 to run task
+[2025-03-20T22:08:43.475+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_phase_2_task', 'manual__2025-03-20T22:02:38.687555+00:00', '--job-id', '239', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmps0_fb3q8']
+[2025-03-20T22:08:43.487+0000] {standard_task_runner.py:88} INFO - Job 239: Subtask transform_phase_2_task
+[2025-03-20T22:08:43.666+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_phase_2_task manual__2025-03-20T22:02:38.687555+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-20T22:08:43.922+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_phase_2_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-20T22:02:38.687555+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-20T22:02:38.687555+00:00'
+[2025-03-20T22:09:13.442+0000] {dictionary.py:201} INFO - adding document #0 to Dictionary<0 unique tokens: []>
+[2025-03-20T22:09:13.443+0000] {dictionary.py:206} INFO - built Dictionary<84 unique tokens: ['45', 'agent', 'banque', 'dattente', 'minutes']...> from 9 documents (total 102 corpus positions)
+[2025-03-20T22:09:13.476+0000] {utils.py:447} INFO - Dictionary lifecycle event {'msg': "built Dictionary<84 unique tokens: ['45', 'agent', 'banque', 'dattente', 'minutes']...> from 9 documents (total 102 corpus positions)", 'datetime': '2025-03-20T22:09:13.444271', 'gensim': '4.3.3', 'python': '3.8.10 (default, Jan 17 2025, 14:40:23) \n[GCC 9.4.0]', 'platform': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.29', 'event': 'created'}
+[2025-03-20T22:09:13.477+0000] {ldamodel.py:596} INFO - using autotuned alpha, starting with [0.2, 0.2, 0.2, 0.2, 0.2]
+[2025-03-20T22:09:13.477+0000] {ldamodel.py:482} INFO - using serial LDA version on this node
+[2025-03-20T22:09:13.478+0000] {ldamodel.py:948} INFO - running online (multi-pass) LDA training, 5 topics, 15 passes over the supplied corpus of 9 documents, updating model once every 9 documents, evaluating perplexity every 9 documents, iterating 50x with a convergence threshold of 0.001000
+[2025-03-20T22:09:13.500+0000] {ldamodel.py:848} INFO - -7.934 per-word bound, 244.5 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.501+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 0, at document #9/9
+[2025-03-20T22:09:13.517+0000] {ldamodel.py:795} INFO - optimized alpha [0.12247073, 0.17196211, 0.17990571, 0.18278138, 0.18182719]
+[2025-03-20T22:09:13.518+0000] {ldamodel.py:1197} INFO - topic #0 (0.122): 0.029*"haut" + 0.028*"très" + 0.026*"cest" + 0.025*"heureux" + 0.025*"musulman" + 0.025*"banque" + 0.025*"individu" + 0.024*"services" + 0.024*"niveau" + 0.023*"vraiment"
+[2025-03-20T22:09:13.519+0000] {ldamodel.py:1197} INFO - topic #1 (0.172): 0.042*"sympathique" + 0.042*"commerciaux" + 0.042*"dagence" + 0.042*"personnel" + 0.042*"chef" + 0.042*"lécoute" + 0.042*"très" + 0.042*"avis" + 0.042*"accompagner" + 0.041*"plaisir"
+[2025-03-20T22:09:13.520+0000] {ldamodel.py:1197} INFO - topic #2 (0.180): 0.043*"encore" + 0.032*"non" + 0.032*"carte" + 0.029*"actuellement" + 0.029*"pire" + 0.029*"depuis" + 0.029*"ouverture" + 0.029*"nulle" + 0.029*"bon" + 0.029*"courage"
+[2025-03-20T22:09:13.524+0000] {ldamodel.py:1197} INFO - topic #3 (0.183): 0.042*"bon" + 0.042*"service" + 0.041*"frais" + 0.040*"cest" + 0.039*"plus" + 0.024*"45" + 0.024*"seul" + 0.024*"banque" + 0.024*"minutes" + 0.024*"renseignement"
+[2025-03-20T22:09:13.525+0000] {ldamodel.py:1197} INFO - topic #4 (0.182): 0.026*"plus" + 0.025*"non" + 0.025*"carte" + 0.022*"cest" + 0.021*"prospérité" + 0.021*"souhaite" + 0.021*"chaque" + 0.021*"traiter" + 0.021*"succès" + 0.020*"aussi"
+[2025-03-20T22:09:13.526+0000] {ldamodel.py:1075} INFO - topic diff=2.625328, rho=1.000000
+[2025-03-20T22:09:13.536+0000] {ldamodel.py:848} INFO - -5.314 per-word bound, 39.8 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.536+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 1, at document #9/9
+[2025-03-20T22:09:13.543+0000] {ldamodel.py:795} INFO - optimized alpha [0.0931098, 0.14337811, 0.16429362, 0.16688439, 0.13621947]
+[2025-03-20T22:09:13.544+0000] {ldamodel.py:1197} INFO - topic #0 (0.093): 0.020*"haut" + 0.020*"très" + 0.019*"cest" + 0.019*"heureux" + 0.018*"musulman" + 0.018*"banque" + 0.018*"individu" + 0.018*"services" + 0.018*"niveau" + 0.018*"vraiment"
+[2025-03-20T22:09:13.544+0000] {ldamodel.py:1197} INFO - topic #1 (0.143): 0.042*"sympathique" + 0.042*"commerciaux" + 0.042*"dagence" + 0.042*"personnel" + 0.042*"chef" + 0.042*"lécoute" + 0.042*"très" + 0.042*"avis" + 0.042*"accompagner" + 0.042*"plaisir"
+[2025-03-20T22:09:13.545+0000] {ldamodel.py:1197} INFO - topic #2 (0.164): 0.041*"encore" + 0.037*"non" + 0.037*"carte" + 0.024*"actuellement" + 0.024*"pire" + 0.024*"depuis" + 0.024*"ouverture" + 0.024*"nulle" + 0.024*"courage" + 0.024*"bon"
+[2025-03-20T22:09:13.549+0000] {ldamodel.py:1197} INFO - topic #3 (0.167): 0.042*"bon" + 0.042*"service" + 0.041*"frais" + 0.041*"cest" + 0.041*"plus" + 0.023*"45" + 0.023*"seul" + 0.023*"banque" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:13.549+0000] {ldamodel.py:1197} INFO - topic #4 (0.136): 0.031*"plus" + 0.029*"cest" + 0.029*"prospérité" + 0.029*"souhaite" + 0.028*"chaque" + 0.028*"traiter" + 0.028*"succès" + 0.028*"aussi" + 0.028*"vraiment" + 0.028*"niveau"
+[2025-03-20T22:09:13.550+0000] {ldamodel.py:1075} INFO - topic diff=0.276938, rho=0.577350
+[2025-03-20T22:09:13.557+0000] {ldamodel.py:848} INFO - -5.113 per-word bound, 34.6 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.558+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 2, at document #9/9
+[2025-03-20T22:09:13.567+0000] {ldamodel.py:795} INFO - optimized alpha [0.077150434, 0.12596011, 0.15183628, 0.15412317, 0.113085546]
+[2025-03-20T22:09:13.568+0000] {ldamodel.py:1197} INFO - topic #0 (0.077): 0.016*"haut" + 0.016*"très" + 0.016*"cest" + 0.015*"heureux" + 0.015*"musulman" + 0.015*"banque" + 0.015*"individu" + 0.015*"services" + 0.015*"niveau" + 0.015*"vraiment"
+[2025-03-20T22:09:13.568+0000] {ldamodel.py:1197} INFO - topic #1 (0.126): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"personnel" + 0.043*"chef" + 0.043*"lécoute" + 0.043*"très" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"plaisir"
+[2025-03-20T22:09:13.569+0000] {ldamodel.py:1197} INFO - topic #2 (0.152): 0.041*"encore" + 0.039*"non" + 0.039*"carte" + 0.023*"actuellement" + 0.023*"pire" + 0.023*"depuis" + 0.023*"ouverture" + 0.023*"nulle" + 0.023*"courage" + 0.023*"bon"
+[2025-03-20T22:09:13.569+0000] {ldamodel.py:1197} INFO - topic #3 (0.154): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.041*"cest" + 0.041*"plus" + 0.023*"45" + 0.023*"banque" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:13.569+0000] {ldamodel.py:1197} INFO - topic #4 (0.113): 0.033*"plus" + 0.032*"cest" + 0.032*"prospérité" + 0.032*"souhaite" + 0.032*"chaque" + 0.032*"traiter" + 0.032*"succès" + 0.032*"aussi" + 0.032*"vraiment" + 0.032*"niveau"
+[2025-03-20T22:09:13.570+0000] {ldamodel.py:1075} INFO - topic diff=0.149878, rho=0.500000
+[2025-03-20T22:09:13.576+0000] {ldamodel.py:848} INFO - -5.063 per-word bound, 33.4 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.576+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 3, at document #9/9
+[2025-03-20T22:09:13.578+0000] {ldamodel.py:795} INFO - optimized alpha [0.06673293, 0.11385473, 0.14177302, 0.14377907, 0.09843568]
+[2025-03-20T22:09:13.581+0000] {ldamodel.py:1197} INFO - topic #0 (0.067): 0.014*"haut" + 0.014*"très" + 0.014*"cest" + 0.014*"heureux" + 0.014*"musulman" + 0.014*"banque" + 0.014*"individu" + 0.014*"services" + 0.014*"niveau" + 0.014*"vraiment"
+[2025-03-20T22:09:13.581+0000] {ldamodel.py:1197} INFO - topic #1 (0.114): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"personnel" + 0.043*"chef" + 0.043*"lécoute" + 0.043*"très" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"plaisir"
+[2025-03-20T22:09:13.582+0000] {ldamodel.py:1197} INFO - topic #2 (0.142): 0.040*"encore" + 0.039*"non" + 0.039*"carte" + 0.023*"actuellement" + 0.023*"pire" + 0.023*"depuis" + 0.023*"nulle" + 0.023*"ouverture" + 0.023*"courage" + 0.022*"bon"
+[2025-03-20T22:09:13.582+0000] {ldamodel.py:1197} INFO - topic #3 (0.144): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.041*"cest" + 0.041*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:13.582+0000] {ldamodel.py:1197} INFO - topic #4 (0.098): 0.034*"plus" + 0.034*"cest" + 0.033*"prospérité" + 0.033*"souhaite" + 0.033*"chaque" + 0.033*"traiter" + 0.033*"succès" + 0.033*"aussi" + 0.033*"vraiment" + 0.033*"niveau"
+[2025-03-20T22:09:13.583+0000] {ldamodel.py:1075} INFO - topic diff=0.088195, rho=0.447214
+[2025-03-20T22:09:13.585+0000] {ldamodel.py:848} INFO - -5.046 per-word bound, 33.0 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.586+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 4, at document #9/9
+[2025-03-20T22:09:13.591+0000] {ldamodel.py:795} INFO - optimized alpha [0.059255596, 0.104783714, 0.13346756, 0.13523406, 0.08808951]
+[2025-03-20T22:09:13.592+0000] {ldamodel.py:1197} INFO - topic #0 (0.059): 0.013*"haut" + 0.013*"très" + 0.013*"cest" + 0.013*"heureux" + 0.013*"musulman" + 0.013*"banque" + 0.013*"individu" + 0.013*"services" + 0.013*"niveau" + 0.013*"vraiment"
+[2025-03-20T22:09:13.593+0000] {ldamodel.py:1197} INFO - topic #1 (0.105): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"chef" + 0.043*"personnel" + 0.043*"très" + 0.043*"lécoute" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"plaisir"
+[2025-03-20T22:09:13.594+0000] {ldamodel.py:1197} INFO - topic #2 (0.133): 0.040*"encore" + 0.040*"non" + 0.040*"carte" + 0.022*"actuellement" + 0.022*"pire" + 0.022*"depuis" + 0.022*"nulle" + 0.022*"ouverture" + 0.022*"courage" + 0.022*"bon"
+[2025-03-20T22:09:13.594+0000] {ldamodel.py:1197} INFO - topic #3 (0.135): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.042*"cest" + 0.041*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:13.595+0000] {ldamodel.py:1197} INFO - topic #4 (0.088): 0.035*"plus" + 0.034*"cest" + 0.034*"prospérité" + 0.034*"souhaite" + 0.034*"chaque" + 0.034*"traiter" + 0.034*"succès" + 0.034*"aussi" + 0.034*"vraiment" + 0.034*"niveau"
+[2025-03-20T22:09:13.596+0000] {ldamodel.py:1075} INFO - topic diff=0.052811, rho=0.408248
+[2025-03-20T22:09:13.603+0000] {ldamodel.py:848} INFO - -5.039 per-word bound, 32.9 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.606+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 5, at document #9/9
+[2025-03-20T22:09:13.610+0000] {ldamodel.py:795} INFO - optimized alpha [0.0535618, 0.09764578, 0.12647586, 0.1280443, 0.08028621]
+[2025-03-20T22:09:13.611+0000] {ldamodel.py:1197} INFO - topic #0 (0.054): 0.013*"haut" + 0.013*"très" + 0.013*"cest" + 0.013*"heureux" + 0.013*"musulman" + 0.013*"banque" + 0.013*"individu" + 0.013*"services" + 0.013*"niveau" + 0.013*"vraiment"
+[2025-03-20T22:09:13.611+0000] {ldamodel.py:1197} INFO - topic #1 (0.098): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"chef" + 0.043*"très" + 0.043*"lécoute" + 0.043*"personnel" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"plaisir"
+[2025-03-20T22:09:13.612+0000] {ldamodel.py:1197} INFO - topic #2 (0.126): 0.040*"encore" + 0.040*"non" + 0.040*"carte" + 0.022*"actuellement" + 0.022*"pire" + 0.022*"depuis" + 0.022*"nulle" + 0.022*"ouverture" + 0.022*"courage" + 0.022*"bon"
+[2025-03-20T22:09:13.613+0000] {ldamodel.py:1197} INFO - topic #3 (0.128): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.042*"cest" + 0.042*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:13.615+0000] {ldamodel.py:1197} INFO - topic #4 (0.080): 0.035*"plus" + 0.035*"cest" + 0.035*"prospérité" + 0.035*"souhaite" + 0.035*"chaque" + 0.035*"traiter" + 0.035*"succès" + 0.035*"aussi" + 0.035*"vraiment" + 0.035*"niveau"
+[2025-03-20T22:09:13.615+0000] {ldamodel.py:1075} INFO - topic diff=0.032125, rho=0.377964
+[2025-03-20T22:09:13.623+0000] {ldamodel.py:848} INFO - -5.034 per-word bound, 32.8 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.623+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 6, at document #9/9
+[2025-03-20T22:09:13.634+0000] {ldamodel.py:795} INFO - optimized alpha [0.049046256, 0.0918321, 0.12049053, 0.12189603, 0.07413413]
+[2025-03-20T22:09:13.636+0000] {ldamodel.py:1197} INFO - topic #0 (0.049): 0.013*"haut" + 0.013*"très" + 0.012*"cest" + 0.012*"heureux" + 0.012*"musulman" + 0.012*"banque" + 0.012*"individu" + 0.012*"services" + 0.012*"niveau" + 0.012*"vraiment"
+[2025-03-20T22:09:13.637+0000] {ldamodel.py:1197} INFO - topic #1 (0.092): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"chef" + 0.043*"très" + 0.043*"lécoute" + 0.043*"personnel" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"plaisir"
+[2025-03-20T22:09:13.638+0000] {ldamodel.py:1197} INFO - topic #2 (0.120): 0.040*"encore" + 0.040*"non" + 0.040*"carte" + 0.022*"actuellement" + 0.022*"pire" + 0.022*"depuis" + 0.022*"nulle" + 0.022*"ouverture" + 0.022*"courage" + 0.022*"bon"
+[2025-03-20T22:09:13.643+0000] {ldamodel.py:1197} INFO - topic #3 (0.122): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.042*"cest" + 0.042*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:13.651+0000] {ldamodel.py:1197} INFO - topic #4 (0.074): 0.035*"plus" + 0.035*"cest" + 0.035*"prospérité" + 0.035*"souhaite" + 0.035*"chaque" + 0.035*"traiter" + 0.035*"succès" + 0.035*"aussi" + 0.035*"vraiment" + 0.035*"niveau"
+[2025-03-20T22:09:13.652+0000] {ldamodel.py:1075} INFO - topic diff=0.019939, rho=0.353553
+[2025-03-20T22:09:13.673+0000] {ldamodel.py:848} INFO - -5.031 per-word bound, 32.7 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.674+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 7, at document #9/9
+[2025-03-20T22:09:13.677+0000] {ldamodel.py:795} INFO - optimized alpha [0.04535688, 0.08697402, 0.11529396, 0.1165647, 0.06912603]
+[2025-03-20T22:09:13.678+0000] {ldamodel.py:1197} INFO - topic #0 (0.045): 0.012*"haut" + 0.012*"très" + 0.012*"cest" + 0.012*"heureux" + 0.012*"musulman" + 0.012*"banque" + 0.012*"individu" + 0.012*"services" + 0.012*"niveau" + 0.012*"vraiment"
+[2025-03-20T22:09:13.679+0000] {ldamodel.py:1197} INFO - topic #1 (0.087): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"chef" + 0.043*"très" + 0.043*"lécoute" + 0.043*"personnel" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"plaisir"
+[2025-03-20T22:09:13.680+0000] {ldamodel.py:1197} INFO - topic #2 (0.115): 0.040*"encore" + 0.040*"non" + 0.040*"carte" + 0.022*"actuellement" + 0.022*"pire" + 0.022*"depuis" + 0.022*"nulle" + 0.022*"ouverture" + 0.022*"courage" + 0.022*"bon"
+[2025-03-20T22:09:13.684+0000] {ldamodel.py:1197} INFO - topic #3 (0.117): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.042*"cest" + 0.042*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:13.685+0000] {ldamodel.py:1197} INFO - topic #4 (0.069): 0.035*"plus" + 0.035*"cest" + 0.035*"prospérité" + 0.035*"souhaite" + 0.035*"chaque" + 0.035*"traiter" + 0.035*"succès" + 0.035*"aussi" + 0.035*"vraiment" + 0.035*"niveau"
+[2025-03-20T22:09:13.685+0000] {ldamodel.py:1075} INFO - topic diff=0.012655, rho=0.333333
+[2025-03-20T22:09:13.697+0000] {ldamodel.py:848} INFO - -5.028 per-word bound, 32.6 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.709+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 8, at document #9/9
+[2025-03-20T22:09:13.726+0000] {ldamodel.py:795} INFO - optimized alpha [0.042272948, 0.08283298, 0.11072808, 0.111885004, 0.06494897]
+[2025-03-20T22:09:13.727+0000] {ldamodel.py:1197} INFO - topic #0 (0.042): 0.012*"haut" + 0.012*"très" + 0.012*"cest" + 0.012*"heureux" + 0.012*"musulman" + 0.012*"banque" + 0.012*"individu" + 0.012*"services" + 0.012*"niveau" + 0.012*"vraiment"
+[2025-03-20T22:09:13.728+0000] {ldamodel.py:1197} INFO - topic #1 (0.083): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"chef" + 0.043*"très" + 0.043*"lécoute" + 0.043*"personnel" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"plaisir"
+[2025-03-20T22:09:13.729+0000] {ldamodel.py:1197} INFO - topic #2 (0.111): 0.040*"encore" + 0.040*"non" + 0.040*"carte" + 0.022*"actuellement" + 0.022*"pire" + 0.022*"depuis" + 0.022*"nulle" + 0.022*"ouverture" + 0.022*"courage" + 0.022*"bon"
+[2025-03-20T22:09:13.741+0000] {ldamodel.py:1197} INFO - topic #3 (0.112): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.042*"cest" + 0.042*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:13.743+0000] {ldamodel.py:1197} INFO - topic #4 (0.065): 0.035*"plus" + 0.035*"cest" + 0.035*"prospérité" + 0.035*"souhaite" + 0.035*"chaque" + 0.035*"traiter" + 0.035*"succès" + 0.035*"aussi" + 0.035*"vraiment" + 0.035*"niveau"
+[2025-03-20T22:09:13.744+0000] {ldamodel.py:1075} INFO - topic diff=0.008214, rho=0.316228
+[2025-03-20T22:09:13.777+0000] {ldamodel.py:848} INFO - -5.025 per-word bound, 32.6 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.789+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 9, at document #9/9
+[2025-03-20T22:09:13.807+0000] {ldamodel.py:795} INFO - optimized alpha [0.03964814, 0.07924681, 0.106675565, 0.10773658, 0.061398007]
+[2025-03-20T22:09:13.809+0000] {ldamodel.py:1197} INFO - topic #0 (0.040): 0.012*"haut" + 0.012*"très" + 0.012*"cest" + 0.012*"heureux" + 0.012*"musulman" + 0.012*"banque" + 0.012*"individu" + 0.012*"services" + 0.012*"niveau" + 0.012*"vraiment"
+[2025-03-20T22:09:13.809+0000] {ldamodel.py:1197} INFO - topic #1 (0.079): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"chef" + 0.043*"très" + 0.043*"lécoute" + 0.043*"personnel" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"plaisir"
+[2025-03-20T22:09:13.821+0000] {ldamodel.py:1197} INFO - topic #2 (0.107): 0.040*"encore" + 0.040*"non" + 0.040*"carte" + 0.022*"actuellement" + 0.022*"pire" + 0.022*"depuis" + 0.022*"nulle" + 0.022*"ouverture" + 0.022*"courage" + 0.022*"bon"
+[2025-03-20T22:09:13.823+0000] {ldamodel.py:1197} INFO - topic #3 (0.108): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.042*"cest" + 0.042*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:13.824+0000] {ldamodel.py:1197} INFO - topic #4 (0.061): 0.035*"plus" + 0.035*"cest" + 0.035*"prospérité" + 0.035*"souhaite" + 0.035*"chaque" + 0.035*"traiter" + 0.035*"succès" + 0.035*"aussi" + 0.035*"vraiment" + 0.035*"niveau"
+[2025-03-20T22:09:13.824+0000] {ldamodel.py:1075} INFO - topic diff=0.005447, rho=0.301511
+[2025-03-20T22:09:13.854+0000] {ldamodel.py:848} INFO - -5.023 per-word bound, 32.5 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.855+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 10, at document #9/9
+[2025-03-20T22:09:13.885+0000] {ldamodel.py:795} INFO - optimized alpha [0.037381105, 0.076100685, 0.10304723, 0.10402624, 0.058332503]
+[2025-03-20T22:09:13.886+0000] {ldamodel.py:1197} INFO - topic #0 (0.037): 0.012*"haut" + 0.012*"très" + 0.012*"cest" + 0.012*"heureux" + 0.012*"musulman" + 0.012*"banque" + 0.012*"individu" + 0.012*"services" + 0.012*"niveau" + 0.012*"vraiment"
+[2025-03-20T22:09:13.887+0000] {ldamodel.py:1197} INFO - topic #1 (0.076): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"chef" + 0.043*"très" + 0.043*"lécoute" + 0.043*"personnel" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"plaisir"
+[2025-03-20T22:09:13.889+0000] {ldamodel.py:1197} INFO - topic #2 (0.103): 0.040*"encore" + 0.040*"non" + 0.040*"carte" + 0.022*"actuellement" + 0.022*"pire" + 0.022*"depuis" + 0.022*"nulle" + 0.022*"ouverture" + 0.022*"courage" + 0.022*"bon"
+[2025-03-20T22:09:13.890+0000] {ldamodel.py:1197} INFO - topic #3 (0.104): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.042*"cest" + 0.042*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:13.901+0000] {ldamodel.py:1197} INFO - topic #4 (0.058): 0.035*"plus" + 0.035*"cest" + 0.035*"prospérité" + 0.035*"souhaite" + 0.035*"chaque" + 0.035*"traiter" + 0.035*"succès" + 0.035*"aussi" + 0.035*"vraiment" + 0.035*"niveau"
+[2025-03-20T22:09:13.902+0000] {ldamodel.py:1075} INFO - topic diff=0.003685, rho=0.288675
+[2025-03-20T22:09:13.936+0000] {ldamodel.py:848} INFO - -5.021 per-word bound, 32.5 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:13.937+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 11, at document #9/9
+[2025-03-20T22:09:13.964+0000] {ldamodel.py:795} INFO - optimized alpha [0.035399128, 0.07331067, 0.09977407, 0.10068233, 0.055652313]
+[2025-03-20T22:09:13.966+0000] {ldamodel.py:1197} INFO - topic #0 (0.035): 0.012*"haut" + 0.012*"très" + 0.012*"cest" + 0.012*"heureux" + 0.012*"musulman" + 0.012*"banque" + 0.012*"individu" + 0.012*"services" + 0.012*"niveau" + 0.012*"vraiment"
+[2025-03-20T22:09:13.967+0000] {ldamodel.py:1197} INFO - topic #1 (0.073): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"chef" + 0.043*"très" + 0.043*"lécoute" + 0.043*"personnel" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"plaisir"
+[2025-03-20T22:09:13.968+0000] {ldamodel.py:1197} INFO - topic #2 (0.100): 0.040*"encore" + 0.040*"non" + 0.040*"carte" + 0.022*"actuellement" + 0.022*"pire" + 0.022*"depuis" + 0.022*"nulle" + 0.022*"ouverture" + 0.022*"courage" + 0.022*"bon"
+[2025-03-20T22:09:13.968+0000] {ldamodel.py:1197} INFO - topic #3 (0.101): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.042*"cest" + 0.042*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:13.981+0000] {ldamodel.py:1197} INFO - topic #4 (0.056): 0.035*"plus" + 0.035*"cest" + 0.035*"prospérité" + 0.035*"souhaite" + 0.035*"chaque" + 0.035*"traiter" + 0.035*"succès" + 0.035*"aussi" + 0.035*"vraiment" + 0.035*"niveau"
+[2025-03-20T22:09:13.981+0000] {ldamodel.py:1075} INFO - topic diff=0.002538, rho=0.277350
+[2025-03-20T22:09:14.001+0000] {ldamodel.py:848} INFO - -5.019 per-word bound, 32.4 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:14.002+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 12, at document #9/9
+[2025-03-20T22:09:14.018+0000] {ldamodel.py:795} INFO - optimized alpha [0.033648524, 0.070813805, 0.096801795, 0.097648636, 0.05328395]
+[2025-03-20T22:09:14.019+0000] {ldamodel.py:1197} INFO - topic #0 (0.034): 0.012*"haut" + 0.012*"très" + 0.012*"cest" + 0.012*"heureux" + 0.012*"musulman" + 0.012*"banque" + 0.012*"individu" + 0.012*"services" + 0.012*"niveau" + 0.012*"vraiment"
+[2025-03-20T22:09:14.030+0000] {ldamodel.py:1197} INFO - topic #1 (0.071): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"chef" + 0.043*"très" + 0.043*"lécoute" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"personnel" + 0.043*"plaisir"
+[2025-03-20T22:09:14.031+0000] {ldamodel.py:1197} INFO - topic #2 (0.097): 0.040*"encore" + 0.040*"non" + 0.040*"carte" + 0.022*"actuellement" + 0.022*"pire" + 0.022*"depuis" + 0.022*"nulle" + 0.022*"ouverture" + 0.022*"courage" + 0.022*"bon"
+[2025-03-20T22:09:14.033+0000] {ldamodel.py:1197} INFO - topic #3 (0.098): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.042*"cest" + 0.042*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:14.033+0000] {ldamodel.py:1197} INFO - topic #4 (0.053): 0.035*"plus" + 0.035*"cest" + 0.035*"prospérité" + 0.035*"souhaite" + 0.035*"chaque" + 0.035*"traiter" + 0.035*"succès" + 0.035*"aussi" + 0.035*"vraiment" + 0.035*"niveau"
+[2025-03-20T22:09:14.034+0000] {ldamodel.py:1075} INFO - topic diff=0.001777, rho=0.267261
+[2025-03-20T22:09:14.066+0000] {ldamodel.py:848} INFO - -5.017 per-word bound, 32.4 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:14.078+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 13, at document #9/9
+[2025-03-20T22:09:14.098+0000] {ldamodel.py:795} INFO - optimized alpha [0.032088686, 0.06856174, 0.094087005, 0.09488014, 0.05117209]
+[2025-03-20T22:09:14.100+0000] {ldamodel.py:1197} INFO - topic #0 (0.032): 0.012*"haut" + 0.012*"très" + 0.012*"cest" + 0.012*"heureux" + 0.012*"musulman" + 0.012*"banque" + 0.012*"individu" + 0.012*"services" + 0.012*"niveau" + 0.012*"vraiment"
+[2025-03-20T22:09:14.111+0000] {ldamodel.py:1197} INFO - topic #1 (0.069): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"chef" + 0.043*"très" + 0.043*"lécoute" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"personnel" + 0.043*"plaisir"
+[2025-03-20T22:09:14.112+0000] {ldamodel.py:1197} INFO - topic #2 (0.094): 0.040*"encore" + 0.040*"non" + 0.040*"carte" + 0.022*"actuellement" + 0.022*"pire" + 0.022*"depuis" + 0.022*"nulle" + 0.022*"ouverture" + 0.022*"courage" + 0.022*"bon"
+[2025-03-20T22:09:14.113+0000] {ldamodel.py:1197} INFO - topic #3 (0.095): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.042*"cest" + 0.042*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:14.115+0000] {ldamodel.py:1197} INFO - topic #4 (0.051): 0.035*"plus" + 0.035*"cest" + 0.035*"prospérité" + 0.035*"souhaite" + 0.035*"chaque" + 0.035*"traiter" + 0.035*"succès" + 0.035*"aussi" + 0.035*"vraiment" + 0.035*"niveau"
+[2025-03-20T22:09:14.126+0000] {ldamodel.py:1075} INFO - topic diff=0.001263, rho=0.258199
+[2025-03-20T22:09:14.148+0000] {ldamodel.py:848} INFO - -5.015 per-word bound, 32.3 perplexity estimate based on a held-out corpus of 9 documents with 102 words
+[2025-03-20T22:09:14.149+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 14, at document #9/9
+[2025-03-20T22:09:14.177+0000] {ldamodel.py:795} INFO - optimized alpha [0.030688262, 0.066516645, 0.09159456, 0.09234037, 0.0492742]
+[2025-03-20T22:09:14.178+0000] {ldamodel.py:1197} INFO - topic #0 (0.031): 0.012*"haut" + 0.012*"très" + 0.012*"cest" + 0.012*"heureux" + 0.012*"musulman" + 0.012*"banque" + 0.012*"individu" + 0.012*"services" + 0.012*"niveau" + 0.012*"vraiment"
+[2025-03-20T22:09:14.179+0000] {ldamodel.py:1197} INFO - topic #1 (0.067): 0.043*"sympathique" + 0.043*"commerciaux" + 0.043*"dagence" + 0.043*"chef" + 0.043*"très" + 0.043*"lécoute" + 0.043*"avis" + 0.043*"accompagner" + 0.043*"personnel" + 0.043*"plaisir"
+[2025-03-20T22:09:14.192+0000] {ldamodel.py:1197} INFO - topic #2 (0.092): 0.040*"encore" + 0.040*"non" + 0.040*"carte" + 0.022*"actuellement" + 0.022*"pire" + 0.022*"depuis" + 0.022*"nulle" + 0.022*"ouverture" + 0.022*"courage" + 0.022*"bon"
+[2025-03-20T22:09:14.193+0000] {ldamodel.py:1197} INFO - topic #3 (0.092): 0.042*"bon" + 0.042*"service" + 0.042*"frais" + 0.042*"cest" + 0.042*"plus" + 0.023*"banque" + 0.023*"45" + 0.023*"seul" + 0.023*"minutes" + 0.023*"renseignement"
+[2025-03-20T22:09:14.194+0000] {ldamodel.py:1197} INFO - topic #4 (0.049): 0.035*"plus" + 0.035*"cest" + 0.035*"prospérité" + 0.035*"souhaite" + 0.035*"chaque" + 0.035*"traiter" + 0.035*"succès" + 0.035*"aussi" + 0.035*"vraiment" + 0.035*"niveau"
+[2025-03-20T22:09:14.195+0000] {ldamodel.py:1075} INFO - topic diff=0.000909, rho=0.250000
+[2025-03-20T22:09:14.206+0000] {utils.py:447} INFO - LdaModel lifecycle event {'msg': 'trained LdaModel<num_terms=84, num_topics=5, decay=0.5, chunksize=2000> in 0.73s', 'datetime': '2025-03-20T22:09:14.206816', 'gensim': '4.3.3', 'python': '3.8.10 (default, Jan 17 2025, 14:40:23) \n[GCC 9.4.0]', 'platform': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.29', 'event': 'created'}
+[2025-03-20T22:09:14.209+0000] {logging_mixin.py:188} INFO - Topics extraction complete
+[2025-03-20T22:09:14.266+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.NumericValueOutOfRange: integer out of range
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nord/airflow/dags/google_map_dag_etl.py", line 52, in <lambda>
+    python_callable=lambda: __import__('transform_phase_2').main()
+  File "/home/nord/airflow/dags/transform_phase_2.py", line 151, in main
+    connection.execute(update_query, (row['language'], row['sentiment'],row['relative_topic'],row['topic_meaning'], row['bank_name'], row['branch_name'], row['location'], row['review_text']))
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1370, in execute
+    return self._exec_driver_sql(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1674, in _exec_driver_sql
+    ret = self._execute_context(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.DataError: (psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: 
+        UPDATE cleaned_reviews
+            SET language = %s, sentiment = %s , relative_topic = %s , topic_meaning = %s
+            WHERE bank_name = %s AND branch_name = %s AND location = %s AND review_text = %s;
+        ]
+[parameters: ('fr', 'Negative', nan, nan, 'Umnia Bank', 'Umnia Bank Kénitra Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', '45 minutes dattente pour un renseignement et le pauvre agent de sécurité seul dans la banque')]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2025-03-20T22:09:14.363+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=Google_map, task_id=transform_phase_2_task, execution_date=20250320T220238, start_date=20250320T220843, end_date=20250320T220914
+[2025-03-20T22:09:14.478+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 239 for task transform_phase_2_task ((psycopg2.errors.NumericValueOutOfRange) integer out of range
+
+[SQL: 
+        UPDATE cleaned_reviews
+            SET language = %s, sentiment = %s , relative_topic = %s , topic_meaning = %s
+            WHERE bank_name = %s AND branch_name = %s AND location = %s AND review_text = %s;
+        ]
+[parameters: ('fr', 'Negative', nan, nan, 'Umnia Bank', 'Umnia Bank Kénitra Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', 'Angle Avenue Mohamed diouri et Rue Hamman el Fatouki, Kenitra 14000 ', '45 minutes dattente pour un renseignement et le pauvre agent de sécurité seul dans la banque')]
+(Background on this error at: https://sqlalche.me/e/14/9h9h); 6401)
+[2025-03-20T22:09:14.942+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-20T22:09:15.073+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,170 @@
+[2025-03-15T16:59:24.203+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:59:18.537100+00:00 [queued]>
+[2025-03-15T16:59:24.268+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:59:18.537100+00:00 [queued]>
+[2025-03-15T16:59:24.296+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-15T16:59:24.540+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): insert_data_task> on 2025-03-15 16:59:18.537100+00:00
+[2025-03-15T16:59:24.618+0000] {standard_task_runner.py:60} INFO - Started process 80530 to run task
+[2025-03-15T16:59:24.688+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T16:59:18.537100+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpsqc7vywe']
+[2025-03-15T16:59:24.719+0000] {standard_task_runner.py:88} INFO - Job 80: Subtask insert_data_task
+[2025-03-15T16:59:25.279+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:59:18.537100+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-15T16:59:25.597+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='insert_data_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-15T16:59:18.537100+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-15T16:59:18.537100+00:00'
+[2025-03-15T16:59:25.653+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : invalid input syntax for type numeric: "1 étoile"
+LINE 3: ...l!! Ils traitent les clients comme des animals!', '1 étoile'...
+                                                             ^
+[2025-03-15T16:59:25.654+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.656+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.657+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.658+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.659+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.660+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.661+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.662+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.663+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.664+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.670+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.672+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.673+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.674+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.675+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.677+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.678+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.679+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.680+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.681+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.682+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.686+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.687+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.690+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.691+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.693+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.694+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.695+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.696+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.697+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.698+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.699+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.700+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.701+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.702+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.703+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.704+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.705+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.706+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.707+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.708+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.712+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.713+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.713+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.715+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.716+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.716+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.717+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.719+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.720+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.721+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.721+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.722+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.723+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.724+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.728+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.729+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.730+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.731+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.732+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.733+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.734+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.735+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.736+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.737+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.738+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.739+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.739+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.740+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.742+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.744+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.745+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.746+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.747+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.750+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.752+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.753+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.754+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.755+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.755+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.756+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.758+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.759+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.761+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.762+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.765+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.768+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.770+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.771+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.772+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.773+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.774+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.775+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.776+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.777+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.778+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.781+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.782+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.785+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.788+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.789+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.790+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.791+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.792+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.793+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.794+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.795+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.797+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.798+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.799+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.805+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.806+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.807+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.807+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.810+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.811+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.812+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.813+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.814+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.815+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.816+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.820+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.823+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.827+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.828+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.829+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.831+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.832+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.833+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.840+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.841+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.844+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.845+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.846+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.847+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.848+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.849+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.855+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.856+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.857+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.859+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.862+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.863+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.864+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.865+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.866+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.867+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.868+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.870+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.871+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.872+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.873+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.874+0000] {logging_mixin.py:188} INFO - ⚠️ Erreur lors de l'insertion d'une ligne : current transaction is aborted, commands ignored until end of transaction block
+[2025-03-15T16:59:25.877+0000] {logging_mixin.py:188} INFO - ❌ Insertion échouée, aucun fichier n'a été renommé.
+[2025-03-15T16:59:25.880+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-03-15T16:59:25.921+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Google_map, task_id=insert_data_task, execution_date=20250315T165918, start_date=20250315T165924, end_date=20250315T165925
+[2025-03-15T16:59:25.977+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-15T16:59:26.072+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,38 @@
+[2025-03-17T16:05:28.571+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.load_phase_task manual__2025-03-17T16:04:38.299540+00:00 [queued]>
+[2025-03-17T16:05:28.589+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.load_phase_task manual__2025-03-17T16:04:38.299540+00:00 [queued]>
+[2025-03-17T16:05:28.590+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-17T16:05:28.632+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): load_phase_task> on 2025-03-17 16:04:38.299540+00:00
+[2025-03-17T16:05:28.639+0000] {standard_task_runner.py:60} INFO - Started process 166797 to run task
+[2025-03-17T16:05:28.648+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'load_phase_task', 'manual__2025-03-17T16:04:38.299540+00:00', '--job-id', '172', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpb_4to1lj']
+[2025-03-17T16:05:28.652+0000] {standard_task_runner.py:88} INFO - Job 172: Subtask load_phase_task
+[2025-03-17T16:05:28.801+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.load_phase_task manual__2025-03-17T16:04:38.299540+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-17T16:05:29.097+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='load_phase_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-17T16:04:38.299540+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-17T16:04:38.299540+00:00'
+[2025-03-17T16:05:29.102+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-03-17T16:05:29.104+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd ~/data_warehouse_project && dbt run --profiles-dir ~/.dbt --models dim_bank dim_branch dim_location dim_sentiment fact_reviews']
+[2025-03-17T16:05:29.117+0000] {subprocess.py:86} INFO - Output:
+[2025-03-17T16:05:34.128+0000] {subprocess.py:93} INFO - [0m16:05:34  Running with dbt=1.9.0-b2
+[2025-03-17T16:05:35.047+0000] {subprocess.py:93} INFO - [0m16:05:35  Registered adapter: postgres=1.8.2
+[2025-03-17T16:05:35.875+0000] {subprocess.py:93} INFO - [0m16:05:35  Found 6 models, 1 source, 424 macros
+[2025-03-17T16:05:35.890+0000] {subprocess.py:93} INFO - [0m16:05:35
+[2025-03-17T16:05:35.893+0000] {subprocess.py:93} INFO - [0m16:05:35  Concurrency: 4 threads (target='dev')
+[2025-03-17T16:05:35.897+0000] {subprocess.py:93} INFO - [0m16:05:35
+[2025-03-17T16:05:36.530+0000] {subprocess.py:93} INFO - [0m16:05:36  1 of 5 START sql table model public_Decisionnelle.dim_bank ..................... [RUN]
+[2025-03-17T16:05:36.535+0000] {subprocess.py:93} INFO - [0m16:05:36  2 of 5 START sql table model public_Decisionnelle.dim_branch ................... [RUN]
+[2025-03-17T16:05:36.536+0000] {subprocess.py:93} INFO - [0m16:05:36  3 of 5 START sql table model public_Decisionnelle.dim_location ................. [RUN]
+[2025-03-17T16:05:36.538+0000] {subprocess.py:93} INFO - [0m16:05:36  4 of 5 START sql table model public_Decisionnelle.dim_sentiment ................ [RUN]
+[2025-03-17T16:05:37.452+0000] {subprocess.py:93} INFO - [0m16:05:37  1 of 5 OK created sql table model public_Decisionnelle.dim_bank ................ [[32mSELECT 2[0m in 0.90s]
+[2025-03-17T16:05:37.584+0000] {subprocess.py:93} INFO - [0m16:05:37  4 of 5 OK created sql table model public_Decisionnelle.dim_sentiment ........... [[32mSELECT 2[0m in 1.04s]
+[2025-03-17T16:05:37.591+0000] {subprocess.py:93} INFO - [0m16:05:37  2 of 5 OK created sql table model public_Decisionnelle.dim_branch .............. [[32mSELECT 2[0m in 1.05s]
+[2025-03-17T16:05:37.595+0000] {subprocess.py:93} INFO - [0m16:05:37  3 of 5 OK created sql table model public_Decisionnelle.dim_location ............ [[32mSELECT 2[0m in 1.05s]
+[2025-03-17T16:05:37.603+0000] {subprocess.py:93} INFO - [0m16:05:37  5 of 5 START sql table model public_Decisionnelle.fact_reviews ................. [RUN]
+[2025-03-17T16:05:37.715+0000] {subprocess.py:93} INFO - [0m16:05:37  5 of 5 OK created sql table model public_Decisionnelle.fact_reviews ............ [[32mSELECT 9[0m in 0.11s]
+[2025-03-17T16:05:37.753+0000] {subprocess.py:93} INFO - [0m16:05:37
+[2025-03-17T16:05:37.753+0000] {subprocess.py:93} INFO - [0m16:05:37  Finished running 5 table models in 0 hours 0 minutes and 1.85 seconds (1.85s).
+[2025-03-17T16:05:37.819+0000] {subprocess.py:93} INFO - [0m16:05:37
+[2025-03-17T16:05:37.820+0000] {subprocess.py:93} INFO - [0m16:05:37  [32mCompleted successfully[0m
+[2025-03-17T16:05:37.821+0000] {subprocess.py:93} INFO - [0m16:05:37
+[2025-03-17T16:05:37.822+0000] {subprocess.py:93} INFO - [0m16:05:37  Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[2025-03-17T16:05:39.747+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-03-17T16:05:39.895+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Google_map, task_id=load_phase_task, execution_date=20250317T160438, start_date=20250317T160528, end_date=20250317T160539
+[2025-03-17T16:05:39.953+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-17T16:05:39.994+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

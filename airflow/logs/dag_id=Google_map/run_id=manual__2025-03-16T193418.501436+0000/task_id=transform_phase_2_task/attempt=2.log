@@ -1,0 +1,92 @@
+[2025-03-16T19:39:52.559+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T19:34:18.501436+00:00 [queued]>
+[2025-03-16T19:39:52.571+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T19:34:18.501436+00:00 [queued]>
+[2025-03-16T19:39:52.572+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 3
+[2025-03-16T19:39:52.593+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_phase_2_task> on 2025-03-16 19:34:18.501436+00:00
+[2025-03-16T19:39:52.600+0000] {standard_task_runner.py:60} INFO - Started process 224443 to run task
+[2025-03-16T19:39:52.606+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_phase_2_task', 'manual__2025-03-16T19:34:18.501436+00:00', '--job-id', '150', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmp6nnb95x4']
+[2025-03-16T19:39:52.609+0000] {standard_task_runner.py:88} INFO - Job 150: Subtask transform_phase_2_task
+[2025-03-16T19:39:52.730+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T19:34:18.501436+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-16T19:39:53.071+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_phase_2_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T19:34:18.501436+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T19:34:18.501436+00:00'
+[2025-03-16T19:40:08.172+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2025-03-16T19:40:08.201+0000] {process_utils.py:131} INFO - Sending 15 to group 224443. PIDs of all processes in the group: [224443]
+[2025-03-16T19:40:08.201+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 224443
+[2025-03-16T19:40:08.205+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-03-16T19:40:08.272+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nord/airflow/dags/google_map_dag_etl.py", line 51, in <lambda>
+    python_callable=lambda: __import__('transform_phase_2').main()
+  File "/home/nord/airflow/dags/transform_phase_2.py", line 80, in main
+    df['sentiment'] = df['review_text'].apply(classify_sentiment)
+  File "/home/nord/venv/lib/python3.8/site-packages/pandas/core/series.py", line 4630, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "/home/nord/venv/lib/python3.8/site-packages/pandas/core/apply.py", line 1025, in apply
+    return self.apply_standard()
+  File "/home/nord/venv/lib/python3.8/site-packages/pandas/core/apply.py", line 1076, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas/_libs/lib.pyx", line 2834, in pandas._libs.lib.map_infer
+  File "/home/nord/airflow/dags/transform_phase_2.py", line 26, in classify_sentiment
+    result = sentiment_pipeline(text)
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/pipelines/text_classification.py", line 159, in __call__
+    result = super().__call__(*inputs, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/pipelines/base.py", line 1302, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/pipelines/base.py", line 1309, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/pipelines/base.py", line 1209, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/pipelines/text_classification.py", line 190, in _forward
+    return self.model(**model_inputs)
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1668, in forward
+    outputs = self.bert(
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1142, in forward
+    encoder_outputs = self.encoder(
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 695, in forward
+    layer_outputs = layer_module(
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 627, in forward
+    layer_output = apply_chunking_to_forward(
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/pytorch_utils.py", line 248, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 640, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 554, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/modules/normalization.py", line 202, in forward
+    return F.layer_norm(
+  File "/home/nord/venv/lib/python3.8/site-packages/torch/nn/functional.py", line 2576, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2452, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2025-03-16T19:40:08.524+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Google_map, task_id=transform_phase_2_task, execution_date=20250316T193418, start_date=20250316T193952, end_date=20250316T194008
+[2025-03-16T19:40:08.637+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 150 for task transform_phase_2_task (Task received SIGTERM signal; 224443)
+[2025-03-16T19:40:08.960+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=224443, status='terminated', exitcode=1, started='19:39:51') (224443) terminated with exit code 1

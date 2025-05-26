@@ -1,0 +1,26 @@
+[2025-03-16T16:35:39.655+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T16:15:39.596689+00:00 [queued]>
+[2025-03-16T16:35:39.681+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T16:15:39.596689+00:00 [queued]>
+[2025-03-16T16:35:39.681+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 4
+[2025-03-16T16:35:39.713+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_phase_2_task> on 2025-03-16 16:15:39.596689+00:00
+[2025-03-16T16:35:39.721+0000] {standard_task_runner.py:60} INFO - Started process 103631 to run task
+[2025-03-16T16:35:39.728+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_phase_2_task', 'manual__2025-03-16T16:15:39.596689+00:00', '--job-id', '125', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpafrvyz51']
+[2025-03-16T16:35:39.734+0000] {standard_task_runner.py:88} INFO - Job 125: Subtask transform_phase_2_task
+[2025-03-16T16:35:39.844+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_phase_2_task manual__2025-03-16T16:15:39.596689+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-16T16:35:40.207+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_phase_2_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T16:15:39.596689+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T16:15:39.596689+00:00'
+[2025-03-16T16:35:40.230+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nord/airflow/dags/google_map_dag_etl.py", line 51, in <lambda>
+    python_callable=lambda: __import__('transform_phase_2').main()
+  File "/home/nord/airflow/dags/transform_phase_2.py", line 2, in <module>
+    from transformers import pipeline
+ModuleNotFoundError: No module named 'transformers'
+[2025-03-16T16:35:40.326+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Google_map, task_id=transform_phase_2_task, execution_date=20250316T161539, start_date=20250316T163539, end_date=20250316T163540
+[2025-03-16T16:35:40.353+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 125 for task transform_phase_2_task (No module named 'transformers'; 103631)
+[2025-03-16T16:35:40.388+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-16T16:35:40.472+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

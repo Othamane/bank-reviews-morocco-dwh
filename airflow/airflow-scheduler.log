@@ -1,0 +1,873 @@
+2025-02-15 19:48:36,824 INFO - Task context logging is enabled
+2025-02-15 19:48:36,826 INFO - Loaded executor: SequentialExecutor
+2025-02-15 19:48:36,882 INFO - Starting the scheduler
+2025-02-15 19:48:36,883 INFO - Processing each file at most -1 times
+2025-02-15 19:48:36,889 INFO - Launched DagFileProcessorManager with pid: 7963
+2025-02-15 19:48:36,893 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-15 19:48:36,895 INFO - Configured default timezone UTC
+2025-02-15 19:53:37,341 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-15 19:58:37,667 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-15 20:03:38,393 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:33:47,310 INFO - Task context logging is enabled
+2025-02-17 17:33:47,314 INFO - Loaded executor: SequentialExecutor
+2025-02-17 17:33:47,421 INFO - Starting the scheduler
+2025-02-17 17:33:47,424 INFO - Processing each file at most -1 times
+2025-02-17 17:33:47,439 INFO - Launched DagFileProcessorManager with pid: 767
+2025-02-17 17:33:47,444 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:33:47,451 INFO - Configured default timezone UTC
+2025-02-17 17:33:47,517 INFO - Marked 1 SchedulerJob instances as failed
+2025-02-17 17:38:47,943 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:43:36,045 INFO - Task context logging is enabled
+2025-02-17 17:43:36,049 INFO - Loaded executor: SequentialExecutor
+2025-02-17 17:43:36,145 INFO - Starting the scheduler
+2025-02-17 17:43:36,147 INFO - Processing each file at most -1 times
+2025-02-17 17:43:36,160 INFO - Launched DagFileProcessorManager with pid: 639
+2025-02-17 17:43:36,167 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:43:36,172 INFO - Configured default timezone UTC
+2025-02-17 17:43:36,241 INFO - Marked 1 SchedulerJob instances as failed
+2025-02-17 17:48:36,639 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:53:37,125 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 17:59:00,385 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 18:04:01,150 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 18:09:01,290 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 18:14:01,553 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 18:19:01,961 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 18:24:04,967 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 18:28:16,915 INFO - Setting next_dagrun for tutorial to 2025-02-17 00:00:00+00:00, run_after=2025-02-18 00:00:00+00:00
+2025-02-17 18:28:17,228 INFO - 2 tasks up for execution:
+	<TaskInstance: tutorial.print_date_1 scheduled__2025-02-16T00:00:00+00:00 [scheduled]>
+	<TaskInstance: tutorial.print_date_1 manual__2025-02-17T17:28:15.445778+00:00 [scheduled]>
+2025-02-17 18:28:17,229 INFO - DAG tutorial has 0/16 running and queued tasks
+2025-02-17 18:28:17,229 INFO - DAG tutorial has 1/16 running and queued tasks
+2025-02-17 18:28:17,229 INFO - Setting the following tasks to queued state:
+	<TaskInstance: tutorial.print_date_1 scheduled__2025-02-16T00:00:00+00:00 [scheduled]>
+	<TaskInstance: tutorial.print_date_1 manual__2025-02-17T17:28:15.445778+00:00 [scheduled]>
+2025-02-17 18:28:17,233 WARNING - cannot record scheduled_duration for task print_date_1 because previous state change time has not been saved
+2025-02-17 18:28:17,234 WARNING - cannot record scheduled_duration for task print_date_1 because previous state change time has not been saved
+2025-02-17 18:28:17,235 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='print_date_1', run_id='scheduled__2025-02-16T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2025-02-17 18:28:17,235 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:28:17,236 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='print_date_1', run_id='manual__2025-02-17T17:28:15.445778+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2025-02-17 18:28:17,237 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'manual__2025-02-17T17:28:15.445778+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:28:17,263 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:28:22,020 ERROR - Failed to execute task Command '['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']' returned non-zero exit status 1..
+2025-02-17 18:28:22,022 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'manual__2025-02-17T17:28:15.445778+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:28:25,855 ERROR - Failed to execute task Command '['airflow', 'tasks', 'run', 'tutorial', 'print_date_1', 'manual__2025-02-17T17:28:15.445778+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']' returned non-zero exit status 1..
+2025-02-17 18:28:25,858 INFO - Received executor event with state failed for task instance TaskInstanceKey(dag_id='tutorial', task_id='print_date_1', run_id='scheduled__2025-02-16T00:00:00+00:00', try_number=1, map_index=-1)
+2025-02-17 18:28:25,859 INFO - Received executor event with state failed for task instance TaskInstanceKey(dag_id='tutorial', task_id='print_date_1', run_id='manual__2025-02-17T17:28:15.445778+00:00', try_number=1, map_index=-1)
+2025-02-17 18:28:25,884 INFO - TaskInstance Finished: dag_id=tutorial, task_id=print_date_1, run_id=manual__2025-02-17T17:28:15.445778+00:00, map_index=-1, run_start_date=None, run_end_date=None, run_duration=None, state=queued, executor_state=failed, try_number=1, max_tries=1, job_id=None, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2025-02-17 17:28:17.230787+00:00, queued_by_job_id=3, pid=None
+2025-02-17 18:28:25,885 ERROR - Executor reports task instance <TaskInstance: tutorial.print_date_1 manual__2025-02-17T17:28:15.445778+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-02-17 18:28:25,899 ERROR - Executor reports task instance <TaskInstance: tutorial.print_date_1 manual__2025-02-17T17:28:15.445778+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-02-17 18:28:25,914 INFO - Marking task as UP_FOR_RETRY. dag_id=tutorial, task_id=print_date_1, execution_date=20250217T172815, start_date=, end_date=20250217T172825
+2025-02-17 18:28:25,933 INFO - TaskInstance Finished: dag_id=tutorial, task_id=print_date_1, run_id=scheduled__2025-02-16T00:00:00+00:00, map_index=-1, run_start_date=None, run_end_date=None, run_duration=None, state=queued, executor_state=failed, try_number=1, max_tries=1, job_id=None, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2025-02-17 17:28:17.230787+00:00, queued_by_job_id=3, pid=None
+2025-02-17 18:28:25,934 ERROR - Executor reports task instance <TaskInstance: tutorial.print_date_1 scheduled__2025-02-16T00:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-02-17 18:28:25,956 ERROR - Executor reports task instance <TaskInstance: tutorial.print_date_1 scheduled__2025-02-16T00:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-02-17 18:28:26,002 INFO - Marking task as UP_FOR_RETRY. dag_id=tutorial, task_id=print_date_1, execution_date=20250216T000000, start_date=, end_date=20250217T172825
+2025-02-17 18:28:57,481 ERROR - Failed to get task for ti <TaskInstance: tutorial.print_date_1 scheduled__2025-02-16T00:00:00+00:00 [up_for_retry]>. Marking it as removed.
+2025-02-17 18:28:57,488 ERROR - Failed to get task for ti <TaskInstance: tutorial.print_date_2 scheduled__2025-02-16T00:00:00+00:00 [None]>. Marking it as removed.
+2025-02-17 18:28:57,508 ERROR - Failed to get task for ti <TaskInstance: tutorial.print_date_1 manual__2025-02-17T17:28:15.445778+00:00 [up_for_retry]>. Marking it as removed.
+2025-02-17 18:28:57,511 ERROR - Failed to get task for ti <TaskInstance: tutorial.print_date_2 manual__2025-02-17T17:28:15.445778+00:00 [None]>. Marking it as removed.
+2025-02-17 18:28:57,543 INFO - 2 tasks up for execution:
+	<TaskInstance: tutorial.print_date scheduled__2025-02-16T00:00:00+00:00 [scheduled]>
+	<TaskInstance: tutorial.print_date manual__2025-02-17T17:28:15.445778+00:00 [scheduled]>
+2025-02-17 18:28:57,544 INFO - DAG tutorial has 0/16 running and queued tasks
+2025-02-17 18:28:57,544 INFO - DAG tutorial has 1/16 running and queued tasks
+2025-02-17 18:28:57,545 INFO - Setting the following tasks to queued state:
+	<TaskInstance: tutorial.print_date scheduled__2025-02-16T00:00:00+00:00 [scheduled]>
+	<TaskInstance: tutorial.print_date manual__2025-02-17T17:28:15.445778+00:00 [scheduled]>
+2025-02-17 18:28:57,548 WARNING - cannot record scheduled_duration for task print_date because previous state change time has not been saved
+2025-02-17 18:28:57,548 WARNING - cannot record scheduled_duration for task print_date because previous state change time has not been saved
+2025-02-17 18:28:57,549 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='print_date', run_id='scheduled__2025-02-16T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2025-02-17 18:28:57,549 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'print_date', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:28:57,550 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='print_date', run_id='manual__2025-02-17T17:28:15.445778+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2025-02-17 18:28:57,551 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'print_date', 'manual__2025-02-17T17:28:15.445778+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:28:57,571 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'print_date', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:29:02,115 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'print_date', 'manual__2025-02-17T17:28:15.445778+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:29:06,466 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial', task_id='print_date', run_id='scheduled__2025-02-16T00:00:00+00:00', try_number=1, map_index=-1)
+2025-02-17 18:29:06,467 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial', task_id='print_date', run_id='manual__2025-02-17T17:28:15.445778+00:00', try_number=1, map_index=-1)
+2025-02-17 18:29:06,477 INFO - TaskInstance Finished: dag_id=tutorial, task_id=print_date, run_id=manual__2025-02-17T17:28:15.445778+00:00, map_index=-1, run_start_date=2025-02-17 17:29:05.439318+00:00, run_end_date=2025-02-17 17:29:05.796273+00:00, run_duration=0.356955, state=success, executor_state=success, try_number=1, max_tries=1, job_id=5, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2025-02-17 17:28:57.546399+00:00, queued_by_job_id=3, pid=2914
+2025-02-17 18:29:06,478 INFO - TaskInstance Finished: dag_id=tutorial, task_id=print_date, run_id=scheduled__2025-02-16T00:00:00+00:00, map_index=-1, run_start_date=2025-02-17 17:29:01.080264+00:00, run_end_date=2025-02-17 17:29:01.540596+00:00, run_duration=0.460332, state=success, executor_state=success, try_number=1, max_tries=1, job_id=4, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2025-02-17 17:28:57.546399+00:00, queued_by_job_id=3, pid=2910
+2025-02-17 18:29:06,519 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 18:29:06,705 INFO - 4 tasks up for execution:
+	<TaskInstance: tutorial.sleep scheduled__2025-02-16T00:00:00+00:00 [scheduled]>
+	<TaskInstance: tutorial.sleep manual__2025-02-17T17:28:15.445778+00:00 [scheduled]>
+	<TaskInstance: tutorial.templated scheduled__2025-02-16T00:00:00+00:00 [scheduled]>
+	<TaskInstance: tutorial.templated manual__2025-02-17T17:28:15.445778+00:00 [scheduled]>
+2025-02-17 18:29:06,706 INFO - DAG tutorial has 0/16 running and queued tasks
+2025-02-17 18:29:06,706 INFO - DAG tutorial has 1/16 running and queued tasks
+2025-02-17 18:29:06,707 INFO - DAG tutorial has 2/16 running and queued tasks
+2025-02-17 18:29:06,707 INFO - DAG tutorial has 3/16 running and queued tasks
+2025-02-17 18:29:06,707 INFO - Setting the following tasks to queued state:
+	<TaskInstance: tutorial.sleep scheduled__2025-02-16T00:00:00+00:00 [scheduled]>
+	<TaskInstance: tutorial.sleep manual__2025-02-17T17:28:15.445778+00:00 [scheduled]>
+	<TaskInstance: tutorial.templated scheduled__2025-02-16T00:00:00+00:00 [scheduled]>
+	<TaskInstance: tutorial.templated manual__2025-02-17T17:28:15.445778+00:00 [scheduled]>
+2025-02-17 18:29:06,712 WARNING - cannot record scheduled_duration for task sleep because previous state change time has not been saved
+2025-02-17 18:29:06,713 WARNING - cannot record scheduled_duration for task sleep because previous state change time has not been saved
+2025-02-17 18:29:06,713 WARNING - cannot record scheduled_duration for task templated because previous state change time has not been saved
+2025-02-17 18:29:06,713 WARNING - cannot record scheduled_duration for task templated because previous state change time has not been saved
+2025-02-17 18:29:06,714 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='sleep', run_id='scheduled__2025-02-16T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2025-02-17 18:29:06,714 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'sleep', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:29:06,715 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='sleep', run_id='manual__2025-02-17T17:28:15.445778+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2025-02-17 18:29:06,715 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'sleep', 'manual__2025-02-17T17:28:15.445778+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:29:06,716 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='templated', run_id='scheduled__2025-02-16T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-02-17 18:29:06,717 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'templated', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:29:06,718 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='templated', run_id='manual__2025-02-17T17:28:15.445778+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-02-17 18:29:06,719 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'templated', 'manual__2025-02-17T17:28:15.445778+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:29:06,745 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'sleep', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:29:16,342 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'sleep', 'manual__2025-02-17T17:28:15.445778+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:29:25,925 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'templated', 'scheduled__2025-02-16T00:00:00+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:29:30,234 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'templated', 'manual__2025-02-17T17:28:15.445778+00:00', '--local', '--subdir', '/home/nord/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-02-17 18:29:34,356 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial', task_id='sleep', run_id='scheduled__2025-02-16T00:00:00+00:00', try_number=1, map_index=-1)
+2025-02-17 18:29:34,357 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial', task_id='sleep', run_id='manual__2025-02-17T17:28:15.445778+00:00', try_number=1, map_index=-1)
+2025-02-17 18:29:34,357 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial', task_id='templated', run_id='scheduled__2025-02-16T00:00:00+00:00', try_number=1, map_index=-1)
+2025-02-17 18:29:34,357 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial', task_id='templated', run_id='manual__2025-02-17T17:28:15.445778+00:00', try_number=1, map_index=-1)
+2025-02-17 18:29:34,373 INFO - TaskInstance Finished: dag_id=tutorial, task_id=sleep, run_id=scheduled__2025-02-16T00:00:00+00:00, map_index=-1, run_start_date=2025-02-17 17:29:10.578169+00:00, run_end_date=2025-02-17 17:29:15.870811+00:00, run_duration=5.292642, state=success, executor_state=success, try_number=1, max_tries=3, job_id=6, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-02-17 17:29:06.709247+00:00, queued_by_job_id=3, pid=2921
+2025-02-17 18:29:34,374 INFO - TaskInstance Finished: dag_id=tutorial, task_id=templated, run_id=scheduled__2025-02-16T00:00:00+00:00, map_index=-1, run_start_date=2025-02-17 17:29:29.265328+00:00, run_end_date=2025-02-17 17:29:29.537056+00:00, run_duration=0.271728, state=success, executor_state=success, try_number=1, max_tries=1, job_id=8, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-02-17 17:29:06.709247+00:00, queued_by_job_id=3, pid=2929
+2025-02-17 18:29:34,374 INFO - TaskInstance Finished: dag_id=tutorial, task_id=sleep, run_id=manual__2025-02-17T17:28:15.445778+00:00, map_index=-1, run_start_date=2025-02-17 17:29:19.897530+00:00, run_end_date=2025-02-17 17:29:25.268222+00:00, run_duration=5.370692, state=success, executor_state=success, try_number=1, max_tries=3, job_id=7, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-02-17 17:29:06.709247+00:00, queued_by_job_id=3, pid=2925
+2025-02-17 18:29:34,374 INFO - TaskInstance Finished: dag_id=tutorial, task_id=templated, run_id=manual__2025-02-17T17:28:15.445778+00:00, map_index=-1, run_start_date=2025-02-17 17:29:33.434998+00:00, run_end_date=2025-02-17 17:29:33.716114+00:00, run_duration=0.281116, state=success, executor_state=success, try_number=1, max_tries=1, job_id=9, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-02-17 17:29:06.709247+00:00, queued_by_job_id=3, pid=2935
+2025-02-17 18:29:34,736 INFO - Marking run <DagRun tutorial @ 2025-02-16 00:00:00+00:00: scheduled__2025-02-16T00:00:00+00:00, state:running, queued_at: 2025-02-17 17:28:16.862855+00:00. externally triggered: False> successful
+2025-02-17 18:29:34,737 INFO - DagRun Finished: dag_id=tutorial, execution_date=2025-02-16 00:00:00+00:00, run_id=scheduled__2025-02-16T00:00:00+00:00, run_start_date=2025-02-17 17:28:16.989316+00:00, run_end_date=2025-02-17 17:29:34.737776+00:00, run_duration=77.74846, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-16 00:00:00+00:00, data_interval_end=2025-02-17 00:00:00+00:00, dag_hash=aeb89a7007d669b93a86716b06726570
+2025-02-17 18:29:34,742 INFO - Setting next_dagrun for tutorial to 2025-02-17 00:00:00+00:00, run_after=2025-02-18 00:00:00+00:00
+2025-02-17 18:29:34,747 INFO - Marking run <DagRun tutorial @ 2025-02-17 17:28:15.445778+00:00: manual__2025-02-17T17:28:15.445778+00:00, state:running, queued_at: 2025-02-17 17:28:15.565979+00:00. externally triggered: True> successful
+2025-02-17 18:29:34,748 INFO - DagRun Finished: dag_id=tutorial, execution_date=2025-02-17 17:28:15.445778+00:00, run_id=manual__2025-02-17T17:28:15.445778+00:00, run_start_date=2025-02-17 17:28:16.989845+00:00, run_end_date=2025-02-17 17:29:34.748365+00:00, run_duration=77.75852, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-02-16 17:28:15.445778+00:00, data_interval_end=2025-02-17 17:28:15.445778+00:00, dag_hash=aeb89a7007d669b93a86716b06726570
+2025-02-17 18:34:06,878 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 18:39:06,983 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-17 18:44:07,444 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-03 15:00:19,899 INFO - Task context logging is enabled
+2025-03-03 15:00:19,903 INFO - Loaded executor: SequentialExecutor
+2025-03-03 15:00:20,027 INFO - Starting the scheduler
+2025-03-03 15:00:20,030 INFO - Processing each file at most -1 times
+2025-03-03 15:00:20,044 INFO - Launched DagFileProcessorManager with pid: 806
+2025-03-03 15:00:20,049 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-03 15:00:20,055 INFO - Configured default timezone UTC
+2025-03-03 15:00:20,108 INFO - Marked 1 SchedulerJob instances as failed
+2025-03-03 15:01:21,847 INFO - Setting next_dagrun for tutorial to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+2025-03-03 15:01:22,041 INFO - 1 tasks up for execution:
+	<TaskInstance: tutorial.print_date scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+2025-03-03 15:01:22,041 INFO - DAG tutorial has 0/16 running and queued tasks
+2025-03-03 15:01:22,042 INFO - Setting the following tasks to queued state:
+	<TaskInstance: tutorial.print_date scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+2025-03-03 15:01:22,045 WARNING - cannot record scheduled_duration for task print_date because previous state change time has not been saved
+2025-03-03 15:01:22,046 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='print_date', run_id='scheduled__2025-03-02T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default
+2025-03-03 15:01:22,047 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'print_date', 'scheduled__2025-03-02T00:00:00+00:00', '--local', '--subdir', '/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-03-03 15:01:22,058 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'print_date', 'scheduled__2025-03-02T00:00:00+00:00', '--local', '--subdir', '/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-03-03 15:01:26,964 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial', task_id='print_date', run_id='scheduled__2025-03-02T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-03 15:01:26,982 INFO - TaskInstance Finished: dag_id=tutorial, task_id=print_date, run_id=scheduled__2025-03-02T00:00:00+00:00, map_index=-1, run_start_date=2025-03-03 15:01:25.973992+00:00, run_end_date=2025-03-03 15:01:26.252161+00:00, run_duration=0.278169, state=success, executor_state=success, try_number=1, max_tries=1, job_id=11, pool=default_pool, queue=default, priority_weight=3, operator=BashOperator, queued_dttm=2025-03-03 15:01:22.043198+00:00, queued_by_job_id=10, pid=878
+2025-03-03 15:01:27,399 INFO - 2 tasks up for execution:
+	<TaskInstance: tutorial.sleep scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: tutorial.templated scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+2025-03-03 15:01:27,399 INFO - DAG tutorial has 0/16 running and queued tasks
+2025-03-03 15:01:27,399 INFO - DAG tutorial has 1/16 running and queued tasks
+2025-03-03 15:01:27,400 INFO - Setting the following tasks to queued state:
+	<TaskInstance: tutorial.sleep scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: tutorial.templated scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+2025-03-03 15:01:27,402 WARNING - cannot record scheduled_duration for task sleep because previous state change time has not been saved
+2025-03-03 15:01:27,402 WARNING - cannot record scheduled_duration for task templated because previous state change time has not been saved
+2025-03-03 15:01:27,402 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='sleep', run_id='scheduled__2025-03-02T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-03 15:01:27,403 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'sleep', 'scheduled__2025-03-02T00:00:00+00:00', '--local', '--subdir', '/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-03-03 15:01:27,403 INFO - Sending TaskInstanceKey(dag_id='tutorial', task_id='templated', run_id='scheduled__2025-03-02T00:00:00+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-03 15:01:27,403 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial', 'templated', 'scheduled__2025-03-02T00:00:00+00:00', '--local', '--subdir', '/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-03-03 15:01:27,415 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'sleep', 'scheduled__2025-03-02T00:00:00+00:00', '--local', '--subdir', '/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-03-03 15:01:37,161 INFO - Executing command: ['airflow', 'tasks', 'run', 'tutorial', 'templated', 'scheduled__2025-03-02T00:00:00+00:00', '--local', '--subdir', '/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py']
+2025-03-03 15:01:41,702 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial', task_id='sleep', run_id='scheduled__2025-03-02T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-03 15:01:41,703 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial', task_id='templated', run_id='scheduled__2025-03-02T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-03 15:01:41,718 INFO - TaskInstance Finished: dag_id=tutorial, task_id=sleep, run_id=scheduled__2025-03-02T00:00:00+00:00, map_index=-1, run_start_date=2025-03-03 15:01:30.958336+00:00, run_end_date=2025-03-03 15:01:36.454949+00:00, run_duration=5.496613, state=success, executor_state=success, try_number=1, max_tries=3, job_id=12, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-03-03 15:01:27.400734+00:00, queued_by_job_id=10, pid=887
+2025-03-03 15:01:41,719 INFO - TaskInstance Finished: dag_id=tutorial, task_id=templated, run_id=scheduled__2025-03-02T00:00:00+00:00, map_index=-1, run_start_date=2025-03-03 15:01:40.806939+00:00, run_end_date=2025-03-03 15:01:41.128996+00:00, run_duration=0.322057, state=success, executor_state=success, try_number=1, max_tries=1, job_id=13, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-03-03 15:01:27.400734+00:00, queued_by_job_id=10, pid=897
+2025-03-03 15:01:42,139 INFO - Marking run <DagRun tutorial @ 2025-03-02 00:00:00+00:00: scheduled__2025-03-02T00:00:00+00:00, state:running, queued_at: 2025-03-03 15:01:21.811288+00:00. externally triggered: False> successful
+2025-03-03 15:01:42,143 INFO - DagRun Finished: dag_id=tutorial, execution_date=2025-03-02 00:00:00+00:00, run_id=scheduled__2025-03-02T00:00:00+00:00, run_start_date=2025-03-03 15:01:21.905045+00:00, run_end_date=2025-03-03 15:01:42.142491+00:00, run_duration=20.237446, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2025-03-02 00:00:00+00:00, data_interval_end=2025-03-03 00:00:00+00:00, dag_hash=160bda85fa32d8ed2e1d6ee57000738d
+2025-03-03 15:01:42,157 INFO - Setting next_dagrun for tutorial to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+2025-03-03 15:05:20,500 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-03 15:10:20,719 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-03 15:15:21,753 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-03 15:20:22,628 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-03 15:25:23,181 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-03 15:25:52,540 INFO - 1 tasks up for execution:
+	<TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:25:50.359734+00:00 [scheduled]>
+2025-03-03 15:25:52,549 INFO - DAG Simple_etl has 0/16 running and queued tasks
+2025-03-03 15:25:52,555 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:25:50.359734+00:00 [scheduled]>
+2025-03-03 15:25:52,576 WARNING - cannot record scheduled_duration for task file_sensor because previous state change time has not been saved
+2025-03-03 15:25:52,591 INFO - Sending TaskInstanceKey(dag_id='Simple_etl', task_id='file_sensor', run_id='manual__2025-03-03T15:25:50.359734+00:00', try_number=1, map_index=-1) to executor with priority 5 and queue default
+2025-03-03 15:25:52,593 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:25:50.359734+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']
+2025-03-03 15:25:52,624 INFO - Executing command: ['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:25:50.359734+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']
+2025-03-03 15:25:58,116 ERROR - Failed to execute task Command '['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:25:50.359734+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']' returned non-zero exit status 1..
+2025-03-03 15:25:58,118 INFO - Received executor event with state failed for task instance TaskInstanceKey(dag_id='Simple_etl', task_id='file_sensor', run_id='manual__2025-03-03T15:25:50.359734+00:00', try_number=1, map_index=-1)
+2025-03-03 15:25:58,128 INFO - TaskInstance Finished: dag_id=Simple_etl, task_id=file_sensor, run_id=manual__2025-03-03T15:25:50.359734+00:00, map_index=-1, run_start_date=None, run_end_date=None, run_duration=None, state=queued, executor_state=failed, try_number=1, max_tries=0, job_id=None, pool=default_pool, queue=default, priority_weight=5, operator=FileSensor, queued_dttm=2025-03-03 15:25:52.561322+00:00, queued_by_job_id=10, pid=None
+2025-03-03 15:25:58,129 ERROR - Executor reports task instance <TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:25:50.359734+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-03-03 15:25:58,141 ERROR - Executor reports task instance <TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:25:50.359734+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-03-03 15:25:58,157 INFO - Marking task as FAILED. dag_id=Simple_etl, task_id=file_sensor, execution_date=20250303T152550, start_date=, end_date=20250303T152558
+2025-03-03 15:26:04,772 ERROR - Marking run <DagRun Simple_etl @ 2025-03-03 15:25:50.359734+00:00: manual__2025-03-03T15:25:50.359734+00:00, state:running, queued_at: 2025-03-03 15:25:50.416068+00:00. externally triggered: True> failed
+2025-03-03 15:26:04,773 INFO - DagRun Finished: dag_id=Simple_etl, execution_date=2025-03-03 15:25:50.359734+00:00, run_id=manual__2025-03-03T15:25:50.359734+00:00, run_start_date=2025-03-03 15:25:52.375054+00:00, run_end_date=2025-03-03 15:26:04.773734+00:00, run_duration=12.39868, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-03-03 15:25:50.359734+00:00, data_interval_end=2025-03-03 15:25:50.359734+00:00, dag_hash=0560b441bceceec130357f5f1fab8ba0
+2025-03-03 15:29:30,342 INFO - 1 tasks up for execution:
+	<TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:29:28.996639+00:00 [scheduled]>
+2025-03-03 15:29:30,343 INFO - DAG Simple_etl has 0/16 running and queued tasks
+2025-03-03 15:29:30,344 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:29:28.996639+00:00 [scheduled]>
+2025-03-03 15:29:30,347 WARNING - cannot record scheduled_duration for task file_sensor because previous state change time has not been saved
+2025-03-03 15:29:30,347 INFO - Sending TaskInstanceKey(dag_id='Simple_etl', task_id='file_sensor', run_id='manual__2025-03-03T15:29:28.996639+00:00', try_number=1, map_index=-1) to executor with priority 5 and queue default
+2025-03-03 15:29:30,347 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:29:28.996639+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']
+2025-03-03 15:29:30,357 INFO - Executing command: ['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:29:28.996639+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']
+2025-03-03 15:29:36,384 ERROR - Failed to execute task Command '['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:29:28.996639+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']' returned non-zero exit status 1..
+2025-03-03 15:29:36,385 INFO - Received executor event with state failed for task instance TaskInstanceKey(dag_id='Simple_etl', task_id='file_sensor', run_id='manual__2025-03-03T15:29:28.996639+00:00', try_number=1, map_index=-1)
+2025-03-03 15:29:36,416 INFO - TaskInstance Finished: dag_id=Simple_etl, task_id=file_sensor, run_id=manual__2025-03-03T15:29:28.996639+00:00, map_index=-1, run_start_date=None, run_end_date=None, run_duration=None, state=queued, executor_state=failed, try_number=1, max_tries=0, job_id=None, pool=default_pool, queue=default, priority_weight=5, operator=FileSensor, queued_dttm=2025-03-03 15:29:30.344917+00:00, queued_by_job_id=10, pid=None
+2025-03-03 15:29:36,417 ERROR - Executor reports task instance <TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:29:28.996639+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-03-03 15:29:36,435 ERROR - Executor reports task instance <TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:29:28.996639+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-03-03 15:29:36,447 INFO - Marking task as FAILED. dag_id=Simple_etl, task_id=file_sensor, execution_date=20250303T152928, start_date=, end_date=20250303T152936
+2025-03-03 15:29:41,522 ERROR - Marking run <DagRun Simple_etl @ 2025-03-03 15:29:28.996639+00:00: manual__2025-03-03T15:29:28.996639+00:00, state:running, queued_at: 2025-03-03 15:29:29.014988+00:00. externally triggered: True> failed
+2025-03-03 15:29:41,522 INFO - DagRun Finished: dag_id=Simple_etl, execution_date=2025-03-03 15:29:28.996639+00:00, run_id=manual__2025-03-03T15:29:28.996639+00:00, run_start_date=2025-03-03 15:29:30.283165+00:00, run_end_date=2025-03-03 15:29:41.522694+00:00, run_duration=11.239529, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-03-03 15:29:28.996639+00:00, data_interval_end=2025-03-03 15:29:28.996639+00:00, dag_hash=0560b441bceceec130357f5f1fab8ba0
+2025-03-03 15:30:23,628 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-03 15:31:19,061 INFO - 1 tasks up for execution:
+	<TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:31:17.079223+00:00 [scheduled]>
+2025-03-03 15:31:19,062 INFO - DAG Simple_etl has 0/16 running and queued tasks
+2025-03-03 15:31:19,062 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:31:17.079223+00:00 [scheduled]>
+2025-03-03 15:31:19,106 WARNING - cannot record scheduled_duration for task file_sensor because previous state change time has not been saved
+2025-03-03 15:31:19,106 INFO - Sending TaskInstanceKey(dag_id='Simple_etl', task_id='file_sensor', run_id='manual__2025-03-03T15:31:17.079223+00:00', try_number=1, map_index=-1) to executor with priority 5 and queue default
+2025-03-03 15:31:19,106 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:31:17.079223+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']
+2025-03-03 15:31:19,125 INFO - Executing command: ['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:31:17.079223+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']
+2025-03-03 15:31:28,091 ERROR - Failed to execute task Command '['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:31:17.079223+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']' returned non-zero exit status 1..
+2025-03-03 15:31:28,095 INFO - Received executor event with state failed for task instance TaskInstanceKey(dag_id='Simple_etl', task_id='file_sensor', run_id='manual__2025-03-03T15:31:17.079223+00:00', try_number=1, map_index=-1)
+2025-03-03 15:31:28,134 INFO - TaskInstance Finished: dag_id=Simple_etl, task_id=file_sensor, run_id=manual__2025-03-03T15:31:17.079223+00:00, map_index=-1, run_start_date=None, run_end_date=None, run_duration=None, state=queued, executor_state=failed, try_number=1, max_tries=0, job_id=None, pool=default_pool, queue=default, priority_weight=5, operator=FileSensor, queued_dttm=2025-03-03 15:31:19.063670+00:00, queued_by_job_id=10, pid=None
+2025-03-03 15:31:28,136 ERROR - Executor reports task instance <TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:31:17.079223+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-03-03 15:31:28,190 ERROR - Executor reports task instance <TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:31:17.079223+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-03-03 15:31:28,227 INFO - Marking task as FAILED. dag_id=Simple_etl, task_id=file_sensor, execution_date=20250303T153117, start_date=, end_date=20250303T153128
+2025-03-03 15:31:35,152 ERROR - Marking run <DagRun Simple_etl @ 2025-03-03 15:31:17.079223+00:00: manual__2025-03-03T15:31:17.079223+00:00, state:running, queued_at: 2025-03-03 15:31:17.108188+00:00. externally triggered: True> failed
+2025-03-03 15:31:35,152 INFO - DagRun Finished: dag_id=Simple_etl, execution_date=2025-03-03 15:31:17.079223+00:00, run_id=manual__2025-03-03T15:31:17.079223+00:00, run_start_date=2025-03-03 15:31:18.866473+00:00, run_end_date=2025-03-03 15:31:35.152769+00:00, run_duration=16.286296, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-03-03 15:31:17.079223+00:00, data_interval_end=2025-03-03 15:31:17.079223+00:00, dag_hash=0560b441bceceec130357f5f1fab8ba0
+2025-03-03 15:33:14,102 INFO - 1 tasks up for execution:
+	<TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:33:13.630861+00:00 [scheduled]>
+2025-03-03 15:33:14,102 INFO - DAG Simple_etl has 0/16 running and queued tasks
+2025-03-03 15:33:14,103 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:33:13.630861+00:00 [scheduled]>
+2025-03-03 15:33:14,104 WARNING - cannot record scheduled_duration for task file_sensor because previous state change time has not been saved
+2025-03-03 15:33:14,105 INFO - Sending TaskInstanceKey(dag_id='Simple_etl', task_id='file_sensor', run_id='manual__2025-03-03T15:33:13.630861+00:00', try_number=1, map_index=-1) to executor with priority 5 and queue default
+2025-03-03 15:33:14,105 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:33:13.630861+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']
+2025-03-03 15:33:14,116 INFO - Executing command: ['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:33:13.630861+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']
+2025-03-03 15:33:21,080 ERROR - Failed to execute task Command '['airflow', 'tasks', 'run', 'Simple_etl', 'file_sensor', 'manual__2025-03-03T15:33:13.630861+00:00', '--local', '--subdir', 'DAGS_FOLDER/dag_etl.py']' returned non-zero exit status 1..
+2025-03-03 15:33:21,081 INFO - Received executor event with state failed for task instance TaskInstanceKey(dag_id='Simple_etl', task_id='file_sensor', run_id='manual__2025-03-03T15:33:13.630861+00:00', try_number=1, map_index=-1)
+2025-03-03 15:33:21,094 INFO - TaskInstance Finished: dag_id=Simple_etl, task_id=file_sensor, run_id=manual__2025-03-03T15:33:13.630861+00:00, map_index=-1, run_start_date=None, run_end_date=None, run_duration=None, state=queued, executor_state=failed, try_number=1, max_tries=0, job_id=None, pool=default_pool, queue=default, priority_weight=5, operator=FileSensor, queued_dttm=2025-03-03 15:33:14.103773+00:00, queued_by_job_id=10, pid=None
+2025-03-03 15:33:21,094 ERROR - Executor reports task instance <TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:33:13.630861+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-03-03 15:33:21,108 ERROR - Executor reports task instance <TaskInstance: Simple_etl.file_sensor manual__2025-03-03T15:33:13.630861+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
+2025-03-03 15:33:21,121 INFO - Marking task as FAILED. dag_id=Simple_etl, task_id=file_sensor, execution_date=20250303T153313, start_date=, end_date=20250303T153321
+2025-03-03 15:33:27,801 ERROR - Marking run <DagRun Simple_etl @ 2025-03-03 15:33:13.630861+00:00: manual__2025-03-03T15:33:13.630861+00:00, state:running, queued_at: 2025-03-03 15:33:13.663686+00:00. externally triggered: True> failed
+2025-03-03 15:33:27,802 INFO - DagRun Finished: dag_id=Simple_etl, execution_date=2025-03-03 15:33:13.630861+00:00, run_id=manual__2025-03-03T15:33:13.630861+00:00, run_start_date=2025-03-03 15:33:14.047995+00:00, run_end_date=2025-03-03 15:33:27.802702+00:00, run_duration=13.754707, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-03-03 15:33:13.630861+00:00, data_interval_end=2025-03-03 15:33:13.630861+00:00, dag_hash=0560b441bceceec130357f5f1fab8ba0
+2025-03-03 15:35:24,053 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-03 15:40:24,496 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-10 15:07:13,397 INFO - Task context logging is enabled
+2025-03-10 15:07:13,401 INFO - Loaded executor: LocalExecutor
+2025-03-15 15:54:37,481 INFO - Task context logging is enabled
+2025-03-15 15:54:37,484 INFO - Loaded executor: LocalExecutor
+2025-03-15 15:54:42,565 INFO - Starting the scheduler
+2025-03-15 15:54:42,565 INFO - Processing each file at most -1 times
+2025-03-15 15:54:42,704 INFO - Launched DagFileProcessorManager with pid: 16172
+2025-03-15 15:54:42,707 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 15:54:42,787 INFO - Configured default timezone UTC
+2025-03-15 15:55:06,729 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [scheduled]>
+2025-03-15 15:55:06,729 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 15:55:06,730 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [scheduled]>
+2025-03-15 15:55:06,744 WARNING - cannot record scheduled_duration for task extract_data_task because previous state change time has not been saved
+2025-03-15 15:55:06,745 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T15:55:06.054403+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 15:55:06,746 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T15:55:06.054403+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 15:55:06,768 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T15:55:06.054403+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 15:55:06,978 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 15:55:07,536 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 15:55:07,662 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 15:55:07,665 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 15:55:09,514 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 15:55:11,993 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T15:55:06.054403+00:00', try_number=1, map_index=-1)
+2025-03-15 15:55:12,017 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T15:55:06.054403+00:00, map_index=-1, run_start_date=2025-03-15 15:55:10.107415+00:00, run_end_date=2025-03-15 15:55:11.412667+00:00, run_duration=1.305252, state=up_for_retry, executor_state=success, try_number=1, max_tries=1, job_id=69, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 15:55:06.732120+00:00, queued_by_job_id=68, pid=16676
+2025-03-15 15:56:36,463 INFO - DAG Google_map scheduling was skipped, probably because the DAG record was locked
+2025-03-15 15:59:43,095 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 15:59:43,098 INFO - Marked 1 SchedulerJob instances as failed
+2025-03-15 16:00:12,363 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [scheduled]>
+2025-03-15 16:00:12,364 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 16:00:12,375 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [scheduled]>
+2025-03-15 16:00:12,378 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T15:55:06.054403+00:00', try_number=2, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 16:00:12,379 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T15:55:06.054403+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:00:12,486 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T15:55:06.054403+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:00:12,691 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 16:00:13,372 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:00:13,544 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 16:00:13,545 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:00:15,103 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 16:00:19,419 ERROR - Marking run <DagRun Google_map @ 2025-03-15 15:55:06.054403+00:00: manual__2025-03-15T15:55:06.054403+00:00, state:running, queued_at: 2025-03-15 15:55:06.169116+00:00. externally triggered: True> failed
+2025-03-15 16:00:19,420 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 15:55:06.054403+00:00, run_id=manual__2025-03-15T15:55:06.054403+00:00, run_start_date=2025-03-15 15:55:06.631549+00:00, run_end_date=2025-03-15 16:00:19.420105+00:00, run_duration=312.788556, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 15:55:06.054403+00:00, data_interval_end=2025-03-15 15:55:06.054403+00:00, dag_hash=b66f7f94ff432b68ed1a31b8da6ad064
+2025-03-15 16:00:20,700 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T15:55:06.054403+00:00', try_number=2, map_index=-1)
+2025-03-15 16:00:20,708 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T15:55:06.054403+00:00, map_index=-1, run_start_date=2025-03-15 16:00:15.434776+00:00, run_end_date=2025-03-15 16:00:18.916249+00:00, run_duration=3.481473, state=failed, executor_state=success, try_number=2, max_tries=1, job_id=70, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 16:00:12.376738+00:00, queued_by_job_id=68, pid=21065
+2025-03-15 16:01:15,150 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [scheduled]>
+2025-03-15 16:01:15,151 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 16:01:15,151 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [scheduled]>
+2025-03-15 16:01:15,155 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T15:55:06.054403+00:00', try_number=3, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 16:01:15,156 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T15:55:06.054403+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:01:15,160 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T15:55:06.054403+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:01:15,224 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 16:01:15,402 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:01:15,488 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 16:01:15,489 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:01:16,379 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 16:01:27,634 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T15:55:06.054403+00:00', try_number=3, map_index=-1)
+2025-03-15 16:01:27,641 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T15:55:06.054403+00:00, map_index=-1, run_start_date=2025-03-15 16:01:16.577348+00:00, run_end_date=2025-03-15 16:01:26.745043+00:00, run_duration=10.167695, state=up_for_retry, executor_state=success, try_number=3, max_tries=3, job_id=71, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 16:01:15.151984+00:00, queued_by_job_id=68, pid=21978
+2025-03-15 16:02:14,506 INFO - DAG Google_map scheduling was skipped, probably because the DAG record was locked
+2025-03-15 16:04:43,171 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 16:06:27,415 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [scheduled]>
+2025-03-15 16:06:27,415 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 16:06:27,415 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [scheduled]>
+2025-03-15 16:06:27,418 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T15:55:06.054403+00:00', try_number=4, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 16:06:27,418 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T15:55:06.054403+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:06:27,422 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T15:55:06.054403+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:06:27,469 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 16:06:27,653 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:06:27,729 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 16:06:27,730 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:06:28,384 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T15:55:06.054403+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 16:06:49,014 ERROR - Marking run <DagRun Google_map @ 2025-03-15 15:55:06.054403+00:00: manual__2025-03-15T15:55:06.054403+00:00, state:running, queued_at: 2025-03-15 16:01:14.078973+00:00. externally triggered: True> failed
+2025-03-15 16:06:49,015 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 15:55:06.054403+00:00, run_id=manual__2025-03-15T15:55:06.054403+00:00, run_start_date=2025-03-15 16:01:15.093809+00:00, run_end_date=2025-03-15 16:06:49.015184+00:00, run_duration=333.921375, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 15:55:06.054403+00:00, data_interval_end=2025-03-15 15:55:06.054403+00:00, dag_hash=b66f7f94ff432b68ed1a31b8da6ad064
+2025-03-15 16:06:49,035 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T15:55:06.054403+00:00', try_number=4, map_index=-1)
+2025-03-15 16:06:49,041 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T15:55:06.054403+00:00, map_index=-1, run_start_date=2025-03-15 16:06:28.521670+00:00, run_end_date=2025-03-15 16:06:48.556614+00:00, run_duration=20.034944, state=failed, executor_state=success, try_number=4, max_tries=3, job_id=72, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 16:06:27.416408+00:00, queued_by_job_id=68, pid=27129
+2025-03-15 16:09:43,222 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 16:13:16,690 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [scheduled]>
+2025-03-15 16:13:16,691 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 16:13:16,691 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [scheduled]>
+2025-03-15 16:13:16,695 WARNING - cannot record scheduled_duration for task extract_data_task because previous state change time has not been saved
+2025-03-15 16:13:16,697 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T16:13:15.596075+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 16:13:16,699 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T16:13:15.596075+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:13:16,706 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T16:13:15.596075+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:13:16,860 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 16:13:17,057 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:13:17,143 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 16:13:17,144 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:13:19,033 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 16:13:28,535 INFO - DAG Google_map scheduling was skipped, probably because the DAG record was locked
+2025-03-15 16:13:32,073 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T16:13:15.596075+00:00', try_number=1, map_index=-1)
+2025-03-15 16:13:32,090 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T16:13:15.596075+00:00, map_index=-1, run_start_date=2025-03-15 16:13:19.492411+00:00, run_end_date=2025-03-15 16:13:30.805702+00:00, run_duration=11.313291, state=up_for_retry, executor_state=success, try_number=1, max_tries=1, job_id=73, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 16:13:16.693104+00:00, queued_by_job_id=68, pid=33242
+2025-03-15 16:14:43,337 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 16:16:02,389 INFO - DAG Google_map scheduling was skipped, probably because the DAG record was locked
+2025-03-15 16:18:30,907 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [scheduled]>
+2025-03-15 16:18:30,907 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 16:18:30,908 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [scheduled]>
+2025-03-15 16:18:30,913 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T16:13:15.596075+00:00', try_number=2, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 16:18:30,914 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T16:13:15.596075+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:18:30,925 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T16:13:15.596075+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:18:31,063 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 16:18:31,356 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:18:31,440 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 16:18:31,441 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:18:32,483 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 16:18:41,483 ERROR - Marking run <DagRun Google_map @ 2025-03-15 16:13:15.596075+00:00: manual__2025-03-15T16:13:15.596075+00:00, state:running, queued_at: 2025-03-15 16:13:15.614191+00:00. externally triggered: True> failed
+2025-03-15 16:18:41,484 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 16:13:15.596075+00:00, run_id=manual__2025-03-15T16:13:15.596075+00:00, run_start_date=2025-03-15 16:13:16.623783+00:00, run_end_date=2025-03-15 16:18:41.484236+00:00, run_duration=324.860453, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 16:13:15.596075+00:00, data_interval_end=2025-03-15 16:13:15.596075+00:00, dag_hash=b66f7f94ff432b68ed1a31b8da6ad064
+2025-03-15 16:18:41,533 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T16:13:15.596075+00:00', try_number=2, map_index=-1)
+2025-03-15 16:18:41,546 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T16:13:15.596075+00:00, map_index=-1, run_start_date=2025-03-15 16:18:32.610948+00:00, run_end_date=2025-03-15 16:18:41.099682+00:00, run_duration=8.488734, state=failed, executor_state=success, try_number=2, max_tries=1, job_id=74, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 16:18:30.909211+00:00, queued_by_job_id=68, pid=40922
+2025-03-15 16:19:43,663 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 16:20:58,194 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [scheduled]>
+2025-03-15 16:20:58,195 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 16:20:58,195 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [scheduled]>
+2025-03-15 16:20:58,198 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T16:13:15.596075+00:00', try_number=3, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 16:20:58,198 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T16:13:15.596075+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:20:58,203 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T16:13:15.596075+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:20:58,294 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 16:20:58,685 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:20:58,880 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 16:20:58,881 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:21:00,516 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 16:21:11,892 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T16:13:15.596075+00:00', try_number=3, map_index=-1)
+2025-03-15 16:21:11,902 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T16:13:15.596075+00:00, map_index=-1, run_start_date=2025-03-15 16:21:00.798172+00:00, run_end_date=2025-03-15 16:21:10.929287+00:00, run_duration=10.131115, state=up_for_retry, executor_state=success, try_number=3, max_tries=3, job_id=75, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 16:20:58.196432+00:00, queued_by_job_id=68, pid=43150
+2025-03-15 16:24:43,895 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 16:26:11,687 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [scheduled]>
+2025-03-15 16:26:11,688 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 16:26:11,688 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [scheduled]>
+2025-03-15 16:26:11,691 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T16:13:15.596075+00:00', try_number=4, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 16:26:11,692 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T16:13:15.596075+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:26:11,696 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T16:13:15.596075+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:26:11,799 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 16:26:12,067 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:26:12,183 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 16:26:12,184 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:26:13,409 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:13:15.596075+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 16:27:50,467 INFO - DAG Google_map scheduling was skipped, probably because the DAG record was locked
+2025-03-15 16:28:30,814 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:13:15.596075+00:00 [scheduled]>
+2025-03-15 16:28:30,814 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 16:28:30,815 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:13:15.596075+00:00 [scheduled]>
+2025-03-15 16:28:30,817 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T16:13:15.596075+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 16:28:30,818 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T16:13:15.596075+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:28:30,830 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T16:13:15.596075+00:00', try_number=4, map_index=-1)
+2025-03-15 16:28:30,830 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T16:13:15.596075+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:28:30,839 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T16:13:15.596075+00:00, map_index=-1, run_start_date=2025-03-15 16:26:13.575682+00:00, run_end_date=2025-03-15 16:28:29.844005+00:00, run_duration=136.268323, state=success, executor_state=success, try_number=4, max_tries=3, job_id=76, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 16:26:11.689486+00:00, queued_by_job_id=68, pid=51010
+2025-03-15 16:28:30,892 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 16:28:31,056 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:28:31,141 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 16:28:31,142 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:28:32,211 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:13:15.596075+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 16:28:33,050 INFO - Marking run <DagRun Google_map @ 2025-03-15 16:13:15.596075+00:00: manual__2025-03-15T16:13:15.596075+00:00, state:running, queued_at: 2025-03-15 16:20:57.892813+00:00. externally triggered: True> successful
+2025-03-15 16:28:33,051 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 16:13:15.596075+00:00, run_id=manual__2025-03-15T16:13:15.596075+00:00, run_start_date=2025-03-15 16:20:58.079356+00:00, run_end_date=2025-03-15 16:28:33.051712+00:00, run_duration=454.972356, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 16:13:15.596075+00:00, data_interval_end=2025-03-15 16:13:15.596075+00:00, dag_hash=b66f7f94ff432b68ed1a31b8da6ad064
+2025-03-15 16:28:33,089 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T16:13:15.596075+00:00', try_number=1, map_index=-1)
+2025-03-15 16:28:33,099 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T16:13:15.596075+00:00, map_index=-1, run_start_date=2025-03-15 16:28:32.373218+00:00, run_end_date=2025-03-15 16:28:32.822594+00:00, run_duration=0.449376, state=success, executor_state=success, try_number=1, max_tries=1, job_id=77, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 16:28:30.815846+00:00, queued_by_job_id=68, pid=53399
+2025-03-15 16:29:44,007 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 16:34:08,866 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:34:08.332084+00:00 [scheduled]>
+2025-03-15 16:34:08,867 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 16:34:08,868 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:34:08.332084+00:00 [scheduled]>
+2025-03-15 16:34:08,871 WARNING - cannot record scheduled_duration for task extract_data_task because previous state change time has not been saved
+2025-03-15 16:34:08,872 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T16:34:08.332084+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 16:34:08,873 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T16:34:08.332084+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:34:08,933 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T16:34:08.332084+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:34:09,034 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 16:34:09,401 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:34:09,659 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 16:34:09,660 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:34:11,612 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T16:34:08.332084+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 16:34:44,258 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 16:39:44,402 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 16:41:21,407 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:34:08.332084+00:00 [scheduled]>
+2025-03-15 16:41:21,408 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 16:41:21,408 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:34:08.332084+00:00 [scheduled]>
+2025-03-15 16:41:21,424 WARNING - cannot record scheduled_duration for task insert_data_task because previous state change time has not been saved
+2025-03-15 16:41:21,426 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T16:34:08.332084+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 16:41:21,426 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T16:34:08.332084+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:41:21,433 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T16:34:08.332084+00:00', try_number=1, map_index=-1)
+2025-03-15 16:41:21,432 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T16:34:08.332084+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:41:21,445 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T16:34:08.332084+00:00, map_index=-1, run_start_date=2025-03-15 16:34:11.895431+00:00, run_end_date=2025-03-15 16:41:20.830297+00:00, run_duration=428.934866, state=success, executor_state=success, try_number=1, max_tries=1, job_id=78, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 16:34:08.869436+00:00, queued_by_job_id=68, pid=58338
+2025-03-15 16:41:21,547 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 16:41:21,797 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:41:21,915 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 16:41:21,916 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:41:23,022 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:34:08.332084+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 16:41:24,800 INFO - Marking run <DagRun Google_map @ 2025-03-15 16:34:08.332084+00:00: manual__2025-03-15T16:34:08.332084+00:00, state:running, queued_at: 2025-03-15 16:34:08.350794+00:00. externally triggered: True> successful
+2025-03-15 16:41:24,801 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 16:34:08.332084+00:00, run_id=manual__2025-03-15T16:34:08.332084+00:00, run_start_date=2025-03-15 16:34:08.779071+00:00, run_end_date=2025-03-15 16:41:24.801302+00:00, run_duration=436.022231, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 16:34:08.332084+00:00, data_interval_end=2025-03-15 16:34:08.332084+00:00, dag_hash=b66f7f94ff432b68ed1a31b8da6ad064
+2025-03-15 16:41:24,823 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T16:34:08.332084+00:00', try_number=1, map_index=-1)
+2025-03-15 16:41:24,830 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T16:34:08.332084+00:00, map_index=-1, run_start_date=2025-03-15 16:41:23.300959+00:00, run_end_date=2025-03-15 16:41:23.975279+00:00, run_duration=0.67432, state=success, executor_state=success, try_number=1, max_tries=1, job_id=79, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 16:41:21.410593+00:00, queued_by_job_id=68, pid=64985
+2025-03-15 16:44:44,464 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 16:49:44,526 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 16:54:44,674 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 16:59:19,899 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:59:18.537100+00:00 [scheduled]>
+2025-03-15 16:59:19,901 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 16:59:19,901 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:59:18.537100+00:00 [scheduled]>
+2025-03-15 16:59:19,906 WARNING - cannot record scheduled_duration for task insert_data_task because previous state change time has not been saved
+2025-03-15 16:59:19,908 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T16:59:18.537100+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 16:59:19,909 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T16:59:18.537100+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:59:19,928 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T16:59:18.537100+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 16:59:20,007 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 16:59:20,344 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:59:20,543 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 16:59:20,544 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 16:59:22,859 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T16:59:18.537100+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 16:59:26,783 INFO - Marking run <DagRun Google_map @ 2025-03-15 16:59:18.537100+00:00: manual__2025-03-15T16:59:18.537100+00:00, state:running, queued_at: 2025-03-15 16:59:18.563449+00:00. externally triggered: True> successful
+2025-03-15 16:59:26,784 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 16:59:18.537100+00:00, run_id=manual__2025-03-15T16:59:18.537100+00:00, run_start_date=2025-03-15 16:59:19.720677+00:00, run_end_date=2025-03-15 16:59:26.784276+00:00, run_duration=7.063599, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 16:59:18.537100+00:00, data_interval_end=2025-03-15 16:59:18.537100+00:00, dag_hash=f97260ad08dd75559aec8f659bbd75ff
+2025-03-15 16:59:26,810 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T16:59:18.537100+00:00', try_number=1, map_index=-1)
+2025-03-15 16:59:26,819 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T16:59:18.537100+00:00, map_index=-1, run_start_date=2025-03-15 16:59:24.204709+00:00, run_end_date=2025-03-15 16:59:25.921205+00:00, run_duration=1.716496, state=success, executor_state=success, try_number=1, max_tries=1, job_id=80, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 16:59:19.903420+00:00, queued_by_job_id=68, pid=80530
+2025-03-15 16:59:44,911 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:04:45,035 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:06:17,961 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:06:17.145399+00:00 [scheduled]>
+2025-03-15 17:06:17,962 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 17:06:17,962 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:06:17.145399+00:00 [scheduled]>
+2025-03-15 17:06:17,965 WARNING - cannot record scheduled_duration for task insert_data_task because previous state change time has not been saved
+2025-03-15 17:06:17,965 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:06:17.145399+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 17:06:17,966 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:06:17.145399+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:06:17,976 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:06:17.145399+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:06:18,182 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 17:06:18,457 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:06:18,679 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 17:06:18,683 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:06:21,637 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:06:17.145399+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 17:06:23,552 INFO - Marking run <DagRun Google_map @ 2025-03-15 17:06:17.145399+00:00: manual__2025-03-15T17:06:17.145399+00:00, state:running, queued_at: 2025-03-15 17:06:17.167353+00:00. externally triggered: True> successful
+2025-03-15 17:06:23,553 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 17:06:17.145399+00:00, run_id=manual__2025-03-15T17:06:17.145399+00:00, run_start_date=2025-03-15 17:06:17.927268+00:00, run_end_date=2025-03-15 17:06:23.553256+00:00, run_duration=5.625988, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 17:06:17.145399+00:00, data_interval_end=2025-03-15 17:06:17.145399+00:00, dag_hash=f97260ad08dd75559aec8f659bbd75ff
+2025-03-15 17:06:23,642 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:06:17.145399+00:00', try_number=1, map_index=-1)
+2025-03-15 17:06:23,663 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T17:06:17.145399+00:00, map_index=-1, run_start_date=2025-03-15 17:06:22.148945+00:00, run_end_date=2025-03-15 17:06:23.029352+00:00, run_duration=0.880407, state=success, executor_state=success, try_number=1, max_tries=1, job_id=81, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 17:06:17.963574+00:00, queued_by_job_id=68, pid=86574
+2025-03-15 17:07:56,854 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:07:56.620736+00:00 [scheduled]>
+2025-03-15 17:07:56,855 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 17:07:56,855 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:07:56.620736+00:00 [scheduled]>
+2025-03-15 17:07:56,858 WARNING - cannot record scheduled_duration for task insert_data_task because previous state change time has not been saved
+2025-03-15 17:07:56,859 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:07:56.620736+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 17:07:56,859 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:07:56.620736+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:07:56,880 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:07:56.620736+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:07:57,140 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 17:07:57,848 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:07:58,309 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 17:07:58,311 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:08:01,732 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:07:56.620736+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 17:08:03,650 INFO - Marking run <DagRun Google_map @ 2025-03-15 17:07:56.620736+00:00: manual__2025-03-15T17:07:56.620736+00:00, state:running, queued_at: 2025-03-15 17:07:56.645250+00:00. externally triggered: True> successful
+2025-03-15 17:08:03,651 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 17:07:56.620736+00:00, run_id=manual__2025-03-15T17:07:56.620736+00:00, run_start_date=2025-03-15 17:07:56.770137+00:00, run_end_date=2025-03-15 17:08:03.651152+00:00, run_duration=6.881015, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 17:07:56.620736+00:00, data_interval_end=2025-03-15 17:07:56.620736+00:00, dag_hash=f97260ad08dd75559aec8f659bbd75ff
+2025-03-15 17:08:03,715 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:07:56.620736+00:00', try_number=1, map_index=-1)
+2025-03-15 17:08:03,724 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T17:07:56.620736+00:00, map_index=-1, run_start_date=2025-03-15 17:08:02.414196+00:00, run_end_date=2025-03-15 17:08:03.213605+00:00, run_duration=0.799409, state=success, executor_state=success, try_number=1, max_tries=1, job_id=82, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 17:07:56.856945+00:00, queued_by_job_id=68, pid=88119
+2025-03-15 17:08:55,043 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:08:54.811299+00:00 [scheduled]>
+2025-03-15 17:08:55,049 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 17:08:55,050 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:08:54.811299+00:00 [scheduled]>
+2025-03-15 17:08:55,054 WARNING - cannot record scheduled_duration for task insert_data_task because previous state change time has not been saved
+2025-03-15 17:08:55,055 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:08:54.811299+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 17:08:55,055 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:08:54.811299+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:08:55,091 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:08:54.811299+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:08:55,197 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 17:08:55,509 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:08:55,665 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 17:08:55,666 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:08:57,301 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:08:54.811299+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 17:08:58,530 INFO - Marking run <DagRun Google_map @ 2025-03-15 17:08:54.811299+00:00: manual__2025-03-15T17:08:54.811299+00:00, state:running, queued_at: 2025-03-15 17:08:54.842055+00:00. externally triggered: True> successful
+2025-03-15 17:08:58,531 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 17:08:54.811299+00:00, run_id=manual__2025-03-15T17:08:54.811299+00:00, run_start_date=2025-03-15 17:08:54.907717+00:00, run_end_date=2025-03-15 17:08:58.531694+00:00, run_duration=3.623977, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 17:08:54.811299+00:00, data_interval_end=2025-03-15 17:08:54.811299+00:00, dag_hash=f97260ad08dd75559aec8f659bbd75ff
+2025-03-15 17:08:58,594 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:08:54.811299+00:00', try_number=1, map_index=-1)
+2025-03-15 17:08:58,617 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T17:08:54.811299+00:00, map_index=-1, run_start_date=2025-03-15 17:08:57.513430+00:00, run_end_date=2025-03-15 17:08:58.238267+00:00, run_duration=0.724837, state=success, executor_state=success, try_number=1, max_tries=1, job_id=83, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 17:08:55.052009+00:00, queued_by_job_id=68, pid=88929
+2025-03-15 17:09:45,111 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:11:14,116 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T17:11:13.295290+00:00 [scheduled]>
+2025-03-15 17:11:14,117 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 17:11:14,117 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T17:11:13.295290+00:00 [scheduled]>
+2025-03-15 17:11:14,125 WARNING - cannot record scheduled_duration for task extract_data_task because previous state change time has not been saved
+2025-03-15 17:11:14,127 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T17:11:13.295290+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 17:11:14,127 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T17:11:13.295290+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:11:14,138 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T17:11:13.295290+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:11:14,224 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 17:11:14,618 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:11:14,939 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 17:11:14,940 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:11:17,840 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T17:11:13.295290+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 17:14:45,212 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:18:52,323 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:11:13.295290+00:00 [scheduled]>
+2025-03-15 17:18:52,323 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 17:18:52,324 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:11:13.295290+00:00 [scheduled]>
+2025-03-15 17:18:52,327 WARNING - cannot record scheduled_duration for task insert_data_task because previous state change time has not been saved
+2025-03-15 17:18:52,328 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:11:13.295290+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 17:18:52,328 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:11:13.295290+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:18:52,332 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T17:11:13.295290+00:00', try_number=1, map_index=-1)
+2025-03-15 17:18:52,332 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:11:13.295290+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:18:52,342 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T17:11:13.295290+00:00, map_index=-1, run_start_date=2025-03-15 17:11:18.146772+00:00, run_end_date=2025-03-15 17:18:51.728199+00:00, run_duration=453.581427, state=success, executor_state=success, try_number=1, max_tries=1, job_id=84, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 17:11:14.120409+00:00, queued_by_job_id=68, pid=91076
+2025-03-15 17:18:52,386 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 17:18:52,567 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:18:52,763 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 17:18:52,764 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:18:54,072 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:11:13.295290+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 17:18:55,331 INFO - Marking run <DagRun Google_map @ 2025-03-15 17:11:13.295290+00:00: manual__2025-03-15T17:11:13.295290+00:00, state:running, queued_at: 2025-03-15 17:11:13.332376+00:00. externally triggered: True> successful
+2025-03-15 17:18:55,331 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 17:11:13.295290+00:00, run_id=manual__2025-03-15T17:11:13.295290+00:00, run_start_date=2025-03-15 17:11:13.952244+00:00, run_end_date=2025-03-15 17:18:55.331870+00:00, run_duration=461.379626, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 17:11:13.295290+00:00, data_interval_end=2025-03-15 17:11:13.295290+00:00, dag_hash=b66f7f94ff432b68ed1a31b8da6ad064
+2025-03-15 17:18:55,356 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:11:13.295290+00:00', try_number=1, map_index=-1)
+2025-03-15 17:18:55,364 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T17:11:13.295290+00:00, map_index=-1, run_start_date=2025-03-15 17:18:54.359831+00:00, run_end_date=2025-03-15 17:18:55.007110+00:00, run_duration=0.647279, state=success, executor_state=success, try_number=1, max_tries=1, job_id=85, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 17:18:52.325545+00:00, queued_by_job_id=68, pid=98091
+2025-03-15 17:19:45,318 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:23:41,154 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:23:40.549476+00:00 [scheduled]>
+2025-03-15 17:23:41,155 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 17:23:41,156 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:23:40.549476+00:00 [scheduled]>
+2025-03-15 17:23:41,160 WARNING - cannot record scheduled_duration for task insert_data_task because previous state change time has not been saved
+2025-03-15 17:23:41,161 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:23:40.549476+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 17:23:41,162 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:23:40.549476+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:23:41,169 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:23:40.549476+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:23:41,294 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 17:23:41,703 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:23:41,888 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 17:23:41,889 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:23:43,836 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:23:40.549476+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 17:23:45,099 INFO - Marking run <DagRun Google_map @ 2025-03-15 17:23:40.549476+00:00: manual__2025-03-15T17:23:40.549476+00:00, state:running, queued_at: 2025-03-15 17:23:40.560331+00:00. externally triggered: True> successful
+2025-03-15 17:23:45,102 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 17:23:40.549476+00:00, run_id=manual__2025-03-15T17:23:40.549476+00:00, run_start_date=2025-03-15 17:23:41.086431+00:00, run_end_date=2025-03-15 17:23:45.101837+00:00, run_duration=4.015406, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 17:23:40.549476+00:00, data_interval_end=2025-03-15 17:23:40.549476+00:00, dag_hash=f97260ad08dd75559aec8f659bbd75ff
+2025-03-15 17:23:45,144 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:23:40.549476+00:00', try_number=1, map_index=-1)
+2025-03-15 17:23:45,154 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T17:23:40.549476+00:00, map_index=-1, run_start_date=2025-03-15 17:23:44.236608+00:00, run_end_date=2025-03-15 17:23:44.784109+00:00, run_duration=0.547501, state=success, executor_state=success, try_number=1, max_tries=1, job_id=86, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 17:23:41.157630+00:00, queued_by_job_id=68, pid=102315
+2025-03-15 17:24:28,314 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:24:27.193824+00:00 [scheduled]>
+2025-03-15 17:24:28,314 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 17:24:28,315 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:24:27.193824+00:00 [scheduled]>
+2025-03-15 17:24:28,318 WARNING - cannot record scheduled_duration for task insert_data_task because previous state change time has not been saved
+2025-03-15 17:24:28,319 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:24:27.193824+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 17:24:28,319 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:24:27.193824+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:24:28,325 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:24:27.193824+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:24:28,425 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 17:24:28,819 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:24:29,046 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 17:24:29,047 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:24:30,951 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:24:27.193824+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 17:24:32,278 INFO - Marking run <DagRun Google_map @ 2025-03-15 17:24:27.193824+00:00: manual__2025-03-15T17:24:27.193824+00:00, state:running, queued_at: 2025-03-15 17:24:27.216352+00:00. externally triggered: True> successful
+2025-03-15 17:24:32,278 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 17:24:27.193824+00:00, run_id=manual__2025-03-15T17:24:27.193824+00:00, run_start_date=2025-03-15 17:24:28.263752+00:00, run_end_date=2025-03-15 17:24:32.278744+00:00, run_duration=4.014992, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 17:24:27.193824+00:00, data_interval_end=2025-03-15 17:24:27.193824+00:00, dag_hash=f97260ad08dd75559aec8f659bbd75ff
+2025-03-15 17:24:33,493 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:24:27.193824+00:00', try_number=1, map_index=-1)
+2025-03-15 17:24:33,508 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T17:24:27.193824+00:00, map_index=-1, run_start_date=2025-03-15 17:24:31.461152+00:00, run_end_date=2025-03-15 17:24:32.226989+00:00, run_duration=0.765837, state=success, executor_state=success, try_number=1, max_tries=1, job_id=87, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 17:24:28.316380+00:00, queued_by_job_id=68, pid=103028
+2025-03-15 17:24:45,384 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:26:04,542 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:26:03.626556+00:00 [scheduled]>
+2025-03-15 17:26:04,543 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 17:26:04,543 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:26:03.626556+00:00 [scheduled]>
+2025-03-15 17:26:04,547 WARNING - cannot record scheduled_duration for task insert_data_task because previous state change time has not been saved
+2025-03-15 17:26:04,548 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:26:03.626556+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 17:26:04,548 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:26:03.626556+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:26:04,553 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:26:03.626556+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:26:04,611 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 17:26:04,941 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:26:05,023 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 17:26:05,024 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:26:06,806 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:26:03.626556+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 17:26:08,149 INFO - Marking run <DagRun Google_map @ 2025-03-15 17:26:03.626556+00:00: manual__2025-03-15T17:26:03.626556+00:00, state:running, queued_at: 2025-03-15 17:26:03.672029+00:00. externally triggered: True> successful
+2025-03-15 17:26:08,150 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 17:26:03.626556+00:00, run_id=manual__2025-03-15T17:26:03.626556+00:00, run_start_date=2025-03-15 17:26:04.485279+00:00, run_end_date=2025-03-15 17:26:08.150109+00:00, run_duration=3.66483, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 17:26:03.626556+00:00, data_interval_end=2025-03-15 17:26:03.626556+00:00, dag_hash=f97260ad08dd75559aec8f659bbd75ff
+2025-03-15 17:26:08,601 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:26:03.626556+00:00', try_number=1, map_index=-1)
+2025-03-15 17:26:08,654 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T17:26:03.626556+00:00, map_index=-1, run_start_date=2025-03-15 17:26:07.418954+00:00, run_end_date=2025-03-15 17:26:08.069259+00:00, run_duration=0.650305, state=success, executor_state=success, try_number=1, max_tries=1, job_id=88, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 17:26:04.544980+00:00, queued_by_job_id=68, pid=104456
+2025-03-15 17:27:26,507 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:27:25.766362+00:00 [scheduled]>
+2025-03-15 17:27:26,507 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 17:27:26,508 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:27:25.766362+00:00 [scheduled]>
+2025-03-15 17:27:26,514 WARNING - cannot record scheduled_duration for task insert_data_task because previous state change time has not been saved
+2025-03-15 17:27:26,514 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:27:25.766362+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 17:27:26,515 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:27:25.766362+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:27:26,522 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T17:27:25.766362+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 17:27:26,610 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 17:27:26,892 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:27:27,016 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 17:27:27,017 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 17:27:28,768 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T17:27:25.766362+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 17:27:30,424 INFO - Marking run <DagRun Google_map @ 2025-03-15 17:27:25.766362+00:00: manual__2025-03-15T17:27:25.766362+00:00, state:running, queued_at: 2025-03-15 17:27:25.787927+00:00. externally triggered: True> successful
+2025-03-15 17:27:30,424 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 17:27:25.766362+00:00, run_id=manual__2025-03-15T17:27:25.766362+00:00, run_start_date=2025-03-15 17:27:26.394385+00:00, run_end_date=2025-03-15 17:27:30.424827+00:00, run_duration=4.030442, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 17:27:25.766362+00:00, data_interval_end=2025-03-15 17:27:25.766362+00:00, dag_hash=f97260ad08dd75559aec8f659bbd75ff
+2025-03-15 17:27:30,464 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T17:27:25.766362+00:00', try_number=1, map_index=-1)
+2025-03-15 17:27:30,477 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T17:27:25.766362+00:00, map_index=-1, run_start_date=2025-03-15 17:27:29.461359+00:00, run_end_date=2025-03-15 17:27:30.003735+00:00, run_duration=0.542376, state=success, executor_state=success, try_number=1, max_tries=1, job_id=89, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 17:27:26.509368+00:00, queued_by_job_id=68, pid=105638
+2025-03-15 17:29:51,831 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:34:51,873 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:39:51,925 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:44:52,041 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:49:52,261 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:54:52,346 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 17:59:52,416 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 18:04:52,474 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 18:09:52,523 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 21:37:11,938 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 21:42:11,978 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 21:47:12,221 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 21:52:12,414 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 21:57:12,441 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 22:01:30,341 INFO - 2 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [scheduled]>
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T22:01:29.743852+00:00 [scheduled]>
+2025-03-15 22:01:30,341 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 22:01:30,342 INFO - DAG Google_map has 1/16 running and queued tasks
+2025-03-15 22:01:30,342 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [scheduled]>
+	<TaskInstance: Google_map.insert_data_task manual__2025-03-15T22:01:29.743852+00:00 [scheduled]>
+2025-03-15 22:01:30,346 WARNING - cannot record scheduled_duration for task extract_data_task because previous state change time has not been saved
+2025-03-15 22:01:30,346 WARNING - cannot record scheduled_duration for task insert_data_task because previous state change time has not been saved
+2025-03-15 22:01:30,347 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T22:01:29.743852+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 22:01:30,348 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T22:01:29.743852+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 22:01:30,348 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T22:01:29.743852+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 22:01:30,349 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T22:01:29.743852+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 22:01:30,360 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T22:01:29.743852+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 22:01:30,365 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-15T22:01:29.743852+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 22:01:30,454 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 22:01:30,506 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 22:01:30,838 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 22:01:30,873 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 22:01:30,990 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 22:01:30,991 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 22:01:31,035 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 22:01:31,036 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 22:01:32,691 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 22:01:32,915 INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-15T22:01:29.743852+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 22:01:36,437 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='insert_data_task', run_id='manual__2025-03-15T22:01:29.743852+00:00', try_number=1, map_index=-1)
+2025-03-15 22:01:36,438 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T22:01:29.743852+00:00', try_number=1, map_index=-1)
+2025-03-15 22:01:36,449 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T22:01:29.743852+00:00, map_index=-1, run_start_date=2025-03-15 22:01:33.118692+00:00, run_end_date=2025-03-15 22:01:35.525991+00:00, run_duration=2.407299, state=up_for_retry, executor_state=success, try_number=1, max_tries=1, job_id=90, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 22:01:30.343544+00:00, queued_by_job_id=68, pid=167269
+2025-03-15 22:01:36,450 INFO - TaskInstance Finished: dag_id=Google_map, task_id=insert_data_task, run_id=manual__2025-03-15T22:01:29.743852+00:00, map_index=-1, run_start_date=2025-03-15 22:01:33.299798+00:00, run_end_date=2025-03-15 22:01:35.049062+00:00, run_duration=1.749264, state=up_for_retry, executor_state=success, try_number=1, max_tries=1, job_id=91, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 22:01:30.343544+00:00, queued_by_job_id=68, pid=167280
+2025-03-15 22:02:12,472 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 22:05:28,749 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [scheduled]>
+2025-03-15 22:05:28,750 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 22:05:28,750 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [scheduled]>
+2025-03-15 22:05:28,755 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T22:01:29.743852+00:00', try_number=2, map_index=-1) to executor with priority 1 and queue default
+2025-03-15 22:05:28,756 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T22:01:29.743852+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 22:05:28,761 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T22:01:29.743852+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 22:05:28,867 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 22:05:29,153 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 22:05:29,268 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 22:05:29,270 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 22:05:31,601 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 22:05:33,770 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T22:01:29.743852+00:00', try_number=2, map_index=-1)
+2025-03-15 22:05:33,787 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T22:01:29.743852+00:00, map_index=-1, run_start_date=2025-03-15 22:05:32.129470+00:00, run_end_date=2025-03-15 22:05:32.945005+00:00, run_duration=0.815535, state=up_for_retry, executor_state=success, try_number=2, max_tries=2, job_id=92, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-03-15 22:05:28.753148+00:00, queued_by_job_id=68, pid=170675
+2025-03-15 22:06:40,209 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [scheduled]>
+2025-03-15 22:06:40,210 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 22:06:40,210 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [scheduled]>
+2025-03-15 22:06:40,218 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T22:01:29.743852+00:00', try_number=3, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 22:06:40,218 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T22:01:29.743852+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 22:06:40,237 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T22:01:29.743852+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 22:06:40,367 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 22:06:40,788 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 22:06:41,043 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 22:06:41,044 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 22:06:42,854 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 22:06:44,259 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T22:01:29.743852+00:00', try_number=3, map_index=-1)
+2025-03-15 22:06:44,277 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T22:01:29.743852+00:00, map_index=-1, run_start_date=2025-03-15 22:06:43.246548+00:00, run_end_date=2025-03-15 22:06:43.830514+00:00, run_duration=0.583966, state=up_for_retry, executor_state=success, try_number=3, max_tries=3, job_id=93, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 22:06:40.211353+00:00, queued_by_job_id=68, pid=171810
+2025-03-15 22:07:12,623 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 22:12:12,689 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 22:17:12,804 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 22:22:12,944 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 22:25:48,531 INFO - 1 tasks up for execution:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [scheduled]>
+2025-03-15 22:25:48,531 INFO - DAG Google_map has 0/16 running and queued tasks
+2025-03-15 22:25:48,532 INFO - Setting the following tasks to queued state:
+	<TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [scheduled]>
+2025-03-15 22:25:48,535 INFO - Sending TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T22:01:29.743852+00:00', try_number=4, map_index=-1) to executor with priority 2 and queue default
+2025-03-15 22:25:48,536 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T22:01:29.743852+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 22:25:48,541 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-15T22:01:29.743852+00:00', '--local', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py']
+2025-03-15 22:25:48,621 INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+2025-03-15 22:25:48,883 WARNING - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 22:25:49,064 WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+2025-03-15 22:25:49,065 WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+2025-03-15 22:25:50,746 INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-15T22:01:29.743852+00:00 [queued]> on host DESKTOP-AVAHALM.
+2025-03-15 22:25:51,986 ERROR - Marking run <DagRun Google_map @ 2025-03-15 22:01:29.743852+00:00: manual__2025-03-15T22:01:29.743852+00:00, state:running, queued_at: 2025-03-15 22:01:29.791549+00:00. externally triggered: True> failed
+2025-03-15 22:25:51,986 INFO - DagRun Finished: dag_id=Google_map, execution_date=2025-03-15 22:01:29.743852+00:00, run_id=manual__2025-03-15T22:01:29.743852+00:00, run_start_date=2025-03-15 22:01:30.194594+00:00, run_end_date=2025-03-15 22:25:51.986736+00:00, run_duration=1461.792142, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-03-15 22:01:29.743852+00:00, data_interval_end=2025-03-15 22:01:29.743852+00:00, dag_hash=b66f7f94ff432b68ed1a31b8da6ad064
+2025-03-15 22:25:52,011 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='Google_map', task_id='extract_data_task', run_id='manual__2025-03-15T22:01:29.743852+00:00', try_number=4, map_index=-1)
+2025-03-15 22:25:52,016 INFO - TaskInstance Finished: dag_id=Google_map, task_id=extract_data_task, run_id=manual__2025-03-15T22:01:29.743852+00:00, map_index=-1, run_start_date=2025-03-15 22:25:50.994934+00:00, run_end_date=2025-03-15 22:25:51.607691+00:00, run_duration=0.612757, state=failed, executor_state=success, try_number=4, max_tries=3, job_id=94, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-03-15 22:25:48.532954+00:00, queued_by_job_id=68, pid=185274
+2025-03-15 22:27:13,077 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 22:32:13,204 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 22:37:13,361 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 22:40:17,772 INFO - Exiting gracefully upon receiving signal 15
+2025-03-15 22:40:18,780 INFO - Sending Signals.SIGTERM to group 16172. PIDs of all processes in the group: [195450, 195459, 16172]
+2025-03-15 22:40:18,780 INFO - Sending the signal Signals.SIGTERM to group 16172
+2025-03-15 22:40:19,646 INFO - Process psutil.Process(pid=16172, status='terminated', exitcode=0, started='19:17:08') (16172) terminated with exit code 0
+2025-03-15 22:40:19,647 INFO - Process psutil.Process(pid=195459, status='terminated', started='22:40:18') (195459) terminated with exit code None
+2025-03-15 22:40:19,648 INFO - Process psutil.Process(pid=195450, status='terminated', started='22:40:18') (195450) terminated with exit code None
+2025-03-15 22:40:19,649 INFO - Shutting down LocalExecutor; waiting for running tasks to finish.  Signal again if you don't want to wait.
+2025-03-15 22:40:19,908 INFO - Sending Signals.SIGTERM to group 16172. PIDs of all processes in the group: []
+2025-03-15 22:40:19,909 INFO - Sending the signal Signals.SIGTERM to group 16172
+2025-03-15 22:40:19,909 INFO - Sending the signal Signals.SIGTERM to process 16172 as process group is missing.
+2025-03-15 22:40:19,910 INFO - Exited execute loop
+2025-03-15 22:40:24,847 INFO - Task context logging is enabled
+2025-03-15 22:40:24,851 INFO - Loaded executor: LocalExecutor
+2025-03-15 22:40:29,996 INFO - Starting the scheduler
+2025-03-15 22:40:29,997 INFO - Processing each file at most -1 times
+2025-03-15 22:40:30,396 INFO - Launched DagFileProcessorManager with pid: 195650
+2025-03-15 22:40:30,401 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-15 22:40:30,493 INFO - Configured default timezone UTC
+2025-03-15 22:45:43,521 INFO - Task context logging is enabled
+2025-03-15 22:45:43,524 INFO - Loaded executor: LocalExecutor
+2025-03-16 13:36:35,223 INFO - Task context logging is enabled
+2025-03-16 13:36:35,228 INFO - Loaded executor: LocalExecutor
+2025-03-18 17:53:45,459 INFO - Task context logging is enabled
+2025-03-18 17:53:45,464 INFO - Loaded executor: LocalExecutor
+2025-05-11 17:36:59,112 INFO - Task context logging is enabled
+2025-05-11 17:36:59,116 INFO - Loaded executor: LocalExecutor

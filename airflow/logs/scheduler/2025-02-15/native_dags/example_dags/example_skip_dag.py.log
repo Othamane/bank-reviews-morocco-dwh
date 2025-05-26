@@ -1,0 +1,112 @@
+[2025-02-15T19:49:06.253+0100] {processor.py:161} INFO - Started process (PID=8002) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:49:06.255+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T19:49:06.267+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:49:06.266+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:49:06.521+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:49:06.800+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:49:06.799+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:49:06.835+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:49:06.834+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T19:49:06.892+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.658 seconds
+[2025-02-15T19:50:12.511+0100] {processor.py:161} INFO - Started process (PID=8061) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:50:12.516+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T19:50:12.520+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:50:12.519+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:50:12.559+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:50:12.612+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:50:12.612+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:50:12.638+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:50:12.638+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T19:50:12.687+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.189 seconds
+[2025-02-15T19:51:26.079+0100] {processor.py:161} INFO - Started process (PID=8126) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:51:26.085+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T19:51:26.091+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:51:26.089+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:51:26.125+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:51:26.153+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:51:26.152+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:51:26.175+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:51:26.175+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T19:51:26.206+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.146 seconds
+[2025-02-15T19:52:31.375+0100] {processor.py:161} INFO - Started process (PID=8178) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:52:31.382+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T19:52:31.394+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:52:31.389+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:52:31.479+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:52:31.583+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:52:31.583+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:52:31.633+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:52:31.632+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T19:52:31.686+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.327 seconds
+[2025-02-15T19:53:40.265+0100] {processor.py:161} INFO - Started process (PID=8246) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:53:40.267+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T19:53:40.270+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:53:40.269+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:53:40.286+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:53:40.323+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:53:40.323+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:53:40.364+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:53:40.364+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T19:53:40.416+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.159 seconds
+[2025-02-15T19:54:44.953+0100] {processor.py:161} INFO - Started process (PID=8298) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:54:44.964+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T19:54:44.967+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:54:44.966+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:54:44.998+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:54:45.064+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:54:45.063+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:54:45.135+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:54:45.134+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T19:54:45.212+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.272 seconds
+[2025-02-15T19:55:50.909+0100] {processor.py:161} INFO - Started process (PID=8351) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:55:50.915+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T19:55:50.920+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:55:50.918+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:55:50.960+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:55:50.993+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:55:50.992+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:55:51.031+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:55:51.031+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T19:55:51.078+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.182 seconds
+[2025-02-15T19:56:53.366+0100] {processor.py:161} INFO - Started process (PID=8405) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:56:53.376+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T19:56:53.387+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:56:53.382+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:56:53.474+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:56:53.594+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:56:53.593+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:56:53.686+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:56:53.686+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T19:56:53.729+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.416 seconds
+[2025-02-15T19:57:55.753+0100] {processor.py:161} INFO - Started process (PID=8456) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:57:55.761+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T19:57:55.762+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:57:55.762+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:57:55.772+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:57:55.792+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:57:55.792+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:57:55.819+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:57:55.818+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T19:57:55.878+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.129 seconds
+[2025-02-15T19:58:51.410+0100] {processor.py:161} INFO - Started process (PID=8506) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:58:51.413+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T19:58:51.414+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:58:51.414+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:58:51.436+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:58:51.587+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:58:51.584+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:58:51.711+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:58:51.711+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T19:58:51.849+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.444 seconds
+[2025-02-15T19:59:45.596+0100] {processor.py:161} INFO - Started process (PID=8551) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:59:45.603+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T19:59:45.605+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:59:45.604+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:59:45.627+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T19:59:45.684+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:59:45.683+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T19:59:45.747+0100] {logging_mixin.py:188} INFO - [2025-02-15T19:59:45.746+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T19:59:45.903+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.319 seconds
+[2025-02-15T20:00:57.094+0100] {processor.py:161} INFO - Started process (PID=8605) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:00:57.100+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T20:00:57.106+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:00:57.104+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:00:57.157+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:00:57.301+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:00:57.301+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T20:00:57.334+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:00:57.334+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T20:00:57.380+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.311 seconds
+[2025-02-15T20:02:04.598+0100] {processor.py:161} INFO - Started process (PID=8677) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:02:04.604+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T20:02:04.612+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:02:04.609+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:02:04.652+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:02:04.736+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:02:04.735+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T20:02:04.796+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:02:04.796+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T20:02:04.831+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.250 seconds
+[2025-02-15T20:03:09.576+0100] {processor.py:161} INFO - Started process (PID=8729) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:03:09.584+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T20:03:09.591+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:03:09.588+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:03:09.636+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:03:09.703+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:03:09.702+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T20:03:09.735+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:03:09.734+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T20:03:09.780+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.228 seconds
+[2025-02-15T20:04:17.264+0100] {processor.py:161} INFO - Started process (PID=8800) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:04:17.268+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T20:04:17.269+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:04:17.268+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:04:17.294+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:04:17.356+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:04:17.356+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T20:04:17.409+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:04:17.409+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T20:04:17.462+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.203 seconds
+[2025-02-15T20:05:29.376+0100] {processor.py:161} INFO - Started process (PID=8858) to work on /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:05:29.382+0100] {processor.py:830} INFO - Processing file /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2025-02-15T20:05:29.389+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:05:29.386+0100] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:05:29.436+0100] {processor.py:840} INFO - DAG(s) 'example_skip_dag' retrieved from /home/nord/venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2025-02-15T20:05:29.487+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:05:29.486+0100] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-02-15T20:05:29.538+0100] {logging_mixin.py:188} INFO - [2025-02-15T20:05:29.537+0100] {dag.py:3823} INFO - Setting next_dagrun for example_skip_dag to 2025-02-14 00:00:00+00:00, run_after=2025-02-15 00:00:00+00:00
+[2025-02-15T20:05:29.589+0100] {processor.py:183} INFO - Processing /home/nord/venv/lib/python3.8/site-packa                                                                

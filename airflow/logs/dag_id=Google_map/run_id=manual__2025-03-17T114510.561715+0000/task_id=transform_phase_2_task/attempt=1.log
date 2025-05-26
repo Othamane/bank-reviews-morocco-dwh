@@ -1,0 +1,56 @@
+[2025-03-17T11:45:34.396+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-17T11:45:10.561715+00:00 [queued]>
+[2025-03-17T11:45:34.413+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-17T11:45:10.561715+00:00 [queued]>
+[2025-03-17T11:45:34.414+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-17T11:45:34.444+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_phase_2_task> on 2025-03-17 11:45:10.561715+00:00
+[2025-03-17T11:45:34.452+0000] {standard_task_runner.py:60} INFO - Started process 25417 to run task
+[2025-03-17T11:45:34.460+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_phase_2_task', 'manual__2025-03-17T11:45:10.561715+00:00', '--job-id', '157', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpxxrish3_']
+[2025-03-17T11:45:34.463+0000] {standard_task_runner.py:88} INFO - Job 157: Subtask transform_phase_2_task
+[2025-03-17T11:45:34.600+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_phase_2_task manual__2025-03-17T11:45:10.561715+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-17T11:45:34.815+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_phase_2_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-17T11:45:10.561715+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-17T11:45:10.561715+00:00'
+[2025-03-17T11:45:54.895+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.DuplicateColumn: column "language" of relation "cleaned_reviews" already exists
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nord/airflow/dags/google_map_dag_etl.py", line 51, in <lambda>
+    python_callable=lambda: __import__('transform_phase_2').main()
+  File "/home/nord/airflow/dags/transform_phase_2.py", line 86, in main
+    connection.execute("ALTER TABLE public.cleaned_reviews ADD COLUMN language VARCHAR(10);")
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1370, in execute
+    return self._exec_driver_sql(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1674, in _exec_driver_sql
+    ret = self._execute_context(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/nord/venv/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.DuplicateColumn) column "language" of relation "cleaned_reviews" already exists
+
+[SQL: ALTER TABLE public.cleaned_reviews ADD COLUMN language VARCHAR(10);]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-03-17T11:45:54.954+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Google_map, task_id=transform_phase_2_task, execution_date=20250317T114510, start_date=20250317T114534, end_date=20250317T114554
+[2025-03-17T11:45:55.034+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 157 for task transform_phase_2_task ((psycopg2.errors.DuplicateColumn) column "language" of relation "cleaned_reviews" already exists
+
+[SQL: ALTER TABLE public.cleaned_reviews ADD COLUMN language VARCHAR(10);]
+(Background on this error at: https://sqlalche.me/e/14/f405); 25417)
+[2025-03-17T11:45:55.120+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-17T11:45:55.155+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

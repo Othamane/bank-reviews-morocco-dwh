@@ -1,0 +1,105 @@
+[2025-03-16T15:28:14.761+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.extract_data_task manual__2025-03-16T15:28:09.434150+00:00 [queued]>
+[2025-03-16T15:28:14.787+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.extract_data_task manual__2025-03-16T15:28:09.434150+00:00 [queued]>
+[2025-03-16T15:28:14.791+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-16T15:28:14.859+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_data_task> on 2025-03-16 15:28:09.434150+00:00
+[2025-03-16T15:28:14.869+0000] {standard_task_runner.py:60} INFO - Started process 58772 to run task
+[2025-03-16T15:28:14.897+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-16T15:28:09.434150+00:00', '--job-id', '109', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpf8mr576m']
+[2025-03-16T15:28:14.900+0000] {standard_task_runner.py:88} INFO - Job 109: Subtask extract_data_task
+[2025-03-16T15:28:15.111+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-16T15:28:09.434150+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-16T15:28:15.714+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='extract_data_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T15:28:09.434150+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T15:28:09.434150+00:00'
+[2025-03-16T15:28:17.361+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-16T15:28:18.312+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-16T15:28:18.636+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-16T15:28:18.874+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-16T15:28:19.485+0000] {logger.py:11} INFO - WebDriver version 134.0.6998.88 selected
+[2025-03-16T15:28:19.493+0000] {logger.py:11} INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.88/linux64/chromedriver-linux64.zip
+[2025-03-16T15:28:19.494+0000] {logger.py:11} INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.88/linux64/chromedriver-linux64.zip
+[2025-03-16T15:28:19.833+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-03-16T15:28:27.657+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-16T15:28:28.369+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/nord/.wdm/drivers/chromedriver/linux64/134.0.6998.88]
+[2025-03-16T15:29:06.807+0000] {logging_mixin.py:188} INFO - ['https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda76bd561040cc1:0x905340e316e127bc!8m2!3d34.0544335!4d-6.7938182!16s%2Fg%2F11dzd19ycg!19sChIJwQwEYdVrpw0RvCfhFuNAU5A?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Banque+Assafa+Ennakhil+Hay+Riad/data=!4m7!3m6!1s0xda71391acdf03ab:0x1d0bdad2be1b6b!8m2!3d33.9600521!4d-6.873139!16s%2Fg%2F11gmsld6sz!19sChIJqwPfrJETpw0Raxu-0toLHQA?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa+Agadir+-+Rue+de+Marrakech/data=!4m7!3m6!1s0xdb3b74860935ee5:0x37ef22e470917d27!8m2!3d30.4140568!4d-9.5878737!16s%2Fg%2F11vc2x2xr1!19sChIJ5V6TYEi3sw0RJ32RcOQi7zc?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda7cda4110f31c9:0xec4a51efaa4d55b5!8m2!3d33.6074575!4d-7.5362811!16s%2Fg%2F11ff29hd_9!19sChIJyTEPEaTNpw0RtVVNqu9RSuw?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xdafee436dd85f7d:0x4fd6e58b9b337db5!8m2!3d31.6243119!4d-7.990059!16s%2Fg%2F11fz374n_r!19sChIJfV_YbUPurw0RtX0zm4vl1k8?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Assafa+bank/data=!4m7!3m6!1s0xda70d0a9edf511f:0x569714a01e3bbb7b!8m2!3d33.9147257!4d-6.9227476!16s%2Fg%2F11kjz8cw31!19sChIJH1HfngoNpw0Re7s7HqAUl1Y?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda7d2bfc787f64f:0x30b6f9e2397c9e26!8m2!3d33.5821725!4d-7.6311601!16s%2Fg%2F11c55556gy!19sChIJT_aHx7_Spw0RJp58OeL5tjA?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda044d9031aa2ff:0xf3bd74bafc99c1a2!8m2!3d33.8968667!4d-5.5481564!16s%2Fg%2F11gbnlfk6b!19sChIJ_6IaA9lEoA0RosGZ_Lp0vfM?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda76c8e94c306c3:0x894b99fafd59bbf9!8m2!3d34.0013493!4d-6.8502605!16s%2Fg%2F11gbnv_k4w!19sChIJwwbDlI5spw0R-btZ_fqZS4k?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda62d6fd6bf2683:0x58e9c7a4bb26cb70!8m2!3d33.5309048!4d-7.6485165!16s%2Fg%2F11gvz7xnnx!19sChIJgya_1m8tpg0RcMsmu6TH6Vg?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda7d2d3d71862f3:0x12cc62de74d13bc4!8m2!3d33.5656192!4d-7.6471908!16s%2Fg%2F11gbn9h17j!19sChIJ82IY19PSpw0RxDvRdN5izBI?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda76c77c1aaffef:0xb5392d380a3fb807!8m2!3d34.02054!4d-6.8364418!16s%2Fg%2F11c3j5c_ld!19sChIJ7_-qwXdspw0RB7g_CjgtObU?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa+-+Si%C3%A8ge+Social/data=!4m7!3m6!1s0xda7d30f7ee7126b:0x6d77d330cfbfb275!8m2!3d33.5819549!4d-7.623805!16s%2Fg%2F11f9gfd9zp!19sChIJaxLnfg_Tpw0RdbK_zzDTd20?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/BANK+ASSAFA,+Agence+MOHAMMEDIA,+HASSAN+II/data=!4m7!3m6!1s0xda7b7ca14efca67:0xe30c48979aadc8f8!8m2!3d33.6935504!4d-7.3919413!16s%2Fg%2F11f6k6h532!19sChIJZ8rvFMq3pw0R-MitmpdIDOM?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xd9f8b7954144831:0x8973190c256e43a9!8m2!3d34.0132716!4d-4.9816343!16s%2Fg%2F11gbnp95tw!19sChIJMUgUVHmLnw0RqUNuJQwZc4k?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xdb3b74fe28697e3:0xa9558af7ffd008d8!8m2!3d30.4227113!4d-9.6021392!16s%2Fg%2F11l2c1l1gz!19sChIJ45eG4k-3sw0R2AjQ__eKVak?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda7d2ce2d47803b:0x70555f9de197fc60!8m2!3d33.5704272!4d-7.6459026!16s%2Fg%2F11f15cv62f!19sChIJO4BHLc7Spw0RYPyX4Z1fVXA?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xd7864a5a399e639:0xe8e388cbdc336a6d!8m2!3d34.6832437!4d-1.9166039!16s%2Fg%2F11c6sly3yt!19sChIJOeaZo6VkeA0RbWoz3MuI4-g?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa+-+Agence+Berkane/data=!4m7!3m6!1s0xd78237d26c6fb65:0x8a43feec0700afb3!8m2!3d34.9258876!4d-2.3329863!16s%2Fg%2F11gbnk8dhh!19sChIJZfvGJn0jeA0Rs68AB-z-Q4o?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa_Agence+digitale/data=!4m7!3m6!1s0xda7d33a875db951:0x139ee15f2ceebfe5!8m2!3d33.5853743!4d-7.6206626!16s%2Fg%2F11fpgw8xz8!19sChIJUbldhzrTpw0R5b_uLF_hnhM?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda7d2ce2d47803b:0x70555f9de197fc60!8m2!3d33.5704272!4d-7.6459026!16s%2Fg%2F11f15cv62f!19sChIJO4BHLc7Spw0RYPyX4Z1fVXA?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xd7864a5a399e639:0xe8e388cbdc336a6d!8m2!3d34.6832437!4d-1.9166039!16s%2Fg%2F11c6sly3yt!19sChIJOeaZo6VkeA0RbWoz3MuI4-g?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa+-+Agence+Meknes+Med+VI/data=!4m7!3m6!1s0xda05b2a3bbc573b:0xb6b16616584fae07!8m2!3d33.86851!4d-5.5764299!16s%2Fg%2F11r1w4x5lj!19sChIJO1e8OypboA0RB65PWBZmsbY?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xd0b80add775a609:0xedbe26c1de51241c!8m2!3d35.7665539!4d-5.8090471!16s%2Fg%2F11fz1r79qm!19sChIJCaZ1162ACw0RHCRR3sEmvu0?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Agence+Bank+Assafa+Taza/data=!4m7!3m6!1s0xd9e174acc0e189f:0x49f21e0639d4591b!8m2!3d34.2177622!4d-4.00569!16s%2Fg%2F11vk5_scp9!19sChIJnxgOzEoXng0RG1nUOQYe8kk?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda91d0281bc574d:0xc9ca539672f2cdcc!8m2!3d33.2473101!4d-8.4974001!16s%2Fg%2F11g4dqq34c!19sChIJTVe8gQIdqQ0RzM3ycpZTysk?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda386ff7db19ff9:0x6b902d2dbe71aba0!8m2!3d32.3315802!4d-6.3623226!16s%2Fg%2F11f127941c!19sChIJ-Z-xff-Gow0RoKtxvi0tkGs?authuser=0&hl=fr&rclk=1', 'https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xd0b4301c3490243:0x288217164dd73928!8m2!3d35.5827554!4d-5.3514295!16s%2Fg%2F11gbnq91_2!19sChIJQwJJwwFDCw0RKDnXTRYXgig?authuser=0&hl=fr&rclk=1']
+[2025-03-16T15:29:06.807+0000] {logging_mixin.py:188} INFO - https://www.google.com/maps/place/Bank+Assafa/data=!4m7!3m6!1s0xda76bd561040cc1:0x905340e316e127bc!8m2!3d34.0544335!4d-6.7938182!16s%2Fg%2F11dzd19ycg!19sChIJwQwEYdVrpw0RvCfhFuNAU5A?authuser=0&hl=fr&rclk=1
+[2025-03-16T15:29:30.329+0000] {logging_mixin.py:188} INFO - 8
+[2025-03-16T15:29:41.469+0000] {logging_mixin.py:188} INFO - Erreur lors du scrolling : Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.88)
+Stacktrace:
+#0 0x5639ceba0a1a <unknown>
+#1 0x5639ce658390 <unknown>
+#2 0x5639ce63e12e <unknown>
+#3 0x5639ce666d50 <unknown>
+#4 0x5639ce6d8559 <unknown>
+#5 0x5639ce6f59f5 <unknown>
+#6 0x5639ce6cf9a3 <unknown>
+#7 0x5639ce69b60e <unknown>
+#8 0x5639ce69cdd1 <unknown>
+#9 0x5639ceb66ddb <unknown>
+#10 0x5639ceb6acbc <unknown>
+#11 0x5639ceb4e392 <unknown>
+#12 0x5639ceb6b834 <unknown>
+#13 0x5639ceb321ef <unknown>
+#14 0x5639ceb8f038 <unknown>
+#15 0x5639ceb8f216 <unknown>
+#16 0x5639ceb9f896 <unknown>
+#17 0x7f333a1ee609 start_thread
+[2025-03-16T15:29:41.657+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nord/airflow/dags/google_map_dag_etl.py", line 33, in <lambda>
+    python_callable=lambda: __import__('main_scraping_script').main()
+  File "/home/nord/airflow/dags/main_scraping_script.py", line 155, in main
+    all_data = extract_data(driver, banques)
+  File "/home/nord/airflow/dags/main_scraping_script.py", line 127, in extract_data
+    bank_data = extract_agency_data(driver, banque, url)
+  File "/home/nord/airflow/dags/main_scraping_script.py", line 66, in extract_agency_data
+    agencies_links = collect_agency_links(driver)
+  File "/home/nord/airflow/dags/main_scraping_script.py", line 46, in collect_agency_links
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 485, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+#0 0x5639ceba0a1a <unknown>
+#1 0x5639ce6581e3 <unknown>
+#2 0x5639ce69af2f <unknown>
+#3 0x5639ce6cfad6 <unknown>
+#4 0x5639ce6ca143 <unknown>
+#5 0x5639ce6c9415 <unknown>
+#6 0x5639ce620fb8 <unknown>
+#7 0x5639ceb66ddb <unknown>
+#8 0x5639ceb6acbc <unknown>
+#9 0x5639ceb4e392 <unknown>
+#10 0x5639ceb6b834 <unknown>
+#11 0x5639ceb321ef <unknown>
+#12 0x5639ce61f9eb <unknown>
+#13 0x7f3339b97083 __libc_start_main
+
+[2025-03-16T15:29:41.751+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Google_map, task_id=extract_data_task, execution_date=20250316T152809, start_date=20250316T152814, end_date=20250316T152941
+[2025-03-16T15:29:41.810+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 109 for task extract_data_task (Message: invalid session id
+Stacktrace:
+#0 0x5639ceba0a1a <unknown>
+#1 0x5639ce6581e3 <unknown>
+#2 0x5639ce69af2f <unknown>
+#3 0x5639ce6cfad6 <unknown>
+#4 0x5639ce6ca143 <unknown>
+#5 0x5639ce6c9415 <unknown>
+#6 0x5639ce620fb8 <unknown>
+#7 0x5639ceb66ddb <unknown>
+#8 0x5639ceb6acbc <unknown>
+#9 0x5639ceb4e392 <unknown>
+#10 0x5639ceb6b834 <unknown>
+#11 0x5639ceb321ef <unknown>
+#12 0x5639ce61f9eb <unknown>
+#13 0x7f3339b97083 __libc_start_main
+; 58772)
+[2025-03-16T15:29:41.862+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-16T15:29:41.939+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

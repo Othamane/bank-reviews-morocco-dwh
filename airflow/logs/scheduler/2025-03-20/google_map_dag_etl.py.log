@@ -1,0 +1,147 @@
+[2025-03-20T22:02:02.417+0000] {processor.py:161} INFO - Started process (PID=1319) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:02:02.419+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:02:02.422+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:02:02.421+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:02:02.451+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:02:02.685+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:02:02.685+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:02:02.704+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:02:02.704+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:02:02.747+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.346 seconds
+[2025-03-20T22:02:32.996+0000] {processor.py:161} INFO - Started process (PID=1658) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:02:32.999+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:02:33.002+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:02:33.001+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:02:33.038+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:02:33.129+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:02:33.129+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:02:33.163+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:02:33.162+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:02:33.213+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.245 seconds
+[2025-03-20T22:03:03.373+0000] {processor.py:161} INFO - Started process (PID=2242) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:03:03.386+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:03:03.388+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:03:03.387+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:03:03.420+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:03:03.585+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:03:03.585+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:03:03.644+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:03:03.643+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:03:03.727+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.363 seconds
+[2025-03-20T22:03:34.303+0000] {processor.py:161} INFO - Started process (PID=2684) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:03:34.313+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:03:34.315+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:03:34.314+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:03:34.337+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:03:34.465+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:03:34.464+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:03:34.522+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:03:34.521+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:03:34.608+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.313 seconds
+[2025-03-20T22:04:04.952+0000] {processor.py:161} INFO - Started process (PID=3032) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:04:04.957+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:04:04.959+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:04:04.959+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:04:04.975+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:04:05.036+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:04:05.036+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:04:05.061+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:04:05.060+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:04:05.098+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.159 seconds
+[2025-03-20T22:04:35.525+0000] {processor.py:161} INFO - Started process (PID=3363) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:04:35.527+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:04:35.537+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:04:35.537+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:04:35.555+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:04:35.659+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:04:35.658+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:04:35.726+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:04:35.725+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:04:35.789+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.281 seconds
+[2025-03-20T22:05:06.410+0000] {processor.py:161} INFO - Started process (PID=3688) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:05:06.426+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:05:06.429+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:05:06.428+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:05:06.449+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:05:06.573+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:05:06.572+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:05:06.623+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:05:06.622+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:05:06.706+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.326 seconds
+[2025-03-20T22:05:37.197+0000] {processor.py:161} INFO - Started process (PID=4012) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:05:37.200+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:05:37.202+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:05:37.201+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:05:37.219+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:05:37.296+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:05:37.295+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:05:37.324+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:05:37.324+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:05:37.372+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.185 seconds
+[2025-03-20T22:05:49.220+0000] {processor.py:161} INFO - Started process (PID=4265) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:05:49.223+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:05:49.225+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:05:49.224+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:05:49.243+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:05:49.367+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:05:49.366+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:05:49.398+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:05:49.398+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:05:49.446+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.231 seconds
+[2025-03-20T22:06:20.117+0000] {processor.py:161} INFO - Started process (PID=4607) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:06:20.119+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:06:20.120+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:06:20.120+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:06:20.134+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:06:20.192+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:06:20.191+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:06:20.212+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:06:20.212+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:06:20.246+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.141 seconds
+[2025-03-20T22:06:50.556+0000] {processor.py:161} INFO - Started process (PID=4930) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:06:50.566+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:06:50.574+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:06:50.570+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:06:50.605+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:06:50.650+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:06:50.650+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:06:50.670+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:06:50.670+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:06:50.706+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.196 seconds
+[2025-03-20T22:07:21.511+0000] {processor.py:161} INFO - Started process (PID=5394) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:07:21.514+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:07:21.518+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:07:21.516+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:07:21.558+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:07:21.617+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:07:21.616+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:07:21.640+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:07:21.639+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:07:21.671+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.180 seconds
+[2025-03-20T22:07:51.873+0000] {processor.py:161} INFO - Started process (PID=5738) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:07:51.879+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:07:51.880+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:07:51.880+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:07:51.895+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:07:51.944+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:07:51.944+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:07:51.969+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:07:51.969+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:07:52.007+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.150 seconds
+[2025-03-20T22:08:22.614+0000] {processor.py:161} INFO - Started process (PID=6069) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:08:22.624+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:08:22.625+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:08:22.624+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:08:22.643+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:08:22.693+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:08:22.692+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:08:22.719+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:08:22.719+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:08:22.769+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.160 seconds
+[2025-03-20T22:08:53.275+0000] {processor.py:161} INFO - Started process (PID=6415) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:08:53.306+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:08:53.308+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:08:53.307+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:08:53.341+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:08:53.443+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:08:53.442+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:08:53.487+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:08:53.487+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:08:53.547+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.305 seconds
+[2025-03-20T22:09:23.774+0000] {processor.py:161} INFO - Started process (PID=6811) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:09:23.776+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:09:23.789+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:09:23.789+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:09:23.813+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:09:23.884+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:09:23.884+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:09:23.913+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:09:23.912+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:09:23.957+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.209 seconds
+[2025-03-20T22:09:54.486+0000] {processor.py:161} INFO - Started process (PID=7177) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:09:54.506+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:09:54.510+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:09:54.508+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:09:54.527+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:09:54.578+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:09:54.577+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:09:54.601+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:09:54.600+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:09:54.635+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.183 seconds
+[2025-03-20T22:10:25.019+0000] {processor.py:161} INFO - Started process (PID=7528) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:10:25.044+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:10:25.047+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:10:25.046+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:10:25.064+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:10:25.130+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:10:25.129+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:10:25.161+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:10:25.160+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:10:25.212+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.246 seconds
+[2025-03-20T22:10:55.662+0000] {processor.py:161} INFO - Started process (PID=7857) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:10:55.674+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:10:55.679+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:10:55.676+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:10:55.694+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:10:55.752+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:10:55.752+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:10:55.776+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:10:55.776+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:10:55.818+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.169 seconds
+[2025-03-20T22:11:26.090+0000] {processor.py:161} INFO - Started process (PID=8179) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:11:26.099+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:11:26.104+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:11:26.102+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:11:26.130+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:11:26.193+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:11:26.193+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:11:26.215+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:11:26.214+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:11:26.248+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.185 seconds
+[2025-03-20T22:11:56.689+0000] {processor.py:161} INFO - Started process (PID=8503) to work on /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:11:56.697+0000] {processor.py:830} INFO - Processing file /home/nord/airflow/dags/google_map_dag_etl.py for tasks to queue
+[2025-03-20T22:11:56.699+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:11:56.698+0000] {dagbag.py:538} INFO - Filling up the DagBag from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:11:56.714+0000] {processor.py:840} INFO - DAG(s) 'Google_map' retrieved from /home/nord/airflow/dags/google_map_dag_etl.py
+[2025-03-20T22:11:56.772+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:11:56.772+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-20T22:11:56.800+0000] {logging_mixin.py:188} INFO - [2025-03-20T22:11:56.800+0000] {dag.py:3823} INFO - Setting next_dagrun for Google_map to None, run_after=None
+[2025-03-20T22:11:56.856+0000] {processor.py:183} INFO - Processing /home/nord/airflow/dags/google_map_dag_etl.py took 0.182 seconds

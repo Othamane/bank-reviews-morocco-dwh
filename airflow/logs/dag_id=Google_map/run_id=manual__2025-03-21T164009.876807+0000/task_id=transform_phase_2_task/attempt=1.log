@@ -1,0 +1,305 @@
+[2025-03-21T16:40:49.679+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-21T16:40:09.876807+00:00 [queued]>
+[2025-03-21T16:40:49.694+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.transform_phase_2_task manual__2025-03-21T16:40:09.876807+00:00 [queued]>
+[2025-03-21T16:40:49.696+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-21T16:40:49.721+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): transform_phase_2_task> on 2025-03-21 16:40:09.876807+00:00
+[2025-03-21T16:40:49.728+0000] {standard_task_runner.py:60} INFO - Started process 4990 to run task
+[2025-03-21T16:40:49.740+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'transform_phase_2_task', 'manual__2025-03-21T16:40:09.876807+00:00', '--job-id', '276', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmp8cfjcf4z']
+[2025-03-21T16:40:49.744+0000] {standard_task_runner.py:88} INFO - Job 276: Subtask transform_phase_2_task
+[2025-03-21T16:40:49.944+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.transform_phase_2_task manual__2025-03-21T16:40:09.876807+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-21T16:40:50.261+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='transform_phase_2_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-21T16:40:09.876807+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-21T16:40:09.876807+00:00'
+[2025-03-21T16:41:02.793+0000] {logging_mixin.py:188} WARNING - [nltk_data] Downloading package punkt to /home/nord/nltk_data...
+[2025-03-21T16:41:02.883+0000] {logging_mixin.py:188} WARNING - [nltk_data]   Package punkt is already up-to-date!
+[2025-03-21T16:41:02.884+0000] {logging_mixin.py:188} WARNING - [nltk_data] Downloading package stopwords to /home/nord/nltk_data...
+[2025-03-21T16:41:02.888+0000] {logging_mixin.py:188} WARNING - [nltk_data]   Package stopwords is already up-to-date!
+[2025-03-21T16:41:04.492+0000] {transform_phase_2.py:126} INFO - Added 'language' column.
+[2025-03-21T16:41:04.583+0000] {transform_phase_2.py:126} INFO - Added 'sentiment' column.
+[2025-03-21T16:41:04.598+0000] {transform_phase_2.py:126} INFO - Added 'relative_topic' column.
+[2025-03-21T16:41:04.632+0000] {transform_phase_2.py:126} INFO - Added 'topic_meaning' column.
+[2025-03-21T16:41:10.097+0000] {dictionary.py:201} INFO - adding document #0 to Dictionary<0 unique tokens: []>
+[2025-03-21T16:41:10.099+0000] {dictionary.py:206} INFO - built Dictionary<84 unique tokens: ['aussi', 'banque', 'cest', 'chaque', 'haut']...> from 8 documents (total 100 corpus positions)
+[2025-03-21T16:41:10.137+0000] {utils.py:447} INFO - Dictionary lifecycle event {'msg': "built Dictionary<84 unique tokens: ['aussi', 'banque', 'cest', 'chaque', 'haut']...> from 8 documents (total 100 corpus positions)", 'datetime': '2025-03-21T16:41:10.103062', 'gensim': '4.3.3', 'python': '3.8.10 (default, Jan 17 2025, 14:40:23) \n[GCC 9.4.0]', 'platform': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.29', 'event': 'created'}
+[2025-03-21T16:41:10.138+0000] {ldamodel.py:596} INFO - using autotuned alpha, starting with [0.2, 0.2, 0.2, 0.2, 0.2]
+[2025-03-21T16:41:10.139+0000] {ldamodel.py:482} INFO - using serial LDA version on this node
+[2025-03-21T16:41:10.139+0000] {ldamodel.py:948} INFO - running online (multi-pass) LDA training, 5 topics, 15 passes over the supplied corpus of 8 documents, updating model once every 8 documents, evaluating perplexity every 8 documents, iterating 50x with a convergence threshold of 0.001000
+[2025-03-21T16:41:10.164+0000] {ldamodel.py:848} INFO - -7.972 per-word bound, 251.0 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.164+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 0, at document #8/8
+[2025-03-21T16:41:10.181+0000] {ldamodel.py:795} INFO - optimized alpha [0.15005568, 0.1171633, 0.15683588, 0.17572075, 0.18641794]
+[2025-03-21T16:41:10.186+0000] {ldamodel.py:1197} INFO - topic #0 (0.150): 0.040*"dattente" + 0.040*"seul" + 0.040*"minutes" + 0.040*"sécurité" + 0.040*"pauvre" + 0.040*"banque" + 0.040*"agent" + 0.040*"renseignement" + 0.040*"45" + 0.018*"carte"
+[2025-03-21T16:41:10.190+0000] {ldamodel.py:1197} INFO - topic #1 (0.117): 0.029*"succès" + 0.026*"cest" + 0.026*"plus" + 0.026*"traiter" + 0.026*"haut" + 0.025*"banque" + 0.025*"souhaite" + 0.025*"très" + 0.025*"niveau" + 0.024*"aussi"
+[2025-03-21T16:41:10.191+0000] {ldamodel.py:1197} INFO - topic #2 (0.157): 0.044*"cest" + 0.044*"frais" + 0.043*"plus" + 0.026*"très" + 0.026*"dagence" + 0.026*"commerciaux" + 0.026*"lécoute" + 0.026*"personnel" + 0.026*"chef" + 0.026*"sympathique"
+[2025-03-21T16:41:10.192+0000] {ldamodel.py:1197} INFO - topic #3 (0.176): 0.044*"ouverture" + 0.041*"encore" + 0.041*"nulle" + 0.041*"pire" + 0.041*"plaisir" + 0.041*"actuellement" + 0.041*"depuis" + 0.041*"remercions" + 0.041*"avis" + 0.041*"accompagner"
+[2025-03-21T16:41:10.193+0000] {ldamodel.py:1197} INFO - topic #4 (0.186): 0.035*"non" + 0.034*"carte" + 0.021*"courage" + 0.021*"bon" + 0.020*"expiré" + 0.020*"déçu" + 0.020*"a" + 0.020*"vers" + 0.020*"personnel" + 0.020*"donner"
+[2025-03-21T16:41:10.193+0000] {ldamodel.py:1075} INFO - topic diff=2.711983, rho=1.000000
+[2025-03-21T16:41:10.206+0000] {ldamodel.py:848} INFO - -5.266 per-word bound, 38.5 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.206+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 1, at document #8/8
+[2025-03-21T16:41:10.215+0000] {ldamodel.py:795} INFO - optimized alpha [0.11780581, 0.09936947, 0.13789785, 0.14456156, 0.16965318]
+[2025-03-21T16:41:10.216+0000] {ldamodel.py:1197} INFO - topic #0 (0.118): 0.044*"dattente" + 0.044*"seul" + 0.044*"minutes" + 0.043*"sécurité" + 0.043*"pauvre" + 0.043*"banque" + 0.043*"agent" + 0.043*"renseignement" + 0.043*"45" + 0.012*"carte"
+[2025-03-21T16:41:10.216+0000] {ldamodel.py:1197} INFO - topic #1 (0.099): 0.033*"succès" + 0.031*"cest" + 0.031*"plus" + 0.030*"traiter" + 0.030*"haut" + 0.030*"banque" + 0.030*"souhaite" + 0.030*"très" + 0.029*"niveau" + 0.028*"aussi"
+[2025-03-21T16:41:10.220+0000] {ldamodel.py:1197} INFO - topic #2 (0.138): 0.045*"cest" + 0.045*"frais" + 0.044*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.221+0000] {ldamodel.py:1197} INFO - topic #3 (0.145): 0.044*"ouverture" + 0.043*"encore" + 0.043*"nulle" + 0.043*"pire" + 0.043*"plaisir" + 0.043*"actuellement" + 0.043*"depuis" + 0.043*"remercions" + 0.043*"avis" + 0.043*"accompagner"
+[2025-03-21T16:41:10.221+0000] {ldamodel.py:1197} INFO - topic #4 (0.170): 0.038*"non" + 0.038*"carte" + 0.022*"courage" + 0.022*"bon" + 0.021*"expiré" + 0.021*"déçu" + 0.021*"a" + 0.021*"personnel" + 0.021*"vers" + 0.021*"donner"
+[2025-03-21T16:41:10.222+0000] {ldamodel.py:1075} INFO - topic diff=0.194529, rho=0.577350
+[2025-03-21T16:41:10.231+0000] {ldamodel.py:848} INFO - -5.122 per-word bound, 34.8 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.231+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 2, at document #8/8
+[2025-03-21T16:41:10.235+0000] {ldamodel.py:795} INFO - optimized alpha [0.09943246, 0.08760083, 0.12369662, 0.1254548, 0.14155132]
+[2025-03-21T16:41:10.237+0000] {ldamodel.py:1197} INFO - topic #0 (0.099): 0.045*"dattente" + 0.045*"seul" + 0.045*"minutes" + 0.045*"sécurité" + 0.045*"pauvre" + 0.045*"banque" + 0.045*"agent" + 0.045*"renseignement" + 0.045*"45" + 0.010*"carte"
+[2025-03-21T16:41:10.238+0000] {ldamodel.py:1197} INFO - topic #1 (0.088): 0.034*"succès" + 0.033*"cest" + 0.033*"plus" + 0.033*"traiter" + 0.033*"haut" + 0.033*"banque" + 0.033*"souhaite" + 0.033*"très" + 0.033*"niveau" + 0.032*"aussi"
+[2025-03-21T16:41:10.240+0000] {ldamodel.py:1197} INFO - topic #2 (0.124): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.243+0000] {ldamodel.py:1197} INFO - topic #3 (0.125): 0.045*"ouverture" + 0.044*"encore" + 0.044*"nulle" + 0.044*"pire" + 0.044*"plaisir" + 0.044*"actuellement" + 0.044*"depuis" + 0.044*"remercions" + 0.044*"avis" + 0.044*"accompagner"
+[2025-03-21T16:41:10.245+0000] {ldamodel.py:1197} INFO - topic #4 (0.142): 0.041*"non" + 0.041*"carte" + 0.023*"courage" + 0.023*"bon" + 0.023*"expiré" + 0.023*"déçu" + 0.023*"personnel" + 0.023*"a" + 0.023*"vers" + 0.023*"donner"
+[2025-03-21T16:41:10.245+0000] {ldamodel.py:1075} INFO - topic diff=0.150097, rho=0.500000
+[2025-03-21T16:41:10.252+0000] {ldamodel.py:848} INFO - -5.040 per-word bound, 32.9 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.253+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 3, at document #8/8
+[2025-03-21T16:41:10.262+0000] {ldamodel.py:795} INFO - optimized alpha [0.08731694, 0.07903111, 0.11297198, 0.11243132, 0.12400708]
+[2025-03-21T16:41:10.263+0000] {ldamodel.py:1197} INFO - topic #0 (0.087): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.009*"carte"
+[2025-03-21T16:41:10.264+0000] {ldamodel.py:1197} INFO - topic #1 (0.079): 0.035*"succès" + 0.034*"cest" + 0.034*"plus" + 0.034*"traiter" + 0.034*"haut" + 0.034*"banque" + 0.034*"souhaite" + 0.034*"très" + 0.034*"niveau" + 0.034*"aussi"
+[2025-03-21T16:41:10.264+0000] {ldamodel.py:1197} INFO - topic #2 (0.113): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.265+0000] {ldamodel.py:1197} INFO - topic #3 (0.112): 0.045*"ouverture" + 0.044*"nulle" + 0.044*"encore" + 0.044*"pire" + 0.044*"plaisir" + 0.044*"actuellement" + 0.044*"depuis" + 0.044*"remercions" + 0.044*"avis" + 0.044*"accompagner"
+[2025-03-21T16:41:10.265+0000] {ldamodel.py:1197} INFO - topic #4 (0.124): 0.043*"non" + 0.043*"carte" + 0.024*"courage" + 0.024*"bon" + 0.024*"expiré" + 0.024*"déçu" + 0.024*"personnel" + 0.024*"a" + 0.024*"vers" + 0.024*"donner"
+[2025-03-21T16:41:10.267+0000] {ldamodel.py:1075} INFO - topic diff=0.084343, rho=0.447214
+[2025-03-21T16:41:10.274+0000] {ldamodel.py:848} INFO - -5.013 per-word bound, 32.3 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.275+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 4, at document #8/8
+[2025-03-21T16:41:10.285+0000] {ldamodel.py:795} INFO - optimized alpha [0.07856231, 0.072436295, 0.1045392, 0.102810234, 0.11171859]
+[2025-03-21T16:41:10.287+0000] {ldamodel.py:1197} INFO - topic #0 (0.079): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.009*"carte"
+[2025-03-21T16:41:10.288+0000] {ldamodel.py:1197} INFO - topic #1 (0.072): 0.035*"succès" + 0.035*"cest" + 0.035*"plus" + 0.035*"traiter" + 0.035*"haut" + 0.035*"banque" + 0.035*"souhaite" + 0.035*"très" + 0.035*"niveau" + 0.035*"aussi"
+[2025-03-21T16:41:10.288+0000] {ldamodel.py:1197} INFO - topic #2 (0.105): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.289+0000] {ldamodel.py:1197} INFO - topic #3 (0.103): 0.045*"ouverture" + 0.045*"nulle" + 0.045*"encore" + 0.045*"pire" + 0.045*"plaisir" + 0.045*"actuellement" + 0.045*"depuis" + 0.045*"remercions" + 0.045*"avis" + 0.045*"accompagner"
+[2025-03-21T16:41:10.290+0000] {ldamodel.py:1197} INFO - topic #4 (0.112): 0.044*"non" + 0.044*"carte" + 0.024*"courage" + 0.024*"bon" + 0.024*"expiré" + 0.024*"déçu" + 0.024*"personnel" + 0.024*"a" + 0.024*"vers" + 0.024*"donner"
+[2025-03-21T16:41:10.291+0000] {ldamodel.py:1075} INFO - topic diff=0.051998, rho=0.408248
+[2025-03-21T16:41:10.305+0000] {ldamodel.py:848} INFO - -5.001 per-word bound, 32.0 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.306+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 5, at document #8/8
+[2025-03-21T16:41:10.322+0000] {ldamodel.py:795} INFO - optimized alpha [0.07186084, 0.06716075, 0.09769528, 0.09532204, 0.10249111]
+[2025-03-21T16:41:10.323+0000] {ldamodel.py:1197} INFO - topic #0 (0.072): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.008*"carte"
+[2025-03-21T16:41:10.324+0000] {ldamodel.py:1197} INFO - topic #1 (0.067): 0.035*"succès" + 0.035*"cest" + 0.035*"plus" + 0.035*"traiter" + 0.035*"haut" + 0.035*"banque" + 0.035*"souhaite" + 0.035*"très" + 0.035*"niveau" + 0.035*"aussi"
+[2025-03-21T16:41:10.325+0000] {ldamodel.py:1197} INFO - topic #2 (0.098): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.326+0000] {ldamodel.py:1197} INFO - topic #3 (0.095): 0.045*"ouverture" + 0.045*"nulle" + 0.045*"encore" + 0.045*"pire" + 0.045*"plaisir" + 0.045*"actuellement" + 0.045*"depuis" + 0.045*"remercions" + 0.045*"avis" + 0.045*"accompagner"
+[2025-03-21T16:41:10.327+0000] {ldamodel.py:1197} INFO - topic #4 (0.102): 0.044*"non" + 0.044*"carte" + 0.024*"courage" + 0.024*"bon" + 0.024*"expiré" + 0.024*"déçu" + 0.024*"personnel" + 0.024*"a" + 0.024*"vers" + 0.024*"donner"
+[2025-03-21T16:41:10.328+0000] {ldamodel.py:1075} INFO - topic diff=0.033025, rho=0.377964
+[2025-03-21T16:41:10.340+0000] {ldamodel.py:848} INFO - -4.995 per-word bound, 31.9 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.341+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 6, at document #8/8
+[2025-03-21T16:41:10.347+0000] {ldamodel.py:795} INFO - optimized alpha [0.06652235, 0.06281806, 0.09200228, 0.08927645, 0.09523226]
+[2025-03-21T16:41:10.348+0000] {ldamodel.py:1197} INFO - topic #0 (0.067): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.008*"carte"
+[2025-03-21T16:41:10.349+0000] {ldamodel.py:1197} INFO - topic #1 (0.063): 0.035*"succès" + 0.035*"cest" + 0.035*"plus" + 0.035*"traiter" + 0.035*"haut" + 0.035*"banque" + 0.035*"souhaite" + 0.035*"très" + 0.035*"niveau" + 0.035*"aussi"
+[2025-03-21T16:41:10.356+0000] {ldamodel.py:1197} INFO - topic #2 (0.092): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.357+0000] {ldamodel.py:1197} INFO - topic #3 (0.089): 0.045*"ouverture" + 0.045*"nulle" + 0.045*"encore" + 0.045*"pire" + 0.045*"plaisir" + 0.045*"actuellement" + 0.045*"depuis" + 0.045*"remercions" + 0.045*"avis" + 0.045*"accompagner"
+[2025-03-21T16:41:10.360+0000] {ldamodel.py:1197} INFO - topic #4 (0.095): 0.045*"non" + 0.045*"carte" + 0.024*"courage" + 0.024*"bon" + 0.024*"expiré" + 0.024*"déçu" + 0.024*"personnel" + 0.024*"a" + 0.024*"vers" + 0.024*"donner"
+[2025-03-21T16:41:10.361+0000] {ldamodel.py:1075} INFO - topic diff=0.021288, rho=0.353553
+[2025-03-21T16:41:10.371+0000] {ldamodel.py:848} INFO - -4.992 per-word bound, 31.8 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.372+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 7, at document #8/8
+[2025-03-21T16:41:10.380+0000] {ldamodel.py:795} INFO - optimized alpha [0.062143117, 0.059163786, 0.08717267, 0.08426098, 0.08932823]
+[2025-03-21T16:41:10.381+0000] {ldamodel.py:1197} INFO - topic #0 (0.062): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.008*"carte"
+[2025-03-21T16:41:10.382+0000] {ldamodel.py:1197} INFO - topic #1 (0.059): 0.035*"succès" + 0.035*"cest" + 0.035*"plus" + 0.035*"traiter" + 0.035*"haut" + 0.035*"banque" + 0.035*"souhaite" + 0.035*"très" + 0.035*"niveau" + 0.035*"aussi"
+[2025-03-21T16:41:10.382+0000] {ldamodel.py:1197} INFO - topic #2 (0.087): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.383+0000] {ldamodel.py:1197} INFO - topic #3 (0.084): 0.045*"ouverture" + 0.045*"nulle" + 0.045*"encore" + 0.045*"pire" + 0.045*"plaisir" + 0.045*"actuellement" + 0.045*"depuis" + 0.045*"remercions" + 0.045*"avis" + 0.045*"accompagner"
+[2025-03-21T16:41:10.384+0000] {ldamodel.py:1197} INFO - topic #4 (0.089): 0.045*"non" + 0.045*"carte" + 0.024*"courage" + 0.024*"bon" + 0.024*"expiré" + 0.024*"déçu" + 0.024*"personnel" + 0.024*"a" + 0.024*"vers" + 0.024*"donner"
+[2025-03-21T16:41:10.385+0000] {ldamodel.py:1075} INFO - topic diff=0.013903, rho=0.333333
+[2025-03-21T16:41:10.397+0000] {ldamodel.py:848} INFO - -4.989 per-word bound, 31.8 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.398+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 8, at document #8/8
+[2025-03-21T16:41:10.404+0000] {ldamodel.py:795} INFO - optimized alpha [0.058469042, 0.0560347, 0.083010145, 0.08001178, 0.08440377]
+[2025-03-21T16:41:10.406+0000] {ldamodel.py:1197} INFO - topic #0 (0.058): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.008*"carte"
+[2025-03-21T16:41:10.407+0000] {ldamodel.py:1197} INFO - topic #1 (0.056): 0.035*"succès" + 0.035*"cest" + 0.035*"plus" + 0.035*"traiter" + 0.035*"haut" + 0.035*"banque" + 0.035*"souhaite" + 0.035*"très" + 0.035*"niveau" + 0.035*"aussi"
+[2025-03-21T16:41:10.410+0000] {ldamodel.py:1197} INFO - topic #2 (0.083): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.411+0000] {ldamodel.py:1197} INFO - topic #3 (0.080): 0.045*"ouverture" + 0.045*"nulle" + 0.045*"encore" + 0.045*"pire" + 0.045*"plaisir" + 0.045*"actuellement" + 0.045*"depuis" + 0.045*"remercions" + 0.045*"avis" + 0.045*"accompagner"
+[2025-03-21T16:41:10.412+0000] {ldamodel.py:1197} INFO - topic #4 (0.084): 0.045*"non" + 0.045*"carte" + 0.024*"courage" + 0.024*"bon" + 0.024*"expiré" + 0.024*"déçu" + 0.024*"personnel" + 0.024*"a" + 0.024*"vers" + 0.024*"donner"
+[2025-03-21T16:41:10.412+0000] {ldamodel.py:1075} INFO - topic diff=0.009211, rho=0.316228
+[2025-03-21T16:41:10.417+0000] {ldamodel.py:848} INFO - -4.986 per-word bound, 31.7 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.418+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 9, at document #8/8
+[2025-03-21T16:41:10.421+0000] {ldamodel.py:795} INFO - optimized alpha [0.055331104, 0.053317063, 0.07937525, 0.07635105, 0.080214754]
+[2025-03-21T16:41:10.422+0000] {ldamodel.py:1197} INFO - topic #0 (0.055): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.008*"carte"
+[2025-03-21T16:41:10.422+0000] {ldamodel.py:1197} INFO - topic #1 (0.053): 0.035*"succès" + 0.035*"cest" + 0.035*"plus" + 0.035*"traiter" + 0.035*"haut" + 0.035*"banque" + 0.035*"souhaite" + 0.035*"très" + 0.035*"niveau" + 0.035*"aussi"
+[2025-03-21T16:41:10.423+0000] {ldamodel.py:1197} INFO - topic #2 (0.079): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.423+0000] {ldamodel.py:1197} INFO - topic #3 (0.076): 0.045*"ouverture" + 0.045*"nulle" + 0.045*"encore" + 0.045*"pire" + 0.045*"plaisir" + 0.045*"actuellement" + 0.045*"depuis" + 0.045*"remercions" + 0.045*"avis" + 0.045*"accompagner"
+[2025-03-21T16:41:10.424+0000] {ldamodel.py:1197} INFO - topic #4 (0.080): 0.045*"non" + 0.045*"carte" + 0.025*"courage" + 0.025*"bon" + 0.025*"expiré" + 0.025*"déçu" + 0.025*"personnel" + 0.025*"a" + 0.025*"vers" + 0.025*"donner"
+[2025-03-21T16:41:10.424+0000] {ldamodel.py:1075} INFO - topic diff=0.006197, rho=0.301511
+[2025-03-21T16:41:10.437+0000] {ldamodel.py:848} INFO - -4.984 per-word bound, 31.7 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.437+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 10, at document #8/8
+[2025-03-21T16:41:10.441+0000] {ldamodel.py:795} INFO - optimized alpha [0.052611936, 0.05092885, 0.07616606, 0.07315397, 0.07659457]
+[2025-03-21T16:41:10.445+0000] {ldamodel.py:1197} INFO - topic #0 (0.053): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.008*"carte"
+[2025-03-21T16:41:10.446+0000] {ldamodel.py:1197} INFO - topic #1 (0.051): 0.035*"succès" + 0.035*"cest" + 0.035*"plus" + 0.035*"traiter" + 0.035*"haut" + 0.035*"banque" + 0.035*"souhaite" + 0.035*"très" + 0.035*"niveau" + 0.035*"aussi"
+[2025-03-21T16:41:10.447+0000] {ldamodel.py:1197} INFO - topic #2 (0.076): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.448+0000] {ldamodel.py:1197} INFO - topic #3 (0.073): 0.045*"ouverture" + 0.045*"nulle" + 0.045*"encore" + 0.045*"pire" + 0.045*"plaisir" + 0.045*"actuellement" + 0.045*"depuis" + 0.045*"remercions" + 0.045*"avis" + 0.045*"accompagner"
+[2025-03-21T16:41:10.448+0000] {ldamodel.py:1197} INFO - topic #4 (0.077): 0.045*"non" + 0.045*"carte" + 0.025*"courage" + 0.025*"bon" + 0.025*"expiré" + 0.025*"déçu" + 0.025*"personnel" + 0.025*"a" + 0.025*"vers" + 0.025*"donner"
+[2025-03-21T16:41:10.449+0000] {ldamodel.py:1075} INFO - topic diff=0.004234, rho=0.288675
+[2025-03-21T16:41:10.456+0000] {ldamodel.py:848} INFO - -4.982 per-word bound, 31.6 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.457+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 11, at document #8/8
+[2025-03-21T16:41:10.463+0000] {ldamodel.py:795} INFO - optimized alpha [0.050227154, 0.048809223, 0.07330613, 0.07032997, 0.07342506]
+[2025-03-21T16:41:10.464+0000] {ldamodel.py:1197} INFO - topic #0 (0.050): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.008*"carte"
+[2025-03-21T16:41:10.465+0000] {ldamodel.py:1197} INFO - topic #1 (0.049): 0.035*"succès" + 0.035*"cest" + 0.035*"plus" + 0.035*"traiter" + 0.035*"haut" + 0.035*"banque" + 0.035*"souhaite" + 0.035*"très" + 0.035*"niveau" + 0.035*"aussi"
+[2025-03-21T16:41:10.465+0000] {ldamodel.py:1197} INFO - topic #2 (0.073): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.466+0000] {ldamodel.py:1197} INFO - topic #3 (0.070): 0.045*"ouverture" + 0.045*"nulle" + 0.045*"encore" + 0.045*"pire" + 0.045*"plaisir" + 0.045*"actuellement" + 0.045*"depuis" + 0.045*"remercions" + 0.045*"avis" + 0.045*"accompagner"
+[2025-03-21T16:41:10.468+0000] {ldamodel.py:1197} INFO - topic #4 (0.073): 0.045*"non" + 0.045*"carte" + 0.025*"courage" + 0.025*"bon" + 0.025*"expiré" + 0.025*"déçu" + 0.025*"personnel" + 0.025*"a" + 0.025*"vers" + 0.025*"donner"
+[2025-03-21T16:41:10.468+0000] {ldamodel.py:1075} INFO - topic diff=0.002937, rho=0.277350
+[2025-03-21T16:41:10.473+0000] {ldamodel.py:848} INFO - -4.981 per-word bound, 31.6 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.473+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 12, at document #8/8
+[2025-03-21T16:41:10.480+0000] {ldamodel.py:795} INFO - optimized alpha [0.048114326, 0.046911962, 0.07073686, 0.06781148, 0.07061982]
+[2025-03-21T16:41:10.481+0000] {ldamodel.py:1197} INFO - topic #0 (0.048): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.008*"carte"
+[2025-03-21T16:41:10.481+0000] {ldamodel.py:1197} INFO - topic #1 (0.047): 0.035*"succès" + 0.035*"cest" + 0.035*"plus" + 0.035*"traiter" + 0.035*"haut" + 0.035*"banque" + 0.035*"souhaite" + 0.035*"très" + 0.035*"niveau" + 0.035*"aussi"
+[2025-03-21T16:41:10.485+0000] {ldamodel.py:1197} INFO - topic #2 (0.071): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.487+0000] {ldamodel.py:1197} INFO - topic #3 (0.068): 0.045*"ouverture" + 0.045*"nulle" + 0.045*"pire" + 0.045*"encore" + 0.045*"plaisir" + 0.045*"actuellement" + 0.045*"depuis" + 0.045*"remercions" + 0.045*"avis" + 0.045*"accompagner"
+[2025-03-21T16:41:10.487+0000] {ldamodel.py:1197} INFO - topic #4 (0.071): 0.045*"non" + 0.045*"carte" + 0.025*"courage" + 0.025*"bon" + 0.025*"expiré" + 0.025*"déçu" + 0.025*"personnel" + 0.025*"a" + 0.025*"vers" + 0.025*"donner"
+[2025-03-21T16:41:10.488+0000] {ldamodel.py:1075} INFO - topic diff=0.002066, rho=0.267261
+[2025-03-21T16:41:10.495+0000] {ldamodel.py:848} INFO - -4.979 per-word bound, 31.5 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.496+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 13, at document #8/8
+[2025-03-21T16:41:10.502+0000] {ldamodel.py:795} INFO - optimized alpha [0.04622616, 0.045201242, 0.06841254, 0.06554695, 0.068113975]
+[2025-03-21T16:41:10.503+0000] {ldamodel.py:1197} INFO - topic #0 (0.046): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.008*"carte"
+[2025-03-21T16:41:10.503+0000] {ldamodel.py:1197} INFO - topic #1 (0.045): 0.035*"succès" + 0.035*"cest" + 0.035*"plus" + 0.035*"traiter" + 0.035*"haut" + 0.035*"banque" + 0.035*"souhaite" + 0.035*"très" + 0.035*"niveau" + 0.035*"aussi"
+[2025-03-21T16:41:10.504+0000] {ldamodel.py:1197} INFO - topic #2 (0.068): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"lécoute" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.504+0000] {ldamodel.py:1197} INFO - topic #3 (0.066): 0.045*"ouverture" + 0.045*"nulle" + 0.045*"encore" + 0.045*"pire" + 0.045*"plaisir" + 0.045*"actuellement" + 0.045*"depuis" + 0.045*"remercions" + 0.045*"avis" + 0.045*"accompagner"
+[2025-03-21T16:41:10.505+0000] {ldamodel.py:1197} INFO - topic #4 (0.068): 0.045*"non" + 0.045*"carte" + 0.025*"courage" + 0.025*"bon" + 0.025*"expiré" + 0.025*"déçu" + 0.025*"personnel" + 0.025*"a" + 0.025*"vers" + 0.025*"donner"
+[2025-03-21T16:41:10.506+0000] {ldamodel.py:1075} INFO - topic diff=0.001474, rho=0.258199
+[2025-03-21T16:41:10.512+0000] {ldamodel.py:848} INFO - -4.978 per-word bound, 31.5 perplexity estimate based on a held-out corpus of 8 documents with 100 words
+[2025-03-21T16:41:10.512+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 14, at document #8/8
+[2025-03-21T16:41:10.515+0000] {ldamodel.py:795} INFO - optimized alpha [0.044526063, 0.043648813, 0.066296875, 0.06349627, 0.06585776]
+[2025-03-21T16:41:10.520+0000] {ldamodel.py:1197} INFO - topic #0 (0.045): 0.046*"dattente" + 0.046*"seul" + 0.046*"minutes" + 0.046*"sécurité" + 0.046*"pauvre" + 0.046*"banque" + 0.046*"agent" + 0.046*"renseignement" + 0.046*"45" + 0.008*"carte"
+[2025-03-21T16:41:10.520+0000] {ldamodel.py:1197} INFO - topic #1 (0.044): 0.035*"succès" + 0.035*"cest" + 0.035*"plus" + 0.035*"traiter" + 0.035*"haut" + 0.035*"banque" + 0.035*"souhaite" + 0.035*"très" + 0.035*"niveau" + 0.035*"aussi"
+[2025-03-21T16:41:10.521+0000] {ldamodel.py:1197} INFO - topic #2 (0.066): 0.045*"cest" + 0.045*"frais" + 0.045*"plus" + 0.025*"très" + 0.025*"lécoute" + 0.025*"dagence" + 0.025*"commerciaux" + 0.025*"chef" + 0.025*"sympathique" + 0.025*"personnel"
+[2025-03-21T16:41:10.522+0000] {ldamodel.py:1197} INFO - topic #3 (0.063): 0.045*"ouverture" + 0.045*"nulle" + 0.045*"encore" + 0.045*"pire" + 0.045*"plaisir" + 0.045*"actuellement" + 0.045*"depuis" + 0.045*"remercions" + 0.045*"avis" + 0.045*"accompagner"
+[2025-03-21T16:41:10.522+0000] {ldamodel.py:1197} INFO - topic #4 (0.066): 0.045*"non" + 0.045*"carte" + 0.025*"courage" + 0.025*"bon" + 0.025*"expiré" + 0.025*"déçu" + 0.025*"personnel" + 0.025*"a" + 0.025*"vers" + 0.025*"donner"
+[2025-03-21T16:41:10.523+0000] {ldamodel.py:1075} INFO - topic diff=0.001064, rho=0.250000
+[2025-03-21T16:41:10.526+0000] {utils.py:447} INFO - LdaModel lifecycle event {'msg': 'trained LdaModel<num_terms=84, num_topics=5, decay=0.5, chunksize=2000> in 0.39s', 'datetime': '2025-03-21T16:41:10.526778', 'gensim': '4.3.3', 'python': '3.8.10 (default, Jan 17 2025, 14:40:23) \n[GCC 9.4.0]', 'platform': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.29', 'event': 'created'}
+[2025-03-21T16:41:10.590+0000] {dictionary.py:201} INFO - adding document #0 to Dictionary<0 unique tokens: []>
+[2025-03-21T16:41:10.591+0000] {dictionary.py:206} INFO - built Dictionary<2 unique tokens: ['bon', 'service']> from 1 documents (total 2 corpus positions)
+[2025-03-21T16:41:10.591+0000] {utils.py:447} INFO - Dictionary lifecycle event {'msg': "built Dictionary<2 unique tokens: ['bon', 'service']> from 1 documents (total 2 corpus positions)", 'datetime': '2025-03-21T16:41:10.591912', 'gensim': '4.3.3', 'python': '3.8.10 (default, Jan 17 2025, 14:40:23) \n[GCC 9.4.0]', 'platform': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.29', 'event': 'created'}
+[2025-03-21T16:41:10.594+0000] {ldamodel.py:596} INFO - using autotuned alpha, starting with [0.2, 0.2, 0.2, 0.2, 0.2]
+[2025-03-21T16:41:10.595+0000] {ldamodel.py:482} INFO - using serial LDA version on this node
+[2025-03-21T16:41:10.596+0000] {ldamodel.py:948} INFO - running online (multi-pass) LDA training, 5 topics, 15 passes over the supplied corpus of 1 documents, updating model once every 1 documents, evaluating perplexity every 1 documents, iterating 50x with a convergence threshold of 0.001000
+[2025-03-21T16:41:10.599+0000] {ldamodel.py:848} INFO - -3.877 per-word bound, 14.7 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.602+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 0, at document #1/1
+[2025-03-21T16:41:10.604+0000] {ldamodel.py:795} INFO - optimized alpha [0.14662908, 0.14659779, 0.36104402, 0.1464451, 0.14676726]
+[2025-03-21T16:41:10.605+0000] {ldamodel.py:1197} INFO - topic #0 (0.147): 0.503*"bon" + 0.497*"service"
+[2025-03-21T16:41:10.606+0000] {ldamodel.py:1197} INFO - topic #1 (0.147): 0.501*"bon" + 0.499*"service"
+[2025-03-21T16:41:10.607+0000] {ldamodel.py:1197} INFO - topic #2 (0.361): 0.501*"service" + 0.499*"bon"
+[2025-03-21T16:41:10.607+0000] {ldamodel.py:1197} INFO - topic #3 (0.146): 0.502*"bon" + 0.498*"service"
+[2025-03-21T16:41:10.608+0000] {ldamodel.py:1197} INFO - topic #4 (0.147): 0.501*"bon" + 0.499*"service"
+[2025-03-21T16:41:10.609+0000] {ldamodel.py:1075} INFO - topic diff=1.408622, rho=1.000000
+[2025-03-21T16:41:10.611+0000] {ldamodel.py:848} INFO - -1.945 per-word bound, 3.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.612+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 1, at document #1/1
+[2025-03-21T16:41:10.614+0000] {ldamodel.py:795} INFO - optimized alpha [0.13080661, 0.1307815, 0.50547224, 0.13066094, 0.13091594]
+[2025-03-21T16:41:10.615+0000] {ldamodel.py:1197} INFO - topic #0 (0.131): 0.501*"bon" + 0.499*"service"
+[2025-03-21T16:41:10.618+0000] {ldamodel.py:1197} INFO - topic #1 (0.131): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.619+0000] {ldamodel.py:1197} INFO - topic #2 (0.505): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.619+0000] {ldamodel.py:1197} INFO - topic #3 (0.131): 0.501*"bon" + 0.499*"service"
+[2025-03-21T16:41:10.620+0000] {ldamodel.py:1197} INFO - topic #4 (0.131): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.621+0000] {ldamodel.py:1075} INFO - topic diff=0.018996, rho=0.577350
+[2025-03-21T16:41:10.622+0000] {ldamodel.py:848} INFO - -1.791 per-word bound, 3.5 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.623+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 2, at document #1/1
+[2025-03-21T16:41:10.625+0000] {ldamodel.py:795} INFO - optimized alpha [0.121961564, 0.12193977, 0.6686482, 0.12183495, 0.12205652]
+[2025-03-21T16:41:10.626+0000] {ldamodel.py:1197} INFO - topic #0 (0.122): 0.501*"bon" + 0.499*"service"
+[2025-03-21T16:41:10.627+0000] {ldamodel.py:1197} INFO - topic #1 (0.122): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.627+0000] {ldamodel.py:1197} INFO - topic #2 (0.669): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.628+0000] {ldamodel.py:1197} INFO - topic #3 (0.122): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.629+0000] {ldamodel.py:1197} INFO - topic #4 (0.122): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.630+0000] {ldamodel.py:1075} INFO - topic diff=0.007264, rho=0.500000
+[2025-03-21T16:41:10.632+0000] {ldamodel.py:848} INFO - -1.690 per-word bound, 3.2 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.632+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 3, at document #1/1
+[2025-03-21T16:41:10.640+0000] {ldamodel.py:795} INFO - optimized alpha [0.11644228, 0.116422415, 0.8513748, 0.116326824, 0.11652886]
+[2025-03-21T16:41:10.642+0000] {ldamodel.py:1197} INFO - topic #0 (0.116): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.643+0000] {ldamodel.py:1197} INFO - topic #1 (0.116): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.644+0000] {ldamodel.py:1197} INFO - topic #2 (0.851): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.644+0000] {ldamodel.py:1197} INFO - topic #3 (0.116): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.645+0000] {ldamodel.py:1197} INFO - topic #4 (0.117): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.647+0000] {ldamodel.py:1075} INFO - topic diff=0.003325, rho=0.447214
+[2025-03-21T16:41:10.649+0000] {ldamodel.py:848} INFO - -1.619 per-word bound, 3.1 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.650+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 4, at document #1/1
+[2025-03-21T16:41:10.654+0000] {ldamodel.py:795} INFO - optimized alpha [0.11276033, 0.112741694, 1.0535886, 0.112652, 0.11284158]
+[2025-03-21T16:41:10.654+0000] {ldamodel.py:1197} INFO - topic #0 (0.113): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.655+0000] {ldamodel.py:1197} INFO - topic #1 (0.113): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.656+0000] {ldamodel.py:1197} INFO - topic #2 (1.054): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.657+0000] {ldamodel.py:1197} INFO - topic #3 (0.113): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.661+0000] {ldamodel.py:1197} INFO - topic #4 (0.113): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.662+0000] {ldamodel.py:1075} INFO - topic diff=0.001703, rho=0.408248
+[2025-03-21T16:41:10.664+0000] {ldamodel.py:848} INFO - -1.566 per-word bound, 3.0 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.664+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 5, at document #1/1
+[2025-03-21T16:41:10.666+0000] {ldamodel.py:795} INFO - optimized alpha [0.11019002, 0.11017221, 1.2743596, 0.11008651, 0.11026765]
+[2025-03-21T16:41:10.667+0000] {ldamodel.py:1197} INFO - topic #0 (0.110): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.668+0000] {ldamodel.py:1197} INFO - topic #1 (0.110): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.669+0000] {ldamodel.py:1197} INFO - topic #2 (1.274): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.670+0000] {ldamodel.py:1197} INFO - topic #3 (0.110): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.671+0000] {ldamodel.py:1197} INFO - topic #4 (0.110): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.671+0000] {ldamodel.py:1075} INFO - topic diff=0.000945, rho=0.377964
+[2025-03-21T16:41:10.673+0000] {ldamodel.py:848} INFO - -1.526 per-word bound, 2.9 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.674+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 6, at document #1/1
+[2025-03-21T16:41:10.680+0000] {ldamodel.py:795} INFO - optimized alpha [0.10833381, 0.10831659, 1.5120606, 0.10823372, 0.10840889]
+[2025-03-21T16:41:10.680+0000] {ldamodel.py:1197} INFO - topic #0 (0.108): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.682+0000] {ldamodel.py:1197} INFO - topic #1 (0.108): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.683+0000] {ldamodel.py:1197} INFO - topic #2 (1.512): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.684+0000] {ldamodel.py:1197} INFO - topic #3 (0.108): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.685+0000] {ldamodel.py:1197} INFO - topic #4 (0.108): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.686+0000] {ldamodel.py:1075} INFO - topic diff=0.000556, rho=0.353553
+[2025-03-21T16:41:10.687+0000] {ldamodel.py:848} INFO - -1.494 per-word bound, 2.8 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.688+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 7, at document #1/1
+[2025-03-21T16:41:10.689+0000] {ldamodel.py:795} INFO - optimized alpha [0.10695615, 0.106939346, 1.7646177, 0.10685854, 0.10702935]
+[2025-03-21T16:41:10.690+0000] {ldamodel.py:1197} INFO - topic #0 (0.107): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.690+0000] {ldamodel.py:1197} INFO - topic #1 (0.107): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.694+0000] {ldamodel.py:1197} INFO - topic #2 (1.765): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.695+0000] {ldamodel.py:1197} INFO - topic #3 (0.107): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.695+0000] {ldamodel.py:1197} INFO - topic #4 (0.107): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.696+0000] {ldamodel.py:1075} INFO - topic diff=0.000341, rho=0.333333
+[2025-03-21T16:41:10.698+0000] {ldamodel.py:848} INFO - -1.469 per-word bound, 2.8 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.698+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 8, at document #1/1
+[2025-03-21T16:41:10.702+0000] {ldamodel.py:795} INFO - optimized alpha [0.10590951, 0.10589304, 2.0297625, 0.10581378, 0.10598131]
+[2025-03-21T16:41:10.703+0000] {ldamodel.py:1197} INFO - topic #0 (0.106): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.704+0000] {ldamodel.py:1197} INFO - topic #1 (0.106): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.704+0000] {ldamodel.py:1197} INFO - topic #2 (2.030): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.704+0000] {ldamodel.py:1197} INFO - topic #3 (0.106): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.704+0000] {ldamodel.py:1197} INFO - topic #4 (0.106): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.705+0000] {ldamodel.py:1075} INFO - topic diff=0.000218, rho=0.316228
+[2025-03-21T16:41:10.706+0000] {ldamodel.py:848} INFO - -1.449 per-word bound, 2.7 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.707+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 9, at document #1/1
+[2025-03-21T16:41:10.708+0000] {ldamodel.py:795} INFO - optimized alpha [0.10509787, 0.10508164, 2.30524, 0.10500357, 0.1051686]
+[2025-03-21T16:41:10.709+0000] {ldamodel.py:1197} INFO - topic #0 (0.105): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.710+0000] {ldamodel.py:1197} INFO - topic #1 (0.105): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.711+0000] {ldamodel.py:1197} INFO - topic #2 (2.305): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.712+0000] {ldamodel.py:1197} INFO - topic #3 (0.105): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.712+0000] {ldamodel.py:1197} INFO - topic #4 (0.105): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.713+0000] {ldamodel.py:1075} INFO - topic diff=0.000144, rho=0.301511
+[2025-03-21T16:41:10.715+0000] {ldamodel.py:848} INFO - -1.433 per-word bound, 2.7 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.719+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 10, at document #1/1
+[2025-03-21T16:41:10.721+0000] {ldamodel.py:795} INFO - optimized alpha [0.10445676, 0.10444072, 2.5889466, 0.10436358, 0.10452665]
+[2025-03-21T16:41:10.722+0000] {ldamodel.py:1197} INFO - topic #0 (0.104): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.722+0000] {ldamodel.py:1197} INFO - topic #1 (0.104): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.722+0000] {ldamodel.py:1197} INFO - topic #2 (2.589): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.723+0000] {ldamodel.py:1197} INFO - topic #3 (0.104): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.723+0000] {ldamodel.py:1197} INFO - topic #4 (0.105): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.723+0000] {ldamodel.py:1075} INFO - topic diff=0.000097, rho=0.288675
+[2025-03-21T16:41:10.725+0000] {ldamodel.py:848} INFO - -1.419 per-word bound, 2.7 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.726+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 11, at document #1/1
+[2025-03-21T16:41:10.727+0000] {ldamodel.py:795} INFO - optimized alpha [0.103941865, 0.10392598, 2.8790066, 0.10384958, 0.10401107]
+[2025-03-21T16:41:10.728+0000] {ldamodel.py:1197} INFO - topic #0 (0.104): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.728+0000] {ldamodel.py:1197} INFO - topic #1 (0.104): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.729+0000] {ldamodel.py:1197} INFO - topic #2 (2.879): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.729+0000] {ldamodel.py:1197} INFO - topic #3 (0.104): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.729+0000] {ldamodel.py:1197} INFO - topic #4 (0.104): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.730+0000] {ldamodel.py:1075} INFO - topic diff=0.000067, rho=0.277350
+[2025-03-21T16:41:10.731+0000] {ldamodel.py:848} INFO - -1.407 per-word bound, 2.7 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.731+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 12, at document #1/1
+[2025-03-21T16:41:10.732+0000] {ldamodel.py:795} INFO - optimized alpha [0.10352204, 0.10350628, 3.173796, 0.10343048, 0.103590705]
+[2025-03-21T16:41:10.736+0000] {ldamodel.py:1197} INFO - topic #0 (0.104): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.736+0000] {ldamodel.py:1197} INFO - topic #1 (0.104): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.737+0000] {ldamodel.py:1197} INFO - topic #2 (3.174): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.738+0000] {ldamodel.py:1197} INFO - topic #3 (0.103): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.738+0000] {ldamodel.py:1197} INFO - topic #4 (0.104): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.739+0000] {ldamodel.py:1075} INFO - topic diff=0.000048, rho=0.267261
+[2025-03-21T16:41:10.740+0000] {ldamodel.py:848} INFO - -1.398 per-word bound, 2.6 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.740+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 13, at document #1/1
+[2025-03-21T16:41:10.742+0000] {ldamodel.py:795} INFO - optimized alpha [0.10317502, 0.10315937, 3.4719436, 0.103084065, 0.10324324]
+[2025-03-21T16:41:10.743+0000] {ldamodel.py:1197} INFO - topic #0 (0.103): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.744+0000] {ldamodel.py:1197} INFO - topic #1 (0.103): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.745+0000] {ldamodel.py:1197} INFO - topic #2 (3.472): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.745+0000] {ldamodel.py:1197} INFO - topic #3 (0.103): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.746+0000] {ldamodel.py:1197} INFO - topic #4 (0.103): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.746+0000] {ldamodel.py:1075} INFO - topic diff=0.000034, rho=0.258199
+[2025-03-21T16:41:10.748+0000] {ldamodel.py:848} INFO - -1.389 per-word bound, 2.6 perplexity estimate based on a held-out corpus of 1 documents with 2 words
+[2025-03-21T16:41:10.749+0000] {ldamodel.py:1002} INFO - PROGRESS: pass 14, at document #1/1
+[2025-03-21T16:41:10.752+0000] {ldamodel.py:795} INFO - optimized alpha [0.10288461, 0.10286904, 3.7723088, 0.10279415, 0.10295245]
+[2025-03-21T16:41:10.753+0000] {ldamodel.py:1197} INFO - topic #0 (0.103): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.754+0000] {ldamodel.py:1197} INFO - topic #1 (0.103): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.755+0000] {ldamodel.py:1197} INFO - topic #2 (3.772): 0.500*"service" + 0.500*"bon"
+[2025-03-21T16:41:10.755+0000] {ldamodel.py:1197} INFO - topic #3 (0.103): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.756+0000] {ldamodel.py:1197} INFO - topic #4 (0.103): 0.500*"bon" + 0.500*"service"
+[2025-03-21T16:41:10.756+0000] {ldamodel.py:1075} INFO - topic diff=0.000026, rho=0.250000
+[2025-03-21T16:41:10.757+0000] {utils.py:447} INFO - LdaModel lifecycle event {'msg': 'trained LdaModel<num_terms=2, num_topics=5, decay=0.5, chunksize=2000> in 0.16s', 'datetime': '2025-03-21T16:41:10.757523', 'gensim': '4.3.3', 'python': '3.8.10 (default, Jan 17 2025, 14:40:23) \n[GCC 9.4.0]', 'platform': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.29', 'event': 'created'}
+[2025-03-21T16:41:10.775+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-03-21T16:41:10.808+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Google_map, task_id=transform_phase_2_task, execution_date=20250321T164009, start_date=20250321T164049, end_date=20250321T164110
+[2025-03-21T16:41:10.944+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-21T16:41:10.993+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

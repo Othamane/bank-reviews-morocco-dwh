@@ -1,0 +1,3 @@
+2025-03-10 15:15:04,696 INFO - Received signal: 15. Closing gunicorn.
+2025-03-15 21:36:06,491 ERROR - [2 / 2] Some workers seem to have died and gunicorn did not restart them as expected
+2025-03-16 21:21:05,722 ERROR - [2 / 2] Some workers seem to have died and gunicorn did not restart them as expected

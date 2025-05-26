@@ -1,0 +1,16 @@
+[2025-03-17T22:29:58.494+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.insert_data_task manual__2025-03-16T18:51:12.944761+00:00 [queued]>
+[2025-03-17T22:29:58.712+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.insert_data_task manual__2025-03-16T18:51:12.944761+00:00 [queued]>
+[2025-03-17T22:29:58.713+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-03-17T22:29:58.814+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): insert_data_task> on 2025-03-16 18:51:12.944761+00:00
+[2025-03-17T22:29:58.821+0000] {standard_task_runner.py:60} INFO - Started process 15441 to run task
+[2025-03-17T22:29:58.848+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'insert_data_task', 'manual__2025-03-16T18:51:12.944761+00:00', '--job-id', '185', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmp7x_8nx7l']
+[2025-03-17T22:29:58.854+0000] {standard_task_runner.py:88} INFO - Job 185: Subtask insert_data_task
+[2025-03-17T22:30:01.221+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.insert_data_task manual__2025-03-16T18:51:12.944761+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-17T22:30:03.170+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='insert_data_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T18:51:12.944761+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T18:51:12.944761+00:00'
+[2025-03-17T22:30:03.186+0000] {logging_mixin.py:188} INFO - 🚀 Début du processus d'insertion des données...
+[2025-03-17T22:30:04.369+0000] {logging_mixin.py:188} INFO - ✅ Insertion réussie dans la table staging.
+[2025-03-17T22:30:04.370+0000] {logging_mixin.py:188} INFO - ✅ Processus terminé.
+[2025-03-17T22:30:04.370+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-03-17T22:30:05.055+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Google_map, task_id=insert_data_task, execution_date=20250316T185112, start_date=20250317T222958, end_date=20250317T223005
+[2025-03-17T22:30:05.560+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-03-17T22:30:06.249+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

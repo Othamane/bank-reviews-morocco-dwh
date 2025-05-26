@@ -1,0 +1,96 @@
+[2025-03-16T15:34:57.131+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Google_map.extract_data_task manual__2025-03-16T15:28:09.434150+00:00 [queued]>
+[2025-03-16T15:34:57.146+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Google_map.extract_data_task manual__2025-03-16T15:28:09.434150+00:00 [queued]>
+[2025-03-16T15:34:57.146+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 3
+[2025-03-16T15:34:57.175+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_data_task> on 2025-03-16 15:28:09.434150+00:00
+[2025-03-16T15:34:57.183+0000] {standard_task_runner.py:60} INFO - Started process 63603 to run task
+[2025-03-16T15:34:57.191+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Google_map', 'extract_data_task', 'manual__2025-03-16T15:28:09.434150+00:00', '--job-id', '114', '--raw', '--subdir', 'DAGS_FOLDER/google_map_dag_etl.py', '--cfg-path', '/tmp/tmpbeiisoaj']
+[2025-03-16T15:34:57.195+0000] {standard_task_runner.py:88} INFO - Job 114: Subtask extract_data_task
+[2025-03-16T15:34:57.353+0000] {task_command.py:423} INFO - Running <TaskInstance: Google_map.extract_data_task manual__2025-03-16T15:28:09.434150+00:00 [running]> on host DESKTOP-AVAHALM.
+[2025-03-16T15:34:57.725+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='master_m2si' AIRFLOW_CTX_DAG_ID='Google_map' AIRFLOW_CTX_TASK_ID='extract_data_task' AIRFLOW_CTX_EXECUTION_DATE='2025-03-16T15:28:09.434150+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-16T15:28:09.434150+00:00'
+[2025-03-16T15:35:00.092+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-03-16T15:35:00.493+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-16T15:35:00.727+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-03-16T15:35:00.945+0000] {logger.py:11} INFO - Driver [/home/nord/.wdm/drivers/chromedriver/linux64/134.0.6998.88/chromedriver-linux64/chromedriver] found in cache
+[2025-03-16T15:35:17.452+0000] {logging_mixin.py:188} INFO - Erreur lors du scrolling : Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.88)
+Stacktrace:
+#0 0x556c836e7a1a <unknown>
+#1 0x556c8319f390 <unknown>
+#2 0x556c8318512e <unknown>
+#3 0x556c831add50 <unknown>
+#4 0x556c8321f559 <unknown>
+#5 0x556c8323c9f5 <unknown>
+#6 0x556c832169a3 <unknown>
+#7 0x556c831e260e <unknown>
+#8 0x556c831e3dd1 <unknown>
+#9 0x556c836adddb <unknown>
+#10 0x556c836b1cbc <unknown>
+#11 0x556c83695392 <unknown>
+#12 0x556c836b2834 <unknown>
+#13 0x556c836791ef <unknown>
+#14 0x556c836d6038 <unknown>
+#15 0x556c836d6216 <unknown>
+#16 0x556c836e6896 <unknown>
+#17 0x7f1573887609 start_thread
+[2025-03-16T15:35:17.602+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/nord/venv/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/nord/airflow/dags/google_map_dag_etl.py", line 33, in <lambda>
+    python_callable=lambda: __import__('main_scraping_script').main()
+  File "/home/nord/airflow/dags/main_scraping_script.py", line 155, in main
+    all_data = extract_data(driver, banques)
+  File "/home/nord/airflow/dags/main_scraping_script.py", line 127, in extract_data
+    bank_data = extract_agency_data(driver, banque, url)
+  File "/home/nord/airflow/dags/main_scraping_script.py", line 66, in extract_agency_data
+    agencies_links = collect_agency_links(driver)
+  File "/home/nord/airflow/dags/main_scraping_script.py", line 46, in collect_agency_links
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 485, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/home/nord/venv/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+#0 0x556c836e7a1a <unknown>
+#1 0x556c8319f1e3 <unknown>
+#2 0x556c831e1f2f <unknown>
+#3 0x556c83216ad6 <unknown>
+#4 0x556c83211143 <unknown>
+#5 0x556c83210415 <unknown>
+#6 0x556c83167fb8 <unknown>
+#7 0x556c836adddb <unknown>
+#8 0x556c836b1cbc <unknown>
+#9 0x556c83695392 <unknown>
+#10 0x556c836b2834 <unknown>
+#11 0x556c836791ef <unknown>
+#12 0x556c831669eb <unknown>
+#13 0x7f1573230083 __libc_start_main
+
+[2025-03-16T15:35:17.695+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=Google_map, task_id=extract_data_task, execution_date=20250316T152809, start_date=20250316T153457, end_date=20250316T153517
+[2025-03-16T15:35:17.879+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 114 for task extract_data_task (Message: invalid session id
+Stacktrace:
+#0 0x556c836e7a1a <unknown>
+#1 0x556c8319f1e3 <unknown>
+#2 0x556c831e1f2f <unknown>
+#3 0x556c83216ad6 <unknown>
+#4 0x556c83211143 <unknown>
+#5 0x556c83210415 <unknown>
+#6 0x556c83167fb8 <unknown>
+#7 0x556c836adddb <unknown>
+#8 0x556c836b1cbc <unknown>
+#9 0x556c83695392 <unknown>
+#10 0x556c836b2834 <unknown>
+#11 0x556c836791ef <unknown>
+#12 0x556c831669eb <unknown>
+#13 0x7f1573230083 __libc_start_main
+; 63603)
+[2025-03-16T15:35:18.025+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-16T15:35:18.158+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
