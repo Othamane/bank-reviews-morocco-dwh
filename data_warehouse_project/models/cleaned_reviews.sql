@@ -122,7 +122,11 @@ adjust_review_date as (
         review_text,
         rating,
         -- Use the macro to convert the relative review_date
-        {{ convert_relative_date('review_date', 'scraping_date') }} as review_date,
+          {{ convert_relative_date(
+            "trim(lower(replace(review_date, '\u00A0', ' ')))",
+            'review_date',
+            'scraping_date'
+        ) }} as review_date,
         scraping_date
     from convert_rating
 )

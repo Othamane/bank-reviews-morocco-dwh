@@ -224,29 +224,29 @@ dim_sentiment: Sentiment labels (sentiment_id, sentiment_label).
 This design enables efficient slicing and dicing of review data by bank, branch, location, or sentiment for BI queries.   
 
 ### Phase 4: Data Analytics & Reporting
-![alt text](Dashboard.png)
+![alt text](Dashboard_images/Dashboard.png)
 
 1. Distribution des agences bancaires : Cette carte montre la répartition géographique des agences bancaires au Maroc. Les points sur la carte indiquent les emplacements des agences, avec une concentration notable autour des zones urbaines comme Casablanca, Rabat et Marrakech.
-![alt text](image.png)
+![alt text](Dashboard_images/image.png)
 
 
 2. Distribution des topics : Ce graphique en barres horizontales illustre la répartition des sujets mentionnés dans les avis, divisés en trois catégories : Positif (bleu), Négatif (orange) et Neutre (violet). Le sujet "Qualité" domine avec une majorité d'avis positifs, suivi de "Service" avec une part notable d'avis négatifs.
-![alt text](image-1.png)
+![alt text](Dashboard_images/image-1.png)
 
 3. Distribution des sentiments : Ce graphique en camembert présente la répartition des sentiments dans les avis : 50,8 % positifs (bleu), 44,9 % négatifs (orange) et 4,3 % neutres (violet), offrant une vue d'ensemble de la satisfaction client.
-![alt text](image-2.png)
+![alt text](Dashboard_images/image-2.png)
 4. Rating Distribution par agence : Ce graphique en barres empilées montre la distribution des notes (1 à 5) pour chaque agence bancaire. Chaque barre représente une agence, avec des couleurs indiquant les différentes notes, permettant d'identifier les performances relatives.
-![alt text](image-3.png)
+![alt text](Dashboard_images/image-3.png)
 5. Nombre d'avis par banque : Ce graphique en barres verticales affiche le nombre total d'avis par banque. Les banques comme Bank Assafa (Banque A) et BCP (Banque C) ont le plus grand nombre d'avis, tandis que d'autres comme Société G en ont moins.
-![alt text](image-4.png)
+![alt text](Dashboard_images/image-4.png)
 6. Tendance des sentiments par agence : Ce graphique en barres horizontales montre l'évolution des sentiments (Positif en bleu, Négatif en orange, Neutre en violet) pour différentes agences. La majorité des agences, comme BCP - 101 bd Mohamed Zerktouni, Casablanca (Banque C) et Bank Assafa - Agadir, Rue de Marrakech (Banque A), ont une tendance majoritairement positive.
-![alt text](image-5.png)
+![alt text](Dashboard_images/image-5.png)
 7. Distribution des ratings : Ce graphique en camembert indique la répartition des notes globales : 1 (46,3 %), 2 (0,5 %), 3 (3,3 %), 4 (7,8 %), 5 (42,1 %), reflétant la satisfaction générale.
-![alt text](image-6.png)
+![alt text](Dashboard_images/image-6.png)
 8. Distribution des langues : Ce graphique en camembert montre que 87 % des avis sont en français (bleu), avec une minorité dans d'autres langues (orange), soulignant la langue dominante des clients.
-![alt text](image-7.png)
+![alt text](Dashboard_images/image-7.png)
 9. Sentiment Flow par agence : Ce graphique en bande montre le flux des sentiments (Positif en bleu, Négatif en orange, Neutre en violet) pour diverses agences, avec des détails sur les adresses spécifiques, offrant une analyse détaillée par emplacement.
-![alt text](image-8.png)
+![alt text](Dashboard_images/image-8.png)
 
 
 

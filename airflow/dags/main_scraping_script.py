@@ -34,7 +34,7 @@ def scroll_to_bottom(driver):
         last_height = driver.execute_script("return arguments[0].scrollHeight", element)
         while True:
             driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", element)
-            random_sleep(3, 6)
+            random_sleep(5, 7)
             new_height = driver.execute_script("return arguments[0].scrollHeight", element)
             if new_height == last_height:
                 break
@@ -60,17 +60,16 @@ def click_all_buttons(driver):
 
 def extract_agency_data(driver, banque, url):
     all_data = {"Bank_name": banque, "Branches": []}
-    print(f"Attempting to access URL: {url}")
     driver.get(url)
-    random_sleep(5, 7)
+    random_sleep(3, 5)
     scroll_to_bottom(driver)
     agencies_links = collect_agency_links(driver)
-    print(agencies_links)
+    print("nbr agences ------", len(agencies_links), "------")
     for index, link in enumerate(agencies_links):
-        print(link)
+        print("agence ", index, "/", len(agencies_links))
         try:
             driver.get(link)
-            time.sleep(5)
+            random_sleep(2, 5)
             try:
                 agence_info = driver.find_element(By.CLASS_NAME, "tAiQdd")
                 nom_agence = agence_info.find_element(By.CSS_SELECTOR, "h1.DUwDvf.lfPIob").text
@@ -81,20 +80,22 @@ def extract_agency_data(driver, banque, url):
             try:
                 avis_button = driver.find_elements(By.CLASS_NAME, "hh2c6")[1]
                 avis_button.click()
-                time.sleep(5)
+                random_sleep(2, 5)
                 WebDriverWait(driver, 10).until(
                     EC.presence_of_element_located((By.CLASS_NAME, "aIFcqe"))
                 )
                 review_container = driver.find_element(By.CLASS_NAME, "m6QErb.DxyBCb.kA9KIf.dS8AEf.XiKgde")
-                last_count = 0
-                while True:
-                    driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", review_container)
-                    time.sleep(2)
-                    soup = BeautifulSoup(driver.page_source, 'html.parser')
-                    new_count = len(soup.find_all('div', class_="jftiEf fontBodyMedium"))
-                    if new_count == last_count:
-                        break
-                    last_count = new_count
+                try:
+                    last_height = driver.execute_script("return arguments[0].scrollHeight", review_container)
+                    while True:
+                        driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", review_container)
+                        random_sleep(5, 7)
+                        new_height = driver.execute_script("return arguments[0].scrollHeight", review_container)
+                        if new_height == last_height:
+                            break
+                        last_height = new_height
+                except Exception as e:
+                    print(f"Erreur lors du scrolling - revues : {e}")
                 click_all_buttons(driver)
                 soup = BeautifulSoup(driver.page_source, 'html.parser')
                 reviews_elements = soup.find_all('div', class_="jftiEf fontBodyMedium")
@@ -117,14 +118,15 @@ def extract_agency_data(driver, banque, url):
             })
         except Exception:
             continue
-        break
+        # break
     return all_data
 
 def extract_data(driver, banques):
     all_banks_data = []
     for banque in banques:
+        print("bank : ", banque)
         cleaned_banque = re.sub(r'[^a-zA-Z0-9\s]', '', banque.lower()).replace(' ', '+')
-        url = f"https://www.google.com/maps/search/{cleaned_banque}+morocco"
+        url = f"https://www.google.com/maps/search/{cleaned_banque}+in+Morocco+OR+Maroc"
         bank_data = extract_agency_data(driver, banque, url)
         all_banks_data.append(bank_data)
     return all_banks_data
@@ -137,6 +139,8 @@ def main():
         "Banque Centrale Populaire (BCP)",
         "Bank of Africa (BOA)",
         "Banque Marocaine pour le Commerce et l'Industrie (BMCI)",
+        "Banque Marocaine du Commerce Extérieur (BMCE)",
+        "Banque Populaire (BP)",
         "Crédit Agricole du Maroc (CAM)",
         "Crédit du Maroc",
         "Société Générale Maroc",
@@ -149,7 +153,6 @@ def main():
         "Al Akhdar Bank (AAB)",
         "Bank Al Yousr",
         "Bank Al-Tamweel wa Al-Inma",
-        "Bank As-Safa",
         "Umnia Bank"
     ]
     try:
