@@ -1,11 +1,11 @@
 # Analyzing Customer Reviews of Bank Agencies in Morocco using a Modern Data Stack
 
 ## Student Profile
-**Name:** NOURDDINE Othmane
-**Program:** Master 2 – Systèmes d'Information et Systèmes Intelligents (M2SI)
-**Institution:**Institut National de Statistique et d'Économie Appliquée (INSEA)
-**Academic Year:** 2024-2025
-**Project Type:** Data Engineering & Analytics Capstone Project
+**Name:** NOURDDINE Othmane <br />
+**Program:** Master 2 – Systèmes d'Information et Systèmes Intelligents (M2SI) <br />
+**Institution:** Institut National de Statistique et d'Économie Appliquée (INSEA) <br />
+**Academic Year:** 2024-2025 <br />
+**Project Type:** Data Engineering & Analytics Capstone Project <br />
 
 ## Project Overview
 
