@@ -1,5 +1,12 @@
 # Analyzing Customer Reviews of Bank Agencies in Morocco using a Modern Data Stack
 
+## Student Profile
+**Name:** NOURDDINE Othmane
+**Program:** Master 2 – Systèmes d'Information et Systèmes Intelligents (M2SI)
+**Institution:**Institut National de Statistique et d'Économie Appliquée (INSEA)
+**Academic Year:** 2024-2025
+**Project Type:** Data Engineering & Analytics Capstone Project
+
 ## Project Overview
 
 **Objective:**
@@ -39,7 +46,29 @@ Banks receive thousands of customer reviews on Google Maps. These reviews contai
 | **Analysis & BI**   | Looker Studio (Google Data Studio)            |
 | **Version Control** | GitHub                                        |
 
----
+## Folder Structure
+
+📁 Project Root 
+├── 📁 .dbt/                          # DBT configuration files
+├── 📁 airflow/                       # Airflow orchestration
+│   ├── 📁 dags/                      # DAG definitions
+├── 📁 Dashboard_images/              # Dashboard screenshots
+├── 📁 data_warehouse_project/        # DBT project
+│   ├── 📁 analyses/                  # Ad-hoc analyses
+│   ├── 📁 logs/                      # DBT logs
+│   ├── 📁 macros/                    # DBT macros
+│   ├── 📁 models/                    # DBT models
+│   │   ├── 📁 marts/                 # Data mart models
+│   │   └── 📁 sources/               # Source definitions
+│   ├── 📁 seeds/                     # Static data files
+│   ├── 📁 snapshots/                 # Data snapshots
+│   ├── 📁 target/                    # DBT compiled files
+│   │   ├── 📁 compiled/              # Compiled SQL
+│   │   └── 📁 run/                   # Execution results
+│   └── 📁 tests/                     # Data quality tests
+└── 📄 README.md                      # Project documentation
+
+
 
 ## Project Roadmap
 
