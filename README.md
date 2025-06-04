@@ -48,27 +48,27 @@ Banks receive thousands of customer reviews on Google Maps. These reviews contai
 
 ## Folder Structure
 
-📁 Project Root 
-├── 📁 .dbt/                          # DBT configuration files
-├── 📁 airflow/                       # Airflow orchestration
-│   ├── 📁 dags/                      # DAG definitions
-├── 📁 Dashboard_images/              # Dashboard screenshots
-├── 📁 data_warehouse_project/        # DBT project
-│   ├── 📁 analyses/                  # Ad-hoc analyses
-│   ├── 📁 logs/                      # DBT logs
-│   ├── 📁 macros/                    # DBT macros
-│   ├── 📁 models/                    # DBT models
-│   │   ├── 📁 marts/                 # Data mart models
-│   │   └── 📁 sources/               # Source definitions
-│   ├── 📁 seeds/                     # Static data files
-│   ├── 📁 snapshots/                 # Data snapshots
-│   ├── 📁 target/                    # DBT compiled files
-│   │   ├── 📁 compiled/              # Compiled SQL
-│   │   └── 📁 run/                   # Execution results
-│   └── 📁 tests/                     # Data quality tests
-└── 📄 README.md                      # Project documentation
-
-
+```text
+Project Root 
+├── .dbt/                          # DBT configuration files
+├── airflow/                       # Airflow orchestration
+│   ├── dags/                      # DAG definitions
+├── Dashboard_images/              # Dashboard screenshots
+├── data_warehouse_project/        # DBT project
+│   ├── analyses/                  # Ad-hoc analyses
+│   ├── logs/                      # DBT logs
+│   ├── macros/                    # DBT macros
+│   ├── models/                    # DBT models
+│   │   ├── marts/                 # Data mart models
+│   │   └── sources/               # Source definitions
+│   ├── seeds/                     # Static data files
+│   ├── snapshots/                 # Data snapshots
+│   ├── target/                    # DBT compiled files
+│   │   ├── compiled/              # Compiled SQL
+│   │   └── run/                   # Execution results
+│   └── tests/                     # Data quality tests
+└── README.md                      # Project documentation
+```
 
 ## Project Roadmap
 
